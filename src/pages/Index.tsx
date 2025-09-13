@@ -1,14 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Landing } from "./Landing";
+import { VideoGeneration } from "./VideoGeneration";
+import { VideoResults } from "./VideoResults";
+
+type AppState = "landing" | "generation" | "results";
 
 const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const [currentState, setCurrentState] = useState<AppState>("landing");
+  const [videoData, setVideoData] = useState(null);
+
+  const handleGetStarted = () => {
+    setCurrentState("generation");
+  };
+
+  const handleVideoGenerated = (data: any) => {
+    setVideoData(data);
+    setCurrentState("results");
+  };
+
+  const handleCreateAnother = () => {
+    setVideoData(null);
+    setCurrentState("generation");
+  };
+
+  const renderCurrentPage = () => {
+    switch (currentState) {
+      case "landing":
+        return <Landing onGetStarted={handleGetStarted} />;
+      case "generation":
+        return <VideoGeneration onVideoGenerated={handleVideoGenerated} />;
+      case "results":
+        return <VideoResults videoData={videoData} onCreateAnother={handleCreateAnother} />;
+      default:
+        return <Landing onGetStarted={handleGetStarted} />;
+    }
+  };
+
+  return <div className="dark">{renderCurrentPage()}</div>;
 };
 
 export default Index;
