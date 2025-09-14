@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Navigation } from "@/components/ui/navigation";
 import { Github, Globe, FileText, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import heroBg from "@/assets/hero-bg.jpg";
 
 interface VideoGenerationProps {
   onStoryboardGenerated: () => void;
@@ -38,28 +39,28 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
     e.preventDefault();
     
     // Validation
-    if (!formData.githubUrl) {
+    if (!formData.websiteUrl) {
       toast({
-        title: "GitHub URL Required",
-        description: "Please provide a valid GitHub repository URL.",
+        title: "Website URL Required",
+        description: "Please provide a valid deployed website URL.",
         variant: "destructive"
       });
       return;
     }
 
-    if (!validateUrl(formData.githubUrl, 'github')) {
-      toast({
-        title: "Invalid GitHub URL",
-        description: "Please enter a valid GitHub repository URL.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    if (formData.websiteUrl && !validateUrl(formData.websiteUrl, 'website')) {
+    if (!validateUrl(formData.websiteUrl, 'website')) {
       toast({
         title: "Invalid Website URL",
         description: "Please enter a valid website URL.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    if (formData.githubUrl && !validateUrl(formData.githubUrl, 'github')) {
+      toast({
+        title: "Invalid GitHub URL",
+        description: "Please enter a valid GitHub repository URL.",
         variant: "destructive"
       });
       return;
@@ -71,11 +72,12 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
     try {
       toast({
         title: "Processing Started",
-        description: "AI is analyzing your repository and generating storyboard workflow...",
+        description: "AI is analyzing your project and generating storyboard workflow. This may take 10-15 seconds...",
       });
 
-      // Simulate processing time
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      // Simulate processing time (10-15 seconds)
+      const delay = Math.floor(Math.random() * 5000) + 10000; // Random delay between 10-15 seconds
+      await new Promise(resolve => setTimeout(resolve, delay));
 
       onStoryboardGenerated();
       
@@ -95,10 +97,21 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div 
+      className="min-h-screen bg-background relative"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: '2000%',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Background Overlay for better text readability */}
+      <div className="absolute inset-0 backdrop-blur-[0.5px]"></div>
+      
       <Navigation showGetStarted={false} onLogoClick={onLogoClick} />
       
-      <div className="pt-36 pb-16">
+      <div className="pt-36 pb-16 relative z-10">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-8">
@@ -117,26 +130,8 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="github-url" className="text-base font-medium">
-                      GitHub Repository URL *
-                    </Label>
-                    <div className="relative">
-                      <Github className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                      <Input
-                        id="github-url"
-                        type="url"
-                        placeholder="https://github.com/username/repository"
-                        className="pl-10 bg-input border-border focus:ring-primary"
-                        value={formData.githubUrl}
-                        onChange={(e) => setFormData(prev => ({ ...prev, githubUrl: e.target.value }))}
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
                     <Label htmlFor="website-url" className="text-base font-medium">
-                      Deployed Website URL (Optional)
+                      Deployed Website URL *
                     </Label>
                     <div className="relative">
                       <Globe className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
@@ -147,6 +142,24 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
                         className="pl-10 bg-input border-border focus:ring-primary"
                         value={formData.websiteUrl}
                         onChange={(e) => setFormData(prev => ({ ...prev, websiteUrl: e.target.value }))}
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="github-url" className="text-base font-medium">
+                      GitHub Repository URL (Optional)
+                    </Label>
+                    <div className="relative">
+                      <Github className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                      <Input
+                        id="github-url"
+                        type="url"
+                        placeholder="https://github.com/username/repository"
+                        className="pl-10 bg-input border-border focus:ring-primary"
+                        value={formData.githubUrl}
+                        onChange={(e) => setFormData(prev => ({ ...prev, githubUrl: e.target.value }))}
                       />
                     </div>
                   </div>

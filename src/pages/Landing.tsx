@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Navigation } from "@/components/ui/navigation";
 import { Badge } from "@/components/ui/badge";
 import { Dynamic3DComponent } from "@/components/ui/dynamic-3d-component";
+import heroBg from "@/assets/hero-bg.jpg";
 import { 
   Zap, 
   Clock, 
@@ -26,33 +27,33 @@ interface LandingProps {
 
 export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
   return (
-    <div className="min-h-screen bg-background">
+    <div 
+      className="min-h-screen bg-background relative"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Background Overlay for better text readability */}
+      <div className="absolute inset-0 backdrop-blur-[0.5px]"></div>
+      
       <Navigation onGetStarted={onGetStarted} onLogoClick={onLogoClick} />
       
       {/* Hero Section */}
-      <section className="relative pt-36 pb-20 overflow-hidden">
+      <section className="relative pt-36 pb-20 overflow-hidden z-10">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="relative z-10">
-              <div className="flex gap-3 mb-6">
-                <Badge variant="secondary" className="bg-muted text-muted-foreground border-border px-4 py-1.5">
-                  <Package className="w-4 h-4 mr-2" />
-                  Built for Developers
-                </Badge>
-                <Badge variant="secondary" className="bg-orange-500/10 text-orange-500 border-orange-500/20 px-4 py-1.5">
-                  <Sparkles className="w-4 h-4 mr-2" />
-                  Backed by AI
-                </Badge>
-              </div>
-              
+            <div className="relative z-20">       
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Your AI
-                <span className="block text-muted-foreground">Demo Video Creator</span>
+                <span className="block text-primary">Demo Video Creator</span>
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Transform your GitHub repositories into professional demo videos. No editing skills. No manual work. Just pure automation.
+                Transform your projects into professional demo videos. No editing skills. No manual work. Just pure automation.
               </p>
               
               <div className="flex flex-wrap gap-4 mb-8">
@@ -61,15 +62,7 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
                   size="lg"
                   className="bg-white text-background hover:bg-white/90 transition-all duration-300 px-8"
                 >
-                  Create Demo <Play className="w-4 h-4 ml-2" />
-                </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="border-border hover:bg-muted transition-all duration-300 px-8"
-                  onClick={() => window.open('#examples', '_self')}
-                >
-                  View Examples <TrendingUp className="w-4 h-4 ml-2" />
+                  Create Demo <Play className="w-2 h-4 ml-2" />
                 </Button>
               </div>
               
@@ -80,7 +73,7 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
             </div>
             
             {/* Right 3D Dashboard Component */}
-            <div className="relative">
+            <div className="relative z-20">
               <Dynamic3DComponent />
             </div>
           </div>
@@ -101,12 +94,12 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
       </section>
 
       {/* Highlights Section */}
-      <section id="highlights" className="py-32 bg-card/30">
+      <section id="highlights" className="py-32 bg-card/30 relative z-10">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4">Highlights</Badge>
             <h2 className="text-4xl md:text-5xl font-bold">
-              Every Project Shines With Take One
+              Every Project Shines With One Take
             </h2>
           </div>
           
@@ -120,10 +113,10 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">Save Production Time</h3>
                   <p className="text-muted-foreground mb-6">
-                    Free up time for coding instead of wrestling with video editors
+                    Free up time for coding instead of video editing
                   </p>
                   <p className="text-sm">
-                    Take One analyzes your code and creates professional demos so you no longer need to spend hours on video production.
+                    One Take analyzes your code and creates professional demos so you no longer need to spend hours on video production.
                   </p>
                 </div>
               </CardContent>
@@ -151,11 +144,11 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-32">
+      <section id="features" className="py-32 relative z-10">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              What Take One Delivers
+              What One Take Delivers
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               One platform where developers get instant demo videos, showcase their work professionally, and save countless hours on production.
@@ -165,7 +158,7 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left Feature */}
             <div>
-              <p className="text-sm text-muted-foreground mb-4">Transform repositories without manual editing</p>
+              {/* <p className="text-sm text-muted-foreground mb-4">Transform repositories without manual editing</p> */}
               <h3 className="text-3xl font-bold mb-8">
                 Automated Demo Creation
               </h3>
@@ -196,12 +189,12 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
             
             {/* Right Feature */}
             <div>
-              <p className="text-sm text-muted-foreground mb-4">See the impact of your projects</p>
+              {/* <p className="text-sm text-muted-foreground mb-4">See the impact of your projects</p> */}
               <h3 className="text-3xl font-bold mb-8">
                 Professional Results
               </h3>
               <p className="text-lg text-muted-foreground mb-8">
-                Take One creates videos that showcase your work professionally:
+                One Take creates videos that showcase your work professionally:
               </p>
               
               <div className="space-y-4">
@@ -236,7 +229,7 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-1">
-                      <span>With Take One</span>
+                      <span>With One Take</span>
                       <span className="text-primary">5-10 minutes</span>
                     </div>
                     <div className="h-2 bg-muted rounded-full overflow-hidden">
@@ -251,7 +244,7 @@ export const Landing = ({ onGetStarted, onLogoClick }: LandingProps) => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-secondary">
+      <section className="py-20 bg-gradient-secondary relative z-10">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Create Your First Demo?

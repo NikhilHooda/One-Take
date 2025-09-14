@@ -10,6 +10,7 @@ import {
 export const Dynamic3DComponent = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -17,37 +18,62 @@ export const Dynamic3DComponent = () => {
       if (rect) {
         const x = (e.clientX - rect.left - rect.width / 2) / rect.width;
         const y = (e.clientY - rect.top - rect.height / 2) / rect.height;
-        setMousePosition({ x: x * 20, y: y * 20 });
+        setMousePosition({ x: x * 15, y: y * 15 });
       }
+    };
+
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
     };
 
     const component = document.getElementById('3d-component');
     if (component) {
       component.addEventListener('mousemove', handleMouseMove);
-      return () => component.removeEventListener('mousemove', handleMouseMove);
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        component.removeEventListener('mousemove', handleMouseMove);
+        window.removeEventListener('scroll', handleScroll);
+      };
     }
   }, []);
 
   return (
-    <div className="relative flex items-center justify-center min-h-[600px] p-8">
-      {/* Floating Animation Container */}
-      <div 
-        id="3d-component"
-        className="relative w-full max-w-md transform-gpu transition-all duration-500 ease-out hover:scale-105"
-        style={{
-          transform: `perspective(1000px) rotateX(${isHovered ? mousePosition.y * 0.5 : 5}deg) rotateY(${isHovered ? mousePosition.x * 0.5 : -5}deg) translateZ(${isHovered ? 20 : 0}px)`,
-          animation: 'float 6s ease-in-out infinite'
-        }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
+    <div className="relative flex items-center justify-center min-h-[600px] p-8 perspective-1000">
+      {/* 3D Container with dramatic perspective */}
+      <div className="relative w-full max-w-lg transform-gpu">
+        {/* Floating Animation Container */}
+        <div 
+          id="3d-component"
+          className="relative w-full transform-gpu transition-all duration-500 ease-out"
+          style={{
+            transform: `perspective(1000px) 
+              rotateX(${isHovered ? mousePosition.y * 0.8 : 8 + Math.sin(scrollY * 0.01) * 3}deg) 
+              rotateY(${isHovered ? mousePosition.x * 0.8 : -8 + Math.cos(scrollY * 0.008) * 3}deg) 
+              translateZ(${isHovered ? 40 : 20 + Math.sin(scrollY * 0.005) * 5}px)
+              translateY(${isHovered ? mousePosition.y * 0.3 : Math.sin(scrollY * 0.003) * 15}px)
+              translateX(${isHovered ? mousePosition.x * 0.3 : 0}px)`,
+            animation: isHovered ? 'none' : 'float 6s ease-in-out infinite, sway 10s ease-in-out infinite',
+            filter: isHovered ? 'brightness(1.05) saturate(1.1)' : 'brightness(1) saturate(1)',
+            boxShadow: isHovered 
+              ? '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 30px rgba(244, 58%, 64%, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.08)' 
+              : '0 15px 35px -5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(244, 58%, 64%, 0.15), inset 0 0 8px rgba(255, 255, 255, 0.03)'
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
         {/* Main 3D Card */}
         <div className="relative bg-gradient-to-br from-card/90 to-card/60 backdrop-blur-xl border border-border/50 rounded-2xl shadow-2xl overflow-hidden">
           {/* Glass Effect Overlay */}
           <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none" />
           
           {/* Ambient Glow */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity" />
+          <div 
+            className="absolute -inset-1 bg-gradient-to-r from-primary/15 via-secondary/15 to-primary/15 rounded-2xl blur-lg transition-all duration-300"
+            style={{
+              opacity: isHovered ? 0.7 : 0.5,
+              transform: isHovered ? `scale(${1.02 + Math.abs(mousePosition.x) * 0.005})` : 'scale(1)'
+            }}
+          />
           
           {/* Content Container */}
           <div className="relative z-10 p-6 space-y-6">
@@ -133,16 +159,84 @@ export const Dynamic3DComponent = () => {
           <div className="absolute inset-0 rounded-2xl border border-white/10 pointer-events-none" />
         </div>
 
-        {/* Additional Floating Elements */}
-        <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full blur-sm animate-pulse" />
-        <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-secondary/20 rounded-full blur-md animate-pulse" style={{ animationDelay: '2s' }} />
+        {/* Subtle Floating Elements */}
+        <div 
+          className="absolute -top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full blur-sm"
+          style={{ 
+            animation: isHovered ? 'none' : 'float 3s ease-in-out infinite, pulse 2s ease-in-out infinite',
+            animationDelay: '0s',
+            transform: isHovered ? `translate3d(${mousePosition.x * 0.1}px, ${mousePosition.y * 0.1}px, 10px) scale(${isHovered ? 1.2 : 1})` : 'translate3d(0, 0, 0) scale(1)',
+            opacity: isHovered ? 0.8 : 0.6,
+            filter: 'blur(4px)'
+          }}
+        />
+        <div 
+          className="absolute -bottom-6 -left-6 w-12 h-12 bg-secondary/20 rounded-full blur-md"
+          style={{ 
+            animation: isHovered ? 'none' : 'float 4s ease-in-out infinite, pulse 3s ease-in-out infinite',
+            animationDelay: '1s',
+            transform: isHovered ? `translate3d(${mousePosition.x * -0.15}px, ${mousePosition.y * -0.15}px, 15px) scale(${isHovered ? 1.15 : 1})` : 'translate3d(0, 0, 0) scale(1)',
+            opacity: isHovered ? 0.7 : 0.5,
+            filter: 'blur(6px)'
+          }}
+        />
+        <div 
+          className="absolute top-1/2 -right-8 w-6 h-6 bg-accent/30 rounded-full blur-sm"
+          style={{ 
+            animation: isHovered ? 'none' : 'sway 5s ease-in-out infinite, pulse 2.5s ease-in-out infinite',
+            animationDelay: '0.5s',
+            transform: isHovered ? `translate3d(${mousePosition.x * 0.2}px, ${mousePosition.y * 0.1}px, 20px) scale(${isHovered ? 1.3 : 1})` : 'translate3d(0, 0, 0) scale(1)',
+            opacity: isHovered ? 0.9 : 0.7,
+            filter: 'blur(3px)'
+          }}
+        />
+        <div 
+          className="absolute -top-8 left-1/4 w-4 h-4 bg-primary/40 rounded-full blur-sm"
+          style={{ 
+            animation: isHovered ? 'none' : 'float 6s ease-in-out infinite, pulse 4s ease-in-out infinite',
+            animationDelay: '2.5s',
+            transform: isHovered ? `translate3d(${mousePosition.x * -0.1}px, ${mousePosition.y * 0.2}px, 25px) scale(${isHovered ? 1.4 : 1})` : 'translate3d(0, 0, 0) scale(1)',
+            opacity: isHovered ? 0.8 : 0.4,
+            filter: 'blur(2px)'
+          }}
+        />
+        </div>
       </div>
 
-      {/* Custom CSS for floating animation */}
+      {/* Custom CSS for 3D floating animation */}
       <style>{`
         @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-10px); }
+          0%, 100% { 
+            transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+          }
+          25% { 
+            transform: translate3d(0, -15px, 8px) rotateX(1deg) rotateY(0.5deg) rotateZ(0.5deg); 
+          }
+          50% { 
+            transform: translate3d(0, -25px, 12px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+          }
+          75% { 
+            transform: translate3d(0, -10px, 6px) rotateX(-0.5deg) rotateY(-0.5deg) rotateZ(-0.5deg); 
+          }
+        }
+        
+        @keyframes sway {
+          0%, 100% { 
+            transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+          }
+          25% { 
+            transform: translate3d(8px, 0, 10px) rotateX(0.5deg) rotateY(1deg) rotateZ(0.3deg); 
+          }
+          50% { 
+            transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+          }
+          75% { 
+            transform: translate3d(-8px, 0, 8px) rotateX(-0.5deg) rotateY(-1deg) rotateZ(-0.3deg); 
+          }
+        }
+        
+        .perspective-1000 {
+          perspective: 1000px;
         }
       `}</style>
     </div>

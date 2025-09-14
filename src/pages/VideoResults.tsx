@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navigation } from "@/components/ui/navigation";
 import { Download, Twitter, Linkedin, ArrowLeft, Share2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import heroBg from "@/assets/hero-bg.jpg";
 
 interface VideoResultsProps {
   videoData: any;
@@ -50,10 +51,21 @@ export const VideoResults = ({ videoData, onCreateAnother, onLogoClick }: VideoR
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div 
+      className="min-h-screen bg-background relative"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: '2000%',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Background Overlay for better text readability */}
+      <div className="absolute inset-0 backdrop-blur-[0.5px]"></div>
+      
       <Navigation showGetStarted={false} onLogoClick={onLogoClick} />
       
-      <div className="pt-36 pb-16">
+      <div className="pt-36 pb-16 relative z-10">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">

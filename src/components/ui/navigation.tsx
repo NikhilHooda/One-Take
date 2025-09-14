@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Video } from "lucide-react";
 import { useState, useEffect } from "react";
+import LOGO from "@/assets/LOGO.png";
 
 interface NavigationProps {
   onGetStarted?: () => void;
@@ -39,13 +40,17 @@ export const Navigation = ({ onGetStarted, onLogoClick, showGetStarted = true }:
           onClick={onLogoClick}
           title="Back to Home"
         >
-          <Video className={`text-primary transition-all duration-300 ${
-            isScrolled ? 'h-6 w-6' : 'h-8 w-8'
-          }`} />
+          <img 
+            src={LOGO} 
+            alt="One Take Logo" 
+            className={`transition-all duration-300 ${
+              isScrolled ? 'h-6 w-8' : 'h-8 w-12'
+            }`}
+          />
           <span className={`font-bold text-white transition-all duration-300 ${
             isScrolled ? 'text-lg' : 'text-xl'
           }`}>
-            TAKE ONE
+            ONE TAKE
           </span>
         </div>
         
