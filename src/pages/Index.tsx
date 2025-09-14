@@ -1,42 +1,23 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Landing } from "./Landing";
-import { VideoGeneration } from "./VideoGeneration";
-import { VideoResults } from "./VideoResults";
-
-type AppState = "landing" | "generation" | "results";
 
 const Index = () => {
-  const [currentState, setCurrentState] = useState<AppState>("landing");
-  const [videoData, setVideoData] = useState(null);
+  const navigate = useNavigate();
 
   const handleGetStarted = () => {
-    setCurrentState("generation");
+    navigate("/video-generation");
   };
 
-  const handleVideoGenerated = (data: any) => {
-    setVideoData(data);
-    setCurrentState("results");
+  const handleLogoClick = () => {
+    // Scroll to top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleCreateAnother = () => {
-    setVideoData(null);
-    setCurrentState("generation");
-  };
-
-  const renderCurrentPage = () => {
-    switch (currentState) {
-      case "landing":
-        return <Landing onGetStarted={handleGetStarted} />;
-      case "generation":
-        return <VideoGeneration onVideoGenerated={handleVideoGenerated} />;
-      case "results":
-        return <VideoResults videoData={videoData} onCreateAnother={handleCreateAnother} />;
-      default:
-        return <Landing onGetStarted={handleGetStarted} />;
-    }
-  };
-
-  return <div className="dark">{renderCurrentPage()}</div>;
+  return (
+    <div className="dark">
+      <Landing onGetStarted={handleGetStarted} onLogoClick={handleLogoClick} />
+    </div>
+  );
 };
 
 export default Index;

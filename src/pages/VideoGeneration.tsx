@@ -9,10 +9,11 @@ import { Github, Globe, FileText, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface VideoGenerationProps {
-  onVideoGenerated: (videoData: any) => void;
+  onStoryboardGenerated: () => void;
+  onLogoClick?: () => void;
 }
 
-export const VideoGeneration = ({ onVideoGenerated }: VideoGenerationProps) => {
+export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGenerationProps) => {
   const [formData, setFormData] = useState({
     githubUrl: "",
     websiteUrl: "",
@@ -66,36 +67,26 @@ export const VideoGeneration = ({ onVideoGenerated }: VideoGenerationProps) => {
 
     setIsGenerating(true);
 
-    // Simulate video generation process
+    // Simulate storyboard generation process
     try {
       toast({
         title: "Processing Started",
-        description: "AI is analyzing your repository and generating your demo video...",
+        description: "AI is analyzing your repository and generating storyboard workflow...",
       });
 
       // Simulate processing time
-      await new Promise(resolve => setTimeout(resolve, 5000));
+      await new Promise(resolve => setTimeout(resolve, 3000));
 
-      const mockVideoData = {
-        id: Date.now().toString(),
-        title: "Demo Video Generated",
-        githubUrl: formData.githubUrl,
-        websiteUrl: formData.websiteUrl,
-        specifications: formData.specifications,
-        videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", // Sample video
-        createdAt: new Date().toISOString()
-      };
-
-      onVideoGenerated(mockVideoData);
+      onStoryboardGenerated();
       
       toast({
-        title: "Video Generated Successfully!",
-        description: "Your demo video is ready for preview and download.",
+        title: "Storyboard Generated Successfully!",
+        description: "Your workflow is ready for customization.",
       });
     } catch (error) {
       toast({
         title: "Generation Failed",
-        description: "There was an error generating your video. Please try again.",
+        description: "There was an error generating your storyboard. Please try again.",
         variant: "destructive"
       });
     } finally {
@@ -105,9 +96,9 @@ export const VideoGeneration = ({ onVideoGenerated }: VideoGenerationProps) => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation showGetStarted={false} />
+      <Navigation showGetStarted={false} onLogoClick={onLogoClick} />
       
-      <div className="pt-20 pb-16">
+      <div className="pt-36 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-8">
@@ -185,10 +176,10 @@ export const VideoGeneration = ({ onVideoGenerated }: VideoGenerationProps) => {
                     {isGenerating ? (
                       <>
                         <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                        Generating Video...
+                        Generating Storyboard...
                       </>
                     ) : (
-                      "Generate Video"
+                      "Generate Storyboard"
                     )}
                   </Button>
                 </form>
@@ -202,7 +193,7 @@ export const VideoGeneration = ({ onVideoGenerated }: VideoGenerationProps) => {
                     <Loader2 className="h-12 w-12 animate-spin text-primary mx-auto mb-4" />
                     <h3 className="text-lg font-semibold mb-2">AI Processing in Progress</h3>
                     <p className="text-muted-foreground">
-                      Our AI is analyzing your repository, extracting key features, and creating your video narrative...
+                      Our AI is analyzing your repository, extracting key features, and creating your storyboard workflow...
                     </p>
                   </div>
                 </CardContent>

@@ -7,9 +7,10 @@ import { useToast } from "@/hooks/use-toast";
 interface VideoResultsProps {
   videoData: any;
   onCreateAnother: () => void;
+  onLogoClick?: () => void;
 }
 
-export const VideoResults = ({ videoData, onCreateAnother }: VideoResultsProps) => {
+export const VideoResults = ({ videoData, onCreateAnother, onLogoClick }: VideoResultsProps) => {
   const { toast } = useToast();
 
   const handleDownload = () => {
@@ -50,9 +51,9 @@ export const VideoResults = ({ videoData, onCreateAnother }: VideoResultsProps) 
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation showGetStarted={false} />
+      <Navigation showGetStarted={false} onLogoClick={onLogoClick} />
       
-      <div className="pt-20 pb-16">
+      <div className="pt-36 pb-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
