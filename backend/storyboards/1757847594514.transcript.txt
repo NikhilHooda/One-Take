@@ -1,0 +1,4 @@
+[00:00 - 00:15] scene=scene-1 Welcome to YouTube, a vast platform filled with videos and music. The homepage offers a glimpse of trending content, making exploration easy.
+[00:15 - 00:30] scene=scene-1 Let's dive into the world of viral content! We'll click on this trending video which takes us to an exciting destination.
+[00:30 - 00:45] scene=scene-2 The video begins playing, and we're immersed in the content. Controls are easily accessible, allowing us to pause, adjust, and enjoy the show.
+[00:45 - 01:00] scene=scene-3 Want to show some love? We can like the video and join the conversation by commenting. It's a simple and engaging process!

@@ -1,0 +1,801 @@
+{
+  "engine": "playwright",
+  "started_at": 1757847618,
+  "start_url": "https://www.youtube.com/",
+  "max_pages": 5,
+  "pages": [
+    {
+      "url": "https://www.youtube.com/",
+      "title": "YouTube",
+      "description": "Enjoy the videos and music that you love, upload original content and share it all with friends, family and the world on YouTube.",
+      "headings": [],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Back",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Back\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Guide",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Guide\"]",
+          "bbox": {
+            "x": 24,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": 56,
+            "y": 21.5,
+            "width": 0,
+            "height": 13
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": null,
+          "classes": "ytSearchboxComponentSearchButton",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 898,
+            "y": 8,
+            "width": 64,
+            "height": 40
+          }
+        },
+        {
+          "text": "Search",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "#button",
+          "bbox": {
+            "x": -216,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": -184,
+            "y": 21.5,
+            "width": 0,
+            "height": 13
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "form:nth-of-type(1)",
+          "fields": [
+            {
+              "name": "search_query",
+              "type": "text",
+              "placeholder": null
+            }
+          ],
+          "submit_button_text": null
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757847594514\\page_1.png",
+      "features_guess": [
+        "search"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/feed/subscriptions",
+      "title": "",
+      "description": null,
+      "headings": [],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Back",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Back\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Guide",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Guide\"]",
+          "bbox": {
+            "x": 24,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": 56,
+            "y": 21.5,
+            "width": 0,
+            "height": 13
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": null,
+          "classes": "ytSearchboxComponentSearchButton",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 898,
+            "y": 8,
+            "width": 64,
+            "height": 40
+          }
+        },
+        {
+          "text": "Search",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "#button",
+          "bbox": {
+            "x": -216,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": -184,
+            "y": 21.5,
+            "width": 0,
+            "height": 13
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "form:nth-of-type(1)",
+          "fields": [
+            {
+              "name": "search_query",
+              "type": "text",
+              "placeholder": null
+            }
+          ],
+          "submit_button_text": null
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757847594514\\page_2.png",
+      "features_guess": [
+        "search"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/feed/you",
+      "title": "",
+      "description": null,
+      "headings": [],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Back",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Back\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Guide",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Guide\"]",
+          "bbox": {
+            "x": 24,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": 56,
+            "y": 21.5,
+            "width": 0,
+            "height": 13
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": null,
+          "classes": "ytSearchboxComponentSearchButton",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 898,
+            "y": 8,
+            "width": 64,
+            "height": 40
+          }
+        },
+        {
+          "text": "Search",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "#button",
+          "bbox": {
+            "x": -216,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": -184,
+            "y": 21.5,
+            "width": 0,
+            "height": 13
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "form:nth-of-type(1)",
+          "fields": [
+            {
+              "name": "search_query",
+              "type": "text",
+              "placeholder": null
+            }
+          ],
+          "submit_button_text": null
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757847594514\\page_3.png",
+      "features_guess": [
+        "search"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/feed/history",
+      "title": "",
+      "description": null,
+      "headings": [],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Back",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Back\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Guide",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Guide\"]",
+          "bbox": {
+            "x": 24,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": 56,
+            "y": 0,
+            "width": 123,
+            "height": 56
+          }
+        },
+        {
+          "text": "Skip navigation",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Skip navigation",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--tonal yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Skip navigation\"]",
+          "bbox": {
+            "x": 16,
+            "y": -1000,
+            "width": 127.90625,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": null,
+          "classes": "ytSearchboxComponentSearchButton",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 858,
+            "y": 8,
+            "width": 64,
+            "height": 40
+          }
+        },
+        {
+          "text": "Search",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Search\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Search with your voice",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-only-default yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Search with your voice\"]",
+          "bbox": {
+            "x": 938,
+            "y": 8,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-menu-button-renderer",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 1117.375,
+            "y": 8,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Settings",
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "role=button[name=\"Settings\"]",
+          "bbox": {
+            "x": 1125.375,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "Sign in",
+          "role": null,
+          "tag": "a",
+          "href": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Ffeed%252Fhistory&hl=en-GB&ec=65620",
+          "aria_label": "Sign in",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--outline yt-spec-button-shape-next--call-to-action yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Sign in\"]",
+          "bbox": {
+            "x": 1165.375,
+            "y": 10,
+            "width": 98.625,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "#button",
+          "bbox": {
+            "x": -216,
+            "y": 16,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": "",
+          "id_attr": "logo",
+          "classes": "yt-simple-endpoint style-scope ytd-topbar-logo-renderer",
+          "locator_suggestion": "#logo",
+          "bbox": {
+            "x": -184,
+            "y": 0,
+            "width": 123,
+            "height": 56
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "button",
+          "classes": "style-scope yt-icon-button",
+          "locator_suggestion": "#button",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Learn more",
+          "role": null,
+          "tag": "a",
+          "href": "https://support.google.com/youtube/answer/95725?hl=en-GB",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "yt-simple-endpoint style-scope yt-formatted-string",
+          "locator_suggestion": "text=Learn more",
+          "bbox": {
+            "x": 581.6875,
+            "y": 364,
+            "width": 70.828125,
+            "height": 20
+          }
+        },
+        {
+          "text": "Sign in",
+          "role": null,
+          "tag": "a",
+          "href": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den-GB%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Ffeed%252Fhistory&hl=en-GB",
+          "aria_label": "Sign in",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--outline yt-spec-button-shape-next--call-to-action yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Sign in\"]",
+          "bbox": {
+            "x": 405.6875,
+            "y": 408,
+            "width": 98.625,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--filled yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-s yt-spec-button-shape-next--icon-button yt-spec-button-shape-next--override-small-size-icon yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Clear all watch history",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Clear all watch history",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Clear all watch history\"]",
+          "bbox": {
+            "x": 867,
+            "y": 80,
+            "width": 194.4375,
+            "height": 36
+          }
+        },
+        {
+          "text": "Pause watch history",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Pause watch history",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Pause watch history\"]",
+          "bbox": {
+            "x": 867,
+            "y": 132,
+            "width": 182.46875,
+            "height": 36
+          }
+        },
+        {
+          "text": "Clear all search history",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Clear all search history",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Clear all search history\"]",
+          "bbox": {
+            "x": 867,
+            "y": 184,
+            "width": 198.921875,
+            "height": 36
+          }
+        },
+        {
+          "text": "Pause search history",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Pause search history",
+          "id_attr": null,
+          "classes": "yt-spec-button-shape-next yt-spec-button-shape-next--text yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--enable-backdrop-filter-experiment",
+          "locator_suggestion": "role=button[name=\"Pause search history\"]",
+          "bbox": {
+            "x": 867,
+            "y": 236,
+            "width": 186.953125,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "media-container-link",
+          "classes": "yt-simple-endpoint style-scope ytd-video-preview",
+          "locator_suggestion": "#media-container-link",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "thumbnail",
+          "classes": "yt-simple-endpoint inline-block style-scope ytd-thumbnail",
+          "locator_suggestion": "#thumbnail",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "form:nth-of-type(1)",
+          "fields": [
+            {
+              "name": "search_query",
+              "type": "text",
+              "placeholder": "Search"
+            }
+          ],
+          "submit_button_text": null
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757847594514\\page_4.png",
+      "features_guess": [
+        "login",
+        "search"
+      ]
+    }
+  ]
+}

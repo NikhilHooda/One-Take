@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { spawn } = require('child_process');
 const path = require('path');
-const fs = require('fs').promises;
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -10,21 +10,6 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(cors());
 app.use(express.json());
-
-// Ensure output directories exist
-const ensureDirectories = async () => {
-  const dirs = ['storyboards', 'site_dumps', 'artifacts'];
-  for (const dir of dirs) {
-    try {
-      await fs.mkdir(dir, { recursive: true });
-    } catch (error) {
-      console.log(`Directory ${dir} already exists or error creating:`, error.message);
-    }
-  }
-};
-
-// Initialize directories
-ensureDirectories();
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -36,6 +21,7 @@ app.post('/api/generate-storyboard', async (req, res) => {
   try {
     const { githubUrl, websiteUrl, specifications } = req.body;
 
+    // Validate required fields
     if (!githubUrl) {
       return res.status(400).json({ error: 'GitHub URL is required' });
     }
@@ -58,8 +44,7 @@ app.post('/api/generate-storyboard', async (req, res) => {
 
     // Determine the URL to analyze (prefer website URL if provided)
     const targetUrl = websiteUrl || githubUrl;
-
-    console.log(`Starting storyboard generation for: ${targetUrl}`);
+    console.log(`Starting storyboard generation for: ${githubUrl}`);
 
     // First, scan the website to get site summary
     const scanArgs = [
@@ -114,9 +99,9 @@ app.post('/api/generate-storyboard', async (req, res) => {
       '--transcript-out', transcriptPath
     ];
 
-    // Add specifications if provided
-    if (specifications) {
-      storyboardArgs.push('--persona', specifications);
+    // Add specifications as goal if provided
+    if (specifications && specifications.trim()) {
+      storyboardArgs.push('--goal', specifications.trim());
     }
 
     console.log('Running storyboard command:', 'python', storyboardArgs.join(' '));
@@ -154,70 +139,43 @@ app.post('/api/generate-storyboard', async (req, res) => {
 
     console.log('Storyboard generation completed successfully');
 
-    // Read the generated storyboard
-    const storyboardData = await fs.readFile(storyboardPath, 'utf8');
-    const storyboard = JSON.parse(storyboardData);
-
-    // Read the transcript
-    let transcript = '';
-    try {
-      transcript = await fs.readFile(transcriptPath, 'utf8');
-    } catch (error) {
-      console.log('Could not read transcript file:', error.message);
-    }
+    // Read the generated files
+    const storyboardData = JSON.parse(fs.readFileSync(storyboardPath, 'utf8'));
+    const transcript = fs.readFileSync(transcriptPath, 'utf8');
 
     // Clean up temporary files
     try {
-      await fs.unlink(siteSummaryPath);
-      await fs.unlink(transcriptPath);
-    } catch (error) {
-      console.log('Could not clean up temporary files:', error.message);
+      fs.unlinkSync(storyboardPath);
+      fs.unlinkSync(transcriptPath);
+      fs.unlinkSync(siteSummaryPath);
+    } catch (cleanupError) {
+      console.warn('Failed to clean up temporary files:', cleanupError.message);
     }
 
+    // Return the response
     res.json({
       success: true,
-      storyboard,
-      transcript,
-      requestId,
-      generatedAt: new Date().toISOString()
+      storyboard: storyboardData,
+      transcript: transcript,
+      requestId: requestId,
+      generatedAt: new Date().toISOString(),
+      sourceUrls: {
+        githubUrl: githubUrl,
+        websiteUrl: websiteUrl
+      }
     });
 
   } catch (error) {
     console.error('Error generating storyboard:', error);
-    res.status(500).json({
-      error: 'Failed to generate storyboard',
-      details: error.message
+    res.status(500).json({ 
+      error: 'Failed to generate storyboard', 
+      details: error.message 
     });
   }
 });
 
-// Get storyboard by ID
-app.get('/api/storyboard/:id', async (req, res) => {
-  try {
-    const { id } = req.params;
-    const storyboardPath = path.join(__dirname, 'storyboards', `${id}.storyboard.json`);
-
-    const storyboardData = await fs.readFile(storyboardPath, 'utf8');
-    const storyboard = JSON.parse(storyboardData);
-
-    res.json({
-      success: true,
-      storyboard,
-      requestId: id
-    });
-  } catch (error) {
-    console.error('Error reading storyboard:', error);
-    res.status(404).json({
-      error: 'Storyboard not found',
-      details: error.message
-    });
-  }
-});
-
-// Start server
+// Start the server
 app.listen(PORT, () => {
   console.log(`Backend server running on port ${PORT}`);
   console.log(`Health check: http://localhost:${PORT}/health`);
 });
-
-module.exports = app;

@@ -1,0 +1,129 @@
+{
+  "product_name": "React",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "title": "Homepage Exploration",
+      "script": "The user lands on the React homepage, learning about React's purpose and key features.",
+      "steps": [
+        {
+          "selector": "text=React",
+          "action": "click",
+          "pause": 2
+        },
+        {
+          "selector": "text=Create user interfaces from components",
+          "action": "hover",
+          "pause": 1
+        },
+        {
+          "selector": "text=Learn more.",
+          "action": "click"
+        }
+      ]
+    },
+    {
+      "title": "Learning Resources",
+      "script": "The user explores the learning resources provided, clicking on the 'Learn' menu and checking out the quick start guide.",
+      "steps": [
+        {
+          "selector": "text=Learn",
+          "action": "click",
+          "pause": 2
+        },
+        {
+          "selector": "text=Quick Start",
+          "action": "hover",
+          "pause": 1
+        },
+        {
+          "selector": "text=Quick Start",
+          "action": "click"
+        },
+        {
+          "selector": "text=Creating and nesting components",
+          "action": "scrollIntoView"
+        }
+      ]
+    },
+    {
+      "title": "API Documentation",
+      "script": "The user searches for specific API information, using the search function. They learn about the different APIs and navigate to the 'React' API page.",
+      "steps": [
+        {
+          "selector": "text=Reference",
+          "action": "click"
+        },
+        {
+          "selector": "form:nth-of-type(1) input[placeholder='Search']",
+          "action": "fill",
+          "fill_text": "react api"
+        },
+        {
+          "selector": "form:nth-of-type(1) button[aria-label='Search']",
+          "action": "click",
+          "pause": 2
+        },
+        {
+          "selector": "text=React API",
+          "action": "click"
+        }
+      ]
+    },
+    {
+      "title": "Community Engagement",
+      "script": "The user checks out the community section, learning about contributions and translations.",
+      "steps": [
+        {
+          "selector": "text=Community",
+          "action": "click",
+          "pause": 2
+        },
+        {
+          "selector": "text=Translations",
+          "action": "click"
+        },
+        {
+          "selector": "text=Learn how to contribute.",
+          "action": "hover",
+          "pause": 1
+        }
+      ]
+    },
+    {
+      "title": "Version History",
+      "script": "The user navigates to the versions page to check the release history, learning about different versions.",
+      "steps": [
+        {
+          "selector": "text=v19.1",
+          "action": "click"
+        },
+        {
+          "selector": "text=React Versions",
+          "action": "scrollIntoView",
+          "pause": 2
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the React website's homepage, learning resources, API documentation, community features, and version history. Users will learn about React's capabilities and interactions.",
+  "assumptions": [
+    "Basic web navigation knowledge for clicking links and buttons.",
+    "Access to the internet to load the website."
+  ],
+  "risks": [
+    "Website content or layout may change, making some steps obsolete.",
+    "Users may have slow internet connections, affecting page load times."
+  ],
+  "transcript": {
+    "segments": [
+      "Welcome to the React demo. Today, we'll explore the website's key features.",
+      "Here's the homepage, which introduces React's purpose. We can learn more about its capabilities.",
+      "Let's dive into the learning resources. The 'Learn' section offers a quick start guide, perfect for beginners.",
+      "The API documentation is comprehensive. We can search for specific APIs using the box here and explore them in depth.",
+      "React fosters an active community. You can contribute and stay updated via the Community section.",
+      "Lastly, checking out the latest React versions is easy. The Versions page displays the release history.",
+      "In just a few minutes, we've covered React's essential features. This website offers a seamless learning experience."
+    ]
+  }
+}

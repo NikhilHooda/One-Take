@@ -1,0 +1,116 @@
+{
+  "product_name": "YouTube",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": "Welcome to YouTube's homepage! Let's explore the content. You can see the search bar, trending videos, and recommended channels. Let's click on a trending video.",
+      "shots": [
+        {
+          "selector": "#logo",
+          "duration": 2
+        },
+        {
+          "selector": "button[name=\"Search\"]",
+          "duration": 2
+        },
+        {
+          "selector": "a.yt-uix-tile-link",
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Video Player",
+      "duration_seconds": 35,
+      "narration": "Here's the video playing! You can see the title, description, and other details. Let's interact with the player controls. We can pause, adjust volume, and switch to full screen.",
+      "shots": [
+        {
+          "selector": "video",
+          "duration": 10
+        },
+        {
+          "selector": "button[aria-label=\"Pause\"]",
+          "duration": 3
+        },
+        {
+          "selector": ".ytp-volume-slider-handle",
+          "duration": 3
+        },
+        {
+          "selector": ".ytp-large-play-button",
+          "duration": 3
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Liking and Commenting",
+      "duration_seconds": 25,
+      "narration": "We can interact with the video by liking it and adding a comment. See the like button and the comment section? Let's click on them and input a comment.",
+      "shots": [
+        {
+          "selector": ".yt-uix-button-like",
+          "duration": 3
+        },
+        {
+          "selector": ".comment-simplebox",
+          "duration": 5
+        },
+        {
+          "selector": ".comment-simplebox textarea",
+          "duration": 7
+        }
+      ],
+      "forms": [
+        {
+          "fields": [
+            {
+              "selector": ".comment-simplebox textarea",
+              "text": "Great video!"
+            }
+          ],
+          "submit_button_text": "Post"
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo covers the homepage exploration, playing a video, interacting with the player, and showing how to like a video and post a comment.",
+  "assumptions": [
+    "The user is assumed to have a basic understanding of web navigation and player controls."
+  ],
+  "risks": [
+    "The video chosen for the demo might not be available in all regions or could be age-restricted."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 15,
+        "text": "Welcome to YouTube, a vast platform filled with videos and music. The homepage offers a glimpse of trending content, making exploration easy."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 15,
+        "end_seconds": 30,
+        "text": "Let's dive into the world of viral content! We'll click on this trending video which takes us to an exciting destination."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 30,
+        "end_seconds": 45,
+        "text": "The video begins playing, and we're immersed in the content. Controls are easily accessible, allowing us to pause, adjust, and enjoy the show."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 45,
+        "end_seconds": 60,
+        "text": "Want to show some love? We can like the video and join the conversation by commenting. It's a simple and engaging process!"
+      }
+    ]
+  }
+}

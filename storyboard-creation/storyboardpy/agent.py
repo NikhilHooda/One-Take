@@ -5,6 +5,7 @@ import io
 import contextlib
 import asyncio
 import inspect
+import re
 
 from dotenv import load_dotenv
 import cohere
@@ -12,7 +13,7 @@ from .schemas import STORYBOARD_JSON_SCHEMA
 
 
 class StoryboardAgent:
-    """Generates storyboard JSON using Cohere Command A Reasoning."""
+    """Generates storyboard JSON using Cohere Chat API."""
 
     def __init__(self, model: Optional[str] = None, temperature: Optional[float] = None):
         load_dotenv()
@@ -25,7 +26,7 @@ class StoryboardAgent:
         self.model = (
             model
             or os.getenv("COHERE_MODEL")
-            or "command-r-plus"  # Command A Reasoning model
+            or "command-r"  # Use newer non-deprecated model
         )
         
         # Temperature settings
@@ -42,128 +43,192 @@ class StoryboardAgent:
         # Initialize Cohere client
         self.co = cohere.Client(self.api_key)
 
+    def _safe_slice(self, text: Optional[str], max_length: int) -> str:
+        """Safely slice text, handling None values."""
+        if text is None:
+            return ""
+        return str(text)[:max_length]
+
     def _build_prompt(self, site_summary: Dict[str, Any], duration_hint: Optional[int], persona: str, goal: str) -> str:
-        schema_hint = json.dumps(STORYBOARD_JSON_SCHEMA, indent=2)
+        # Get the main URL/title to make the prompt more specific
+        start_url = site_summary.get("start_url", "")
+        pages = site_summary.get("pages", [])
+        main_title = ""
+        if pages and len(pages) > 0:
+            main_title = pages[0].get("title", "")
+        
         return (
-            "You are a product demo director. Given a website exploration summary, "
-            "produce a JSON storyboard that another agent will use to record a clean, concise UI demo.\n\n"
-            "Constraints:\n"
-            "- Return ONLY valid JSON. No markdown, no explanations.\n"
-            "- Use the provided JSON schema exactly.\n"
-            "- Choose selectors that are robust (role+name, id, or short text).\n"
-            "- Favor primary flows (landing -> key feature -> value -> CTA).\n"
-            "- Avoid account-specific or destructive actions.\n"
-            "- Include brief narration per scene to explain what's on screen.\n"
-            "- For each scene, include a cinematic shot plan in scenes[].shots with zooms/pans/focus on key elements.\n"
-            "- Shots should include start/end times, camera_move (zoom_in/zoom_out/pan_*/focus_element/static), target_selector (+ by), easing, transition_after, and any overlays or emphasis.\n"
-            "- Also include a transcript with timed segments that sync to scenes; each scene should have at least one segment whose start/end times align with cumulative scene durations.\n"
-            "- The final transcript end time should approximately equal the suggested total duration.\n\n"
+            f"Create a JSON storyboard for demonstrating the website: {start_url}\n"
+            f"Website title: {main_title}\n\n"
+            f"CONTEXT: You are creating a demo for this specific website. Focus ONLY on the content and features found on this website.\n\n"
+            f"Task: Create a product demo storyboard showing how to use this website.\n"
             f"Persona: {persona}\n"
             f"Goal: {goal}\n"
-            f"Duration hint (seconds): {duration_hint if duration_hint else 'no preference'}\n\n"
-            f"JSON Schema (use this strictly):\n{schema_hint}\n\n"
-            f"Website Summary (trimmed):\n{json.dumps(self._trim_site_summary(site_summary), indent=2)}\n\n"
-            "Return ONLY the JSON object, no other text."
+            f"Duration: {duration_hint or 90} seconds\n\n"
+            f"IMPORTANT RULES:\n"
+            f"1. Return ONLY valid JSON - no markdown, no explanations\n"
+            f"2. Base the demo ONLY on the actual website content provided below\n"
+            f"3. Create 3-5 realistic scenes showing actual user interactions with THIS website\n"
+            f"4. Use real selectors and content from the website data\n"
+            f"5. Make sure all scenes relate to the actual website, not generic examples\n"
+            f"6. Transcript segments MUST be objects with scene_id, start_seconds, end_seconds, and text fields\n\n"
+            f"Required JSON structure:\n"
+            f"{{\n"
+            f'  "product_name": "Website Name",\n'
+            f'  "suggested_duration_seconds": {duration_hint or 90},\n'
+            f'  "scenes": [/* array of scene objects with id, title, duration_seconds, narration, shots */],\n'
+            f'  "coverage": "Description of what the demo covers",\n'
+            f'  "assumptions": ["List of assumptions"],\n'
+            f'  "risks": ["List of potential risks"],\n'
+            f'  "transcript": {{\n'
+            f'    "segments": [\n'
+            f'      {{\n'
+            f'        "scene_id": "scene-1",\n'
+            f'        "start_seconds": 0,\n'
+            f'        "end_seconds": 30,\n'
+            f'        "text": "Narration text here"\n'
+            f'      }}\n'
+            f'    ]\n'
+            f'  }}\n'
+            f"}}\n\n"
+            f"Website data to base the demo on:\n"
+            f"{json.dumps(self._trim_site_summary(site_summary), indent=1)}\n\n"
+            f"Create a storyboard that demonstrates THIS specific website, not a generic example."
         )
 
     def _trim_site_summary(self, site_summary: Dict[str, Any]) -> Dict[str, Any]:
-        # Trim for token efficiency while keeping key context
-        pages = site_summary.get("pages", [])[:8]
+        """Trim site summary for token efficiency with safe None handling."""
+        if not site_summary or not isinstance(site_summary, dict):
+            return {"engine": "unknown", "start_url": "", "pages": []}
+        
+        pages = site_summary.get("pages", [])
+        if not isinstance(pages, list):
+            pages = []
+        
+        # Trim more aggressively for token efficiency
+        pages = pages[:3]  # Reduced from 8 to 3
         trimmed_pages = []
+        
         for p in pages:
-            clickables = p.get("clickables", [])[:20]
-            forms = p.get("forms", [])[:5]
-            headings = p.get("headings", [])[:10]
-            nav_links = p.get("nav_links", [])[:15]
+            if not isinstance(p, dict):
+                continue
+                
+            # Safely get and trim clickables
+            clickables = p.get("clickables", [])
+            if not isinstance(clickables, list):
+                clickables = []
+            clickables = clickables[:15]  # Increased to get more context
+            
+            # Safely get other fields
+            forms = p.get("forms", [])
+            if not isinstance(forms, list):
+                forms = []
+            forms = forms[:5]
+            
+            headings = p.get("headings", [])
+            if not isinstance(headings, list):
+                headings = []
+            headings = headings[:8]  # Increased to get more context
+            
+            nav_links = p.get("nav_links", [])
+            if not isinstance(nav_links, list):
+                nav_links = []
+            nav_links = nav_links[:10]
+            
+            features_guess = p.get("features_guess", [])
+            if not isinstance(features_guess, list):
+                features_guess = []
+            features_guess = features_guess[:5]
+            
             trimmed_pages.append({
-                "url": p.get("url"),
-                "title": p.get("title"),
-                "description": p.get("description"),
+                "url": self._safe_slice(p.get("url"), 200),
+                "title": self._safe_slice(p.get("title"), 100),
+                "description": self._safe_slice(p.get("description"), 300),  # Increased for better context
                 "headings": headings,
                 "nav_links": nav_links,
                 "clickables": [
                     {
-                        "text": c.get("text"),
-                        "role": c.get("role"),
-                        "tag": c.get("tag"),
-                        "href": c.get("href"),
-                        "aria_label": c.get("aria_label"),
-                        "id_attr": c.get("id_attr"),
-                        "locator_suggestion": c.get("locator_suggestion"),
+                        "text": self._safe_slice(c.get("text") if isinstance(c, dict) else None, 80),  # Increased
+                        "role": c.get("role") if isinstance(c, dict) else None,
+                        "tag": c.get("tag") if isinstance(c, dict) else None,
+                        "href": self._safe_slice(c.get("href") if isinstance(c, dict) else None, 150) or None,
+                        "aria_label": self._safe_slice(c.get("aria_label") if isinstance(c, dict) else None, 80) or None,
+                        "id_attr": c.get("id_attr") if isinstance(c, dict) else None,
+                        "locator_suggestion": self._safe_slice(c.get("locator_suggestion") if isinstance(c, dict) else None, 80) or None,
                     }
-                    for c in clickables
+                    for c in clickables if isinstance(c, dict)
                 ],
                 "forms": forms,
-                "features_guess": p.get("features_guess", []),
+                "features_guess": features_guess,
             })
+        
         return {
-            "engine": site_summary.get("engine"),
-            "start_url": site_summary.get("start_url"),
+            "engine": site_summary.get("engine", "unknown"),
+            "start_url": self._safe_slice(site_summary.get("start_url"), 200),
             "pages": trimmed_pages,
         }
 
-    def _coerce_result_to_text(self, result: Any) -> str:
-        # Direct string
-        if isinstance(result, str):
-            return result
-        # Common attributes
-        for attr in ("output_text", "text", "content"):
-            if hasattr(result, attr) and isinstance(getattr(result, attr), str):
-                return getattr(result, attr)
-        # Dict-like
-        if isinstance(result, dict):
-            for key in ("output_text", "text", "content"):
-                if isinstance(result.get(key), str):
-                    return result[key]
-            # Messages list pattern
-            msgs = result.get("messages")
-            if isinstance(msgs, list) and msgs:
-                parts = []
-                for m in msgs:
-                    if isinstance(m, dict):
-                        c = m.get("content") or m.get("text")
-                        if isinstance(c, str):
-                            parts.append(c)
-                if parts:
-                    return "\n".join(parts)
-        # Iterable event stream pattern
-        if isinstance(result, Iterable) and not isinstance(result, (str, bytes)):
-            parts = []
-            try:
-                for ev in result:
-                    # ev as dict or object
-                    if isinstance(ev, dict):
-                        if isinstance(ev.get("text"), str):
-                            parts.append(ev["text"])
-                        elif isinstance(ev.get("delta"), dict) and isinstance(ev["delta"].get("text"), str):
-                            parts.append(ev["delta"]["text"])
-                    else:
-                        for attr in ("text", "delta"):
-                            if hasattr(ev, attr):
-                                val = getattr(ev, attr)
-                                if isinstance(val, str):
-                                    parts.append(val)
-                                elif isinstance(val, dict) and isinstance(val.get("text"), str):
-                                    parts.append(val["text"])
-                if parts:
-                    return "".join(parts)
-            except TypeError:
-                pass
-        # Fallback
-        return str(result)
+    def _fix_transcript_structure(self, data: Dict[str, Any]) -> Dict[str, Any]:
+        """Ensure transcript has the correct structure for CLI compatibility."""
+        if "transcript" not in data:
+            data["transcript"] = {"segments": []}
+            return data
+        
+        transcript = data["transcript"]
+        
+        # If transcript is a list, wrap it in segments
+        if isinstance(transcript, list):
+            data["transcript"] = {"segments": transcript}
+            transcript = data["transcript"]
+        
+        # If transcript is not a dict, create empty structure
+        if not isinstance(transcript, dict):
+            data["transcript"] = {"segments": []}
+            return data
+        
+        # Ensure segments exists and is a list
+        if "segments" not in transcript or not isinstance(transcript["segments"], list):
+            transcript["segments"] = []
+        
+        # Validate and fix each segment
+        fixed_segments = []
+        for i, segment in enumerate(transcript["segments"]):
+            if isinstance(segment, str):
+                # Convert string segments to proper objects
+                fixed_segments.append({
+                    "scene_id": f"scene-{i+1}",
+                    "start_seconds": i * 30,
+                    "end_seconds": (i + 1) * 30,
+                    "text": segment
+                })
+            elif isinstance(segment, dict):
+                # Ensure required fields exist
+                fixed_segment = {
+                    "scene_id": segment.get("scene_id", f"scene-{i+1}"),
+                    "start_seconds": segment.get("start_seconds", i * 30),
+                    "end_seconds": segment.get("end_seconds", (i + 1) * 30),
+                    "text": segment.get("text", "")
+                }
+                fixed_segments.append(fixed_segment)
+        
+        data["transcript"]["segments"] = fixed_segments
+        return data
 
     def _invoke_cohere(self, prompt: str) -> str:
-        """Invoke Cohere Command A Reasoning API."""
+        """Invoke Cohere Chat API."""
         try:
-            response = self.co.generate(
+            response = self.co.chat(
                 model=self.model,
-                prompt=prompt,
-                max_tokens=4000,
-                temperature=self.temperature,
-                stop_sequences=["\n\n\n"]
+                message=prompt,
+                temperature=0.1,  # Lower temperature for more focused responses
+                max_tokens=4000
             )
             
-            return response.generations[0].text
+            # Extract text from chat response
+            if hasattr(response, 'text'):
+                return response.text
+            else:
+                raise RuntimeError(f"Chat response has no text attribute: {response}")
             
         except Exception as e:
             raise RuntimeError(f"Cohere API request failed: {e}")
@@ -175,34 +240,48 @@ class StoryboardAgent:
         persona: str = "Prospective user",
         goal: str = "Show the core value and test key flows",
     ) -> Dict[str, Any]:
+        # Validate inputs
+        if not site_summary:
+            site_summary = {"engine": "unknown", "start_url": "", "pages": []}
+        
         prompt = self._build_prompt(site_summary, duration_hint, persona, goal)
         result = self._invoke_cohere(prompt)
-        content_text = self._coerce_result_to_text(result)
+        content_text = result
 
-        def _parse_json_relaxed(txt: str):
-            try:
-                return json.loads(txt)
-            except Exception:
-                # Try to extract a JSON object substring
-                start = txt.find('{')
-                end = txt.rfind('}')
-                if start != -1 and end != -1 and end > start:
-                    snippet = txt[start:end+1]
-                    try:
-                        return json.loads(snippet)
-                    except Exception:
-                        pass
-                raise
-
+        # Try to parse JSON
         try:
-            data = _parse_json_relaxed(content_text)
-        except Exception as e:
-            raise RuntimeError(f"Cohere did not return valid JSON. Error: {e}\nRaw: {content_text[:1000]}")
+            data = json.loads(content_text)
+        except json.JSONDecodeError as e:
+            # Try extracting JSON from text
+            start = content_text.find('{')
+            end = content_text.rfind('}')
+            if start != -1 and end != -1 and end > start:
+                snippet = content_text[start:end+1]
+                try:
+                    data = json.loads(snippet)
+                except json.JSONDecodeError as e2:
+                    raise RuntimeError(f"Cohere did not return valid JSON. Raw response: {content_text[:1000]}")
+            else:
+                raise RuntimeError(f"Cohere did not return valid JSON. Raw response: {content_text[:1000]}")
 
-        # Basic shape checks
-        for key in ["product_name", "suggested_duration_seconds", "scenes", "coverage", "assumptions", "risks", "transcript"]:
-            if key not in data:
-                raise RuntimeError(f"Storyboard missing required field: {key}")
+        # Validate required fields and add defaults if missing
+        required_fields = {
+            "product_name": "Website Demo",
+            "suggested_duration_seconds": duration_hint or 90,
+            "scenes": [],
+            "coverage": "Basic overview",
+            "assumptions": ["Standard web environment"],
+            "risks": ["Content may vary"],
+            "transcript": {"segments": []}
+        }
+        
+        for field, default_value in required_fields.items():
+            if field not in data or data[field] is None:
+                data[field] = default_value
+
+        # Fix transcript structure for CLI compatibility
+        data = self._fix_transcript_structure(data)
+
         return data
 
     def create_storyboard(
