@@ -1,0 +1,84 @@
+{
+  "product_name": "Example Product",
+  "suggested_duration_seconds": 90,
+  "target_audience": "Prospective users evaluating the product",
+  "goal": "Highlight key value, basic workflow, and CTA",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Landing Page Overview",
+      "duration_seconds": 20,
+      "narration": "Welcome to Example Product. Let's quickly see what it does and how it helps you get started.",
+      "on_screen_text": "Example Product — Fast, simple, powerful",
+      "shots": [
+        { "id": "s1-shot1", "start_seconds": 0.0, "end_seconds": 6.0, "camera_move": "zoom_in", "target_selector": "text=Example Product", "by": "text", "easing": "ease-in-out", "transition_after": "dissolve", "emphasis": ["blur_background"] },
+        { "id": "s1-shot2", "start_seconds": 6.0, "end_seconds": 12.0, "camera_move": "pan_down", "easing": "ease-out", "transition_after": "cut" },
+        { "id": "s1-shot3", "start_seconds": 12.0, "end_seconds": 20.0, "camera_move": "focus_element", "target_selector": "text=Get Started", "by": "text", "easing": "ease-in" }
+      ],
+      "actions": [
+        { "type": "navigate", "url": "https://example.com" },
+        { "type": "scroll", "notes": "Reveal hero and features" },
+        { "type": "assert", "selector": "text=Get Started", "by": "text", "expected_result": "CTA visible" }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Explore Features",
+      "duration_seconds": 35,
+      "narration": "Explore the core features, including documentation and pricing options.",
+      "shots": [
+        { "id": "s2-shot1", "start_seconds": 20.0, "end_seconds": 28.0, "camera_move": "focus_element", "target_selector": "role=link[name=\"Docs\"]", "by": "aria", "easing": "ease-in" },
+        { "id": "s2-shot2", "start_seconds": 28.0, "end_seconds": 35.0, "camera_move": "zoom_in", "target_selector": "text=Quickstart", "by": "text", "easing": "ease-in-out", "transition_after": "slide" }
+      ],
+      "actions": [
+        { "type": "click", "selector": "role=link[name=\"Docs\"]", "by": "aria", "expected_result": "Docs page opens" },
+        { "type": "scroll", "notes": "Show quickstart section" },
+        { "type": "click", "selector": "text=Pricing", "by": "text", "expected_result": "Pricing tiers visible" }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Start Free Trial",
+      "duration_seconds": 35,
+      "narration": "Starting a free trial is simple — enter your email and proceed.",
+      "shots": [
+        { "id": "s3-shot1", "start_seconds": 55.0, "end_seconds": 63.0, "camera_move": "focus_element", "target_selector": "text=Get Started", "by": "text" },
+        { "id": "s3-shot2", "start_seconds": 63.0, "end_seconds": 78.0, "camera_move": "zoom_in", "target_selector": "#email", "by": "css", "easing": "ease-in" },
+        { "id": "s3-shot3", "start_seconds": 78.0, "end_seconds": 90.0, "camera_move": "zoom_out", "easing": "ease-out", "transition_after": "dissolve" }
+      ],
+      "actions": [
+        { "type": "click", "selector": "text=Get Started", "by": "text", "expected_result": "Sign-up form visible" },
+        { "type": "input", "selector": "#email", "by": "css", "value": "demo@example.com" },
+        { "type": "click", "selector": "role=button[name=\"Continue\"]", "by": "aria", "expected_result": "Next step shown" },
+        { "type": "wait", "notes": "Show transition" }
+      ]
+    }
+  ],
+  "visual_style": {
+    "default_easing": "ease-in-out",
+    "default_transition": "dissolve",
+    "background_blur": true,
+    "cursor_emphasis": true
+  },
+  "transcript": {
+    "language": "en",
+    "segments": [
+      { "scene_id": "scene-1", "start_seconds": 0.0, "end_seconds": 20.0, "text": "Welcome to Example Product. Let's quickly see what it does and how it helps you get started." },
+      { "scene_id": "scene-2", "start_seconds": 20.0, "end_seconds": 55.0, "text": "Explore the core features, including documentation and pricing options." },
+      { "scene_id": "scene-3", "start_seconds": 55.0, "end_seconds": 90.0, "text": "Starting a free trial is simple — enter your email and proceed." }
+    ]
+  },
+  "coverage": {
+    "features": ["docs", "pricing", "trial"],
+    "buttons_clicked": ["Get Started", "Docs", "Pricing", "Continue"],
+    "forms_tested": ["Signup Form"]
+  },
+  "assumptions": [
+    "Trial is available without credit card",
+    "Docs and Pricing are public"
+  ],
+  "risks": [
+    "Login-required flows may differ",
+    "Region-specific pricing pages"
+  ]
+}

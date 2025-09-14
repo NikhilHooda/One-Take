@@ -1,0 +1,117 @@
+{
+  "product_name": "Binary Calculator",
+  "suggested_duration_seconds": 90,
+  "target_audience": "Prospective user",
+  "goal": "Show the core value and test key flows",
+  "scenes": [
+    {
+      "id": "scene1",
+      "title": "Landing Page",
+      "duration_seconds": 15,
+      "narration": "Welcome to the Binary Calculator page. You can perform various binary calculations here.",
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "https://www.calculator.net/binary-calculator.html",
+          "selector": "h1",
+          "by": "role",
+          "expected_result": "The Binary Calculator header is visible."
+        }
+      ]
+    },
+    {
+      "id": "scene2",
+      "title": "Performing Binary Calculation",
+      "duration_seconds": 45,
+      "narration": "Let's add two binary numbers. Enter 101 and 110, and click Calculate.",
+      "actions": [
+        {
+          "type": "input",
+          "selector": "input[name='number1']",
+          "by": "name",
+          "value": "101",
+          "expected_result": "First number input is filled."
+        },
+        {
+          "type": "input",
+          "selector": "input[name='number2']",
+          "by": "name",
+          "value": "110",
+          "expected_result": "Second number input is filled."
+        },
+        {
+          "type": "click",
+          "selector": "input[type='submit'][value='Calculate']",
+          "by": "xpath",
+          "expected_result": "Calculation result is displayed."
+        }
+      ]
+    },
+    {
+      "id": "scene3",
+      "title": "Viewing the Result",
+      "duration_seconds": 30,
+      "narration": "Here is the result of adding the two binary numbers. You can clear the inputs or perform another calculation.",
+      "actions": [
+        {
+          "type": "assert",
+          "selector": ".results",
+          "by": "css",
+          "expected_result": "Result is displayed correctly."
+        },
+        {
+          "type": "click",
+          "selector": "input[type='button'][value='Clear']",
+          "by": "xpath",
+          "expected_result": "Inputs are cleared for a new calculation."
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "features": [
+      "binary addition",
+      "binary subtraction",
+      "binary multiplication",
+      "binary division"
+    ],
+    "buttons_clicked": [
+      "Calculate",
+      "Clear"
+    ],
+    "forms_tested": [
+      "calform"
+    ]
+  },
+  "assumptions": [
+    "The user is interested in binary calculations.",
+    "The website is responsive and functional."
+  ],
+  "risks": [
+    "Slow loading times might affect user experience.",
+    "Unavailability of the website during the demo."
+  ],
+  "transcript": {
+    "language": "English",
+    "segments": [
+      {
+        "scene_id": "scene1",
+        "start_seconds": 0,
+        "end_seconds": 15,
+        "text": "Welcome to the Binary Calculator page. You can perform various binary calculations here."
+      },
+      {
+        "scene_id": "scene2",
+        "start_seconds": 15,
+        "end_seconds": 60,
+        "text": "Let's add two binary numbers. Enter 101 and 110, and click Calculate."
+      },
+      {
+        "scene_id": "scene3",
+        "start_seconds": 60,
+        "end_seconds": 90,
+        "text": "Here is the result of adding the two binary numbers. You can clear the inputs or perform another calculation."
+      }
+    ]
+  }
+}
