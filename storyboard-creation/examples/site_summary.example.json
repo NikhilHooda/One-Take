@@ -1,0 +1,31 @@
+{
+  "engine": "test",
+  "start_url": "https://example.com",
+  "max_pages": 1,
+  "pages": [
+    {
+      "url": "https://example.com",
+      "title": "Example Domain",
+      "description": "Example site",
+      "headings": ["Welcome"],
+      "nav_links": [["More", "https://example.com/more"]],
+      "clickables": [
+        {
+          "text": "Get Started",
+          "role": "button",
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "cta",
+          "classes": null,
+          "locator_suggestion": "#cta",
+          "bbox": null
+        }
+      ],
+      "forms": [],
+      "screenshot_path": null,
+      "features_guess": ["docs"]
+    }
+  ]
+}
+

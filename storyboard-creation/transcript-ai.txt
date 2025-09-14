@@ -1,0 +1,3 @@
+[00:00 - 00:15] scene=scene1 Welcome to the Binary Calculator page. You can perform various binary calculations here.
+[00:15 - 01:00] scene=scene2 Let's add two binary numbers. Enter 101 and 110, and click Calculate.
+[01:00 - 01:30] scene=scene3 Here is the result of adding the two binary numbers. You can clear the inputs or perform another calculation.
