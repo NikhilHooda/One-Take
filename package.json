@@ -8,7 +8,11 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend": "cd backend && npm start",
+    "backend:dev": "cd backend && npm run dev",
+    "setup": "powershell -ExecutionPolicy Bypass -File setup.ps1",
+    "start:all": "concurrently \"npm run backend\" \"npm run dev\""
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -71,6 +75,7 @@
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",

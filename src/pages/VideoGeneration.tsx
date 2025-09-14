@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -7,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Navigation } from "@/components/ui/navigation";
 import { Github, Globe, FileText, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { StoryboardService } from "@/services/storyboardService";
 
 interface VideoGenerationProps {
   onStoryboardGenerated: () => void;
@@ -14,12 +16,14 @@ interface VideoGenerationProps {
 }
 
 export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGenerationProps) => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     githubUrl: "",
     websiteUrl: "",
     specifications: ""
   });
   const [isGenerating, setIsGenerating] = useState(false);
+  const [generationProgress, setGenerationProgress] = useState("");
   const { toast } = useToast();
 
   const validateUrl = (url: string, type: string) => {
@@ -66,31 +70,53 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
     }
 
     setIsGenerating(true);
+    setGenerationProgress("Initializing storyboard generation...");
 
-    // Simulate storyboard generation process
     try {
       toast({
         title: "Processing Started",
         description: "AI is analyzing your repository and generating storyboard workflow...",
       });
 
-      // Simulate processing time
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      setGenerationProgress("Analyzing website structure...");
+      
+      // Call the real storyboard generation API
+      const response = await StoryboardService.generateStoryboard({
+        githubUrl: formData.githubUrl,
+        websiteUrl: formData.websiteUrl,
+        specifications: formData.specifications
+      });
 
-      onStoryboardGenerated();
+      setGenerationProgress("Generating storyboard scenes...");
+      
+      // Navigate to storyboard flow with the generated data
+      navigate('/storyboard', { 
+        state: { 
+          storyboardData: response.storyboard,
+          transcript: response.transcript,
+          requestId: response.requestId,
+          generatedAt: response.generatedAt,
+          sourceUrls: {
+            githubUrl: formData.githubUrl,
+            websiteUrl: formData.websiteUrl
+          }
+        } 
+      });
       
       toast({
         title: "Storyboard Generated Successfully!",
         description: "Your workflow is ready for customization.",
       });
     } catch (error) {
+      console.error('Storyboard generation error:', error);
       toast({
         title: "Generation Failed",
-        description: "There was an error generating your storyboard. Please try again.",
+        description: error instanceof Error ? error.message : "There was an error generating your storyboard. Please try again.",
         variant: "destructive"
       });
     } finally {
       setIsGenerating(false);
+      setGenerationProgress("");
     }
   };
 
@@ -192,9 +218,14 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
                   <div className="animate-pulse">
                     <Loader2 className="h-12 w-12 animate-spin text-primary mx-auto mb-4" />
                     <h3 className="text-lg font-semibold mb-2">AI Processing in Progress</h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground mb-2">
                       Our AI is analyzing your repository, extracting key features, and creating your storyboard workflow...
                     </p>
+                    {generationProgress && (
+                      <p className="text-sm text-primary font-medium">
+                        {generationProgress}
+                      </p>
+                    )}
                   </div>
                 </CardContent>
               </Card>

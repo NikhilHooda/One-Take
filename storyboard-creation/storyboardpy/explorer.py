@@ -299,7 +299,8 @@ class WebsiteExplorer:
                 elif id_attr:
                     locator = f"#{id_attr}"
                 elif text and len(text) <= 60:
-                    locator = f"text={re.sub(r'\s+', ' ', text)}"
+                    cleaned_text = re.sub(r'\s+', ' ', text)
+                    locator = f"text={cleaned_text}"
                 clickables.append(Clickable(
                     text=text, role=role, tag=tag, href=(urljoin(url, href) if href else None),
                     aria_label=aria, id_attr=id_attr, classes=' '.join(classes) if classes else None,

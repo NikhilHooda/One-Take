@@ -1,0 +1,398 @@
+{
+  "product_name": "GitHub",
+  "suggested_duration_seconds": 90,
+  "target_audience": "Prospective user",
+  "goal": "Show the core value and test key flows",
+  "scenes": [
+    {
+      "id": "landing",
+      "title": "Landing Page",
+      "duration_seconds": 15,
+      "narration": "Welcome to GitHub, the world's most widely adopted, AI-powered developer platform. Let's explore some of its key features and benefits.",
+      "on_screen_text": "GitHub \u00b7 Build and ship software on a single, collaborative platform \u00b7 GitHub",
+      "shots": [
+        {
+          "id": "landing-hero",
+          "start_seconds": 0,
+          "end_seconds": 5,
+          "camera_move": "static",
+          "target_selector": "h1",
+          "by": "role",
+          "zoom_to": 1.25,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [
+            "highlight"
+          ],
+          "overlay": {
+            "text": "GitHub's Landing Page",
+            "position": "top-left"
+          },
+          "action_index": 0
+        },
+        {
+          "id": "landing-hero-2",
+          "start_seconds": 5,
+          "end_seconds": 15,
+          "camera_move": "static",
+          "target_selector": "h1",
+          "by": "role",
+          "zoom_to": 1,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [],
+          "overlay": {
+            "text": "GitHub's core value prop",
+            "position": "top-left"
+          },
+          "action_index": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "https://github.com/",
+          "selector": null,
+          "by": null,
+          "value": null,
+          "expected_result": "Landing page loads",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "title": "Search Feature",
+      "duration_seconds": 15,
+      "narration": "GitHub offers a powerful search feature that allows users to search across code, repositories, users, issues, and pull requests. This makes it easy to find the information you need, whether you're looking for a specific piece of code or a particular repository.",
+      "on_screen_text": "Search code, repositories, users, issues, pull requests...",
+      "shots": [
+        {
+          "id": "search-bar",
+          "start_seconds": 0,
+          "end_seconds": 15,
+          "camera_move": "static",
+          "target_selector": "input[name=\"query-builder-test\"]",
+          "by": "name",
+          "zoom_to": 1,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [
+            "cursor_pulse"
+          ],
+          "overlay": {
+            "text": "Search bar",
+            "position": "top-left"
+          },
+          "action_index": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "url": null,
+          "selector": "input[name=\"query-builder-test\"]",
+          "by": "name",
+          "value": null,
+          "expected_result": "Search bar is focused",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "title": "Code Feature",
+      "duration_seconds": 15,
+      "narration": "GitHub provides a code feature that allows users to view, edit, and collaborate on code. It offers a clean and intuitive interface for browsing code files and directories.",
+      "on_screen_text": "Folders and files",
+      "shots": [
+        {
+          "id": "code-files",
+          "start_seconds": 0,
+          "end_seconds": 15,
+          "camera_move": "static",
+          "target_selector": "text=Folders and files",
+          "by": "text",
+          "zoom_to": 1,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [
+            "highlight"
+          ],
+          "overlay": {
+            "text": "Code files and directories",
+            "position": "top-left"
+          },
+          "action_index": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "url": null,
+          "selector": "text=Folders and files",
+          "by": "text",
+          "value": null,
+          "expected_result": "Code section expands",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "login",
+      "title": "Login and Signup",
+      "duration_seconds": 15,
+      "narration": "GitHub offers a seamless login and signup process, allowing users to easily create an account or sign in with their credentials. This makes it convenient for new users to get started with the platform.",
+      "on_screen_text": "Sign in",
+      "shots": [
+        {
+          "id": "login-button",
+          "start_seconds": 0,
+          "end_seconds": 5,
+          "camera_move": "static",
+          "target_selector": "text=Sign in",
+          "by": "text",
+          "zoom_to": 1,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [
+            "highlight"
+          ],
+          "overlay": {
+            "text": "Login button",
+            "position": "top-left"
+          },
+          "action_index": 0
+        },
+        {
+          "id": "login-form",
+          "start_seconds": 5,
+          "end_seconds": 15,
+          "camera_move": "static",
+          "target_selector": "input[name=\"login\"]",
+          "by": "name",
+          "zoom_to": 1,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [
+            "cursor_pulse"
+          ],
+          "overlay": {
+            "text": "Login form",
+            "position": "top-left"
+          },
+          "action_index": 1
+        }
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "url": null,
+          "selector": "text=Sign in",
+          "by": "text",
+          "value": null,
+          "expected_result": "Login form appears",
+          "notes": null
+        },
+        {
+          "type": "click",
+          "url": null,
+          "selector": "input[name=\"login\"]",
+          "by": "name",
+          "value": null,
+          "expected_result": "Login form is focused",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "copilot",
+      "title": "GitHub Copilot",
+      "duration_seconds": 15,
+      "narration": "GitHub Copilot is an AI pair programmer that works directly in your editor, suggesting whole lines or functions. It's like having an extra pair of eyes reviewing your code.",
+      "on_screen_text": "GitHub Copilot",
+      "shots": [
+        {
+          "id": "copilot-hero",
+          "start_seconds": 0,
+          "end_seconds": 15,
+          "camera_move": "static",
+          "target_selector": "h1",
+          "by": "role",
+          "zoom_to": 1,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [
+            "highlight"
+          ],
+          "overlay": {
+            "text": "GitHub Copilot",
+            "position": "top-left"
+          },
+          "action_index": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "navigate",
+          "url": "https://github.com/features/copilot",
+          "selector": null,
+          "by": null,
+          "value": null,
+          "expected_result": "Copilot page loads",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "call-to-action",
+      "title": "Call to Action",
+      "duration_seconds": 15,
+      "narration": "GitHub provides a clear call to action for users who want to get started with the platform. The 'Sign up for GitHub' button is prominent and easy to find, making it simple for new users to create an account and start using the platform.",
+      "on_screen_text": "Sign up for GitHub",
+      "shots": [
+        {
+          "id": "cta-button",
+          "start_seconds": 0,
+          "end_seconds": 15,
+          "camera_move": "static",
+          "target_selector": "input[name=\"commit\"]",
+          "by": "name",
+          "zoom_to": 1,
+          "pan_vector": {
+            "x": 0,
+            "y": 0
+          },
+          "easing": "ease-in-out",
+          "transition_after": "slide",
+          "emphasis": [
+            "highlight"
+          ],
+          "overlay": {
+            "text": "Sign up button",
+            "position": "top-left"
+          },
+          "action_index": 0
+        }
+      ],
+      "actions": [
+        {
+          "type": "click",
+          "url": null,
+          "selector": "input[name=\"commit\"]",
+          "by": "name",
+          "value": null,
+          "expected_result": "Signup form appears",
+          "notes": null
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "features": [
+      "search",
+      "code",
+      "login",
+      "signup",
+      "copilot"
+    ],
+    "buttons_clicked": [
+      "Sign in",
+      "Sign up for GitHub"
+    ],
+    "forms_tested": [
+      "#query-builder-test-form",
+      "form:nth-of-type(4)"
+    ]
+  },
+  "assumptions": [],
+  "risks": [],
+  "transcript": {
+    "language": "en-US",
+    "segments": [
+      {
+        "scene_id": "landing",
+        "action_index": 0,
+        "start_seconds": 0,
+        "end_seconds": 15,
+        "text": "Welcome to GitHub, the world's most widely adopted, AI-powered developer platform. Let's explore some of its key features and benefits. [Transition to next scene]"
+      },
+      {
+        "scene_id": "search",
+        "action_index": 0,
+        "start_seconds": 15,
+        "end_seconds": 30,
+        "text": "GitHub offers a powerful search feature that allows users to search across code, repositories, users, issues, and pull requests. This makes it easy to find the information you need. [Transition to next scene]"
+      },
+      {
+        "scene_id": "code",
+        "action_index": 0,
+        "start_seconds": 30,
+        "end_seconds": 45,
+        "text": "GitHub provides a code feature for viewing, editing, and collaborating on code. It has a clean interface for browsing code files and directories. [Transition to next scene]"
+      },
+      {
+        "scene_id": "login",
+        "action_index": 0,
+        "start_seconds": 45,
+        "end_seconds": 50,
+        "text": "GitHub offers a seamless login and signup process. [Transition to next action]"
+      },
+      {
+        "scene_id": "login",
+        "action_index": 1,
+        "start_seconds": 50,
+        "end_seconds": 60,
+        "text": "Let's click on the 'Sign in' button. [Transition to next scene]"
+      },
+      {
+        "scene_id": "copilot",
+        "action_index": 0,
+        "start_seconds": 60,
+        "end_seconds": 75,
+        "text": "GitHub Copilot is an AI pair programmer that works directly in your editor, suggesting whole lines or functions. [Transition to next scene]"
+      },
+      {
+        "scene_id": "call-to-action",
+        "action_index": 0,
+        "start_seconds": 75,
+        "end_seconds": 90,
+        "text": "GitHub provides a clear call to action for new users. The 'Sign up for GitHub' button is prominent and easy to find. [End]"
+      }
+    ]
+  },
+  "visual_style": {
+    "default_easing": "ease-in-out",
+    "default_transition": "slide",
+    "background_blur": false,
+    "cursor_emphasis": true
+  }
+}

@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useCallback, useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import ReactFlow, {
   MiniMap,
   Controls,
@@ -21,6 +21,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
+import { StoryboardDetails } from '@/components/StoryboardDetails';
 import {
   Send,
   Settings,
@@ -141,22 +142,34 @@ const nodeTypes: NodeTypes = {
 
 export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowProps) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [storyboardData, setStoryboardData] = useState<any>(null);
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
     {
       id: '1',
       type: 'ai',
-      content: 'Of course! Here is a workflow that will get your emails from the last 24 hours, summarize them with AI, and send the summary to Slack.',
-      timestamp: new Date()
-    },
-    {
-      id: '2',
-      type: 'ai',
-      content: 'I\'ve set the default channel to "#general", which you can change if you\'d like.',
+      content: 'Welcome! I\'ve analyzed your project and generated a storyboard workflow. You can customize the flow below or ask me to make changes.',
       timestamp: new Date()
     }
   ]);
   
   const [newMessage, setNewMessage] = useState('');
+  
+  // Load storyboard data from navigation state
+  useEffect(() => {
+    if (location.state?.storyboardData) {
+      setStoryboardData(location.state.storyboardData);
+      
+      // Add initial AI message about the generated storyboard
+      const initialMessage: ChatMessage = {
+        id: '2',
+        type: 'ai',
+        content: `I've generated a storyboard for "${location.state.storyboardData.product_name || 'your project'}" with ${location.state.storyboardData.scenes?.length || 0} scenes. The total duration is estimated at ${location.state.storyboardData.suggested_duration_seconds || 90} seconds.`,
+        timestamp: new Date()
+      };
+      setChatMessages(prev => [...prev, initialMessage]);
+    }
+  }, [location.state]);
   
   // Calculate center position for nodes based on canvas width
   // Sidebar is 320px (w-80), so we center in the remaining space
@@ -168,6 +181,25 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
   };
   
   const centerX = getCanvasCenterX();
+  
+  // Convert storyboard scenes to React Flow nodes
+  const convertStoryboardToNodes = (storyboard: any): Node[] => {
+    if (!storyboard?.scenes) return [];
+    
+    return storyboard.scenes.map((scene: any, index: number) => ({
+      id: scene.id || `scene-${index}`,
+      type: 'custom',
+      position: { x: centerX, y: index * 200 },
+      data: {
+        title: scene.title || `Scene ${index + 1}`,
+        objective: scene.narration || 'Scene description',
+        icon: Video, // Default icon, could be customized based on scene type
+        status: 'completed',
+        hasInput: false,
+        sceneData: scene
+      },
+    }));
+  };
   
   const initialNodes: Node[] = [
     {
@@ -254,6 +286,33 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
   
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+  
+  // Update nodes when storyboard data is loaded
+  useEffect(() => {
+    if (storyboardData) {
+      const storyboardNodes = convertStoryboardToNodes(storyboardData);
+      if (storyboardNodes.length > 0) {
+        setNodes(storyboardNodes);
+        
+        // Create edges between consecutive scenes
+        const storyboardEdges: Edge[] = [];
+        for (let i = 0; i < storyboardNodes.length - 1; i++) {
+          storyboardEdges.push({
+            id: `e-${storyboardNodes[i].id}-${storyboardNodes[i + 1].id}`,
+            source: storyboardNodes[i].id,
+            target: storyboardNodes[i + 1].id,
+            type: 'smoothstep',
+            animated: false,
+            style: {
+              stroke: '#ffffff',
+              strokeWidth: 4,
+            },
+          });
+        }
+        setEdges(storyboardEdges);
+      }
+    }
+  }, [storyboardData]);
   
   
   const onConnect = useCallback(
@@ -404,39 +463,72 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
           <div className="flex" style={{ height: 'calc(100vh - 80px)' }}>
             {/* Left Sidebar */}
             <div className="w-80 bg-card border-r border-border flex flex-col">
-              {/* Chat Section - Full Height */}
-              <div className="h-full p-4 flex flex-col">
-                <div className="flex items-center gap-2 mb-4">
-                  <MessageCircle className="w-5 h-5 text-primary" />
-                  <span className="font-medium">AI Assistant</span>
-                </div>
-                
-                {/* Messages - Takes up all available space */}
-                <div className="flex-1 overflow-y-auto space-y-3 mb-4">
-                  {chatMessages.map((message) => (
-                    <div key={message.id} className="text-sm bg-muted p-3 rounded-lg">
-                      {message.content}
-                    </div>
-                  ))}
-                </div>
-                
-                {/* Input - Fixed at bottom of chat */}
-                <div className="flex gap-2">
-                  <Input
-                    placeholder="Type your message here. Not sure where to start? Just ask!"
-                    value={newMessage}
-                    onChange={(e) => setNewMessage(e.target.value)}
-                    onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                    className="flex-1 text-sm"
-                  />
-                  <Button 
-                    size="sm" 
-                    onClick={handleSendMessage}
-                    disabled={!newMessage.trim()}
+              {/* Tabs for different views */}
+              <div className="flex border-b border-border">
+                <button
+                  className={`flex-1 px-4 py-2 text-sm font-medium ${
+                    !storyboardData ? 'border-b-2 border-primary text-primary' : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  Chat
+                </button>
+                {storyboardData && (
+                  <button
+                    className={`flex-1 px-4 py-2 text-sm font-medium ${
+                      storyboardData ? 'border-b-2 border-primary text-primary' : 'text-muted-foreground hover:text-foreground'
+                    }`}
                   >
-                    <Send className="w-4 h-4" />
-                  </Button>
-                </div>
+                    Storyboard
+                  </button>
+                )}
+              </div>
+
+              {/* Content based on active tab */}
+              <div className="flex-1 overflow-y-auto">
+                {!storyboardData ? (
+                  /* Chat Section */
+                  <div className="h-full p-4 flex flex-col">
+                    <div className="flex items-center gap-2 mb-4">
+                      <MessageCircle className="w-5 h-5 text-primary" />
+                      <span className="font-medium">AI Assistant</span>
+                    </div>
+                    
+                    {/* Messages - Takes up all available space */}
+                    <div className="flex-1 overflow-y-auto space-y-3 mb-4">
+                      {chatMessages.map((message) => (
+                        <div key={message.id} className="text-sm bg-muted p-3 rounded-lg">
+                          {message.content}
+                        </div>
+                      ))}
+                    </div>
+                    
+                    {/* Input - Fixed at bottom of chat */}
+                    <div className="flex gap-2">
+                      <Input
+                        placeholder="Type your message here. Not sure where to start? Just ask!"
+                        value={newMessage}
+                        onChange={(e) => setNewMessage(e.target.value)}
+                        onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                        className="flex-1 text-sm"
+                      />
+                      <Button 
+                        size="sm" 
+                        onClick={handleSendMessage}
+                        disabled={!newMessage.trim()}
+                      >
+                        <Send className="w-4 h-4" />
+                      </Button>
+                    </div>
+                  </div>
+                ) : (
+                  /* Storyboard Details Section */
+                  <div className="p-4">
+                    <StoryboardDetails 
+                      storyboard={storyboardData} 
+                      transcript={location.state?.transcript} 
+                    />
+                  </div>
+                )}
               </div>
             </div>
 

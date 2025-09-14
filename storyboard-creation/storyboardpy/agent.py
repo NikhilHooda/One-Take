@@ -7,45 +7,40 @@ import asyncio
 import inspect
 
 from dotenv import load_dotenv
-from openai.types.shared import Reasoning
-from agents import Agent, ModelSettings
-
+import cohere
 from .schemas import STORYBOARD_JSON_SCHEMA
 
 
 class StoryboardAgent:
-    """Generates storyboard JSON using the OpenAI Agents SDK (not Assistants)."""
+    """Generates storyboard JSON using Cohere Command A Reasoning."""
 
     def __init__(self, model: Optional[str] = None, temperature: Optional[float] = None):
         load_dotenv()
-        if not os.getenv("OPENAI_API_KEY"):
-            raise RuntimeError("OPENAI_API_KEY not set. Provide via environment or .env file.")
+        if not os.getenv("COHERE_API_KEY"):
+            raise RuntimeError("COHERE_API_KEY not set. Provide via environment or .env file.")
 
-        # Model resolution: explicit arg > OPENAI_MODEL > OPENAI_DEFAULT_MODEL > sensible default
-        resolved_model = (
+        self.api_key = os.getenv("COHERE_API_KEY")
+        
+        # Model resolution: explicit arg > COHERE_MODEL > default
+        self.model = (
             model
-            or os.getenv("OPENAI_MODEL")
-            or os.getenv("OPENAI_DEFAULT_MODEL")
-            or "gpt-4o-mini"
+            or os.getenv("COHERE_MODEL")
+            or "command-r-plus"  # Command A Reasoning model
         )
-        # Temperature is not universally supported by the Agents SDK yet; keep for future use
+        
+        # Temperature settings
         try:
-            self.temperature = float(os.getenv("OPENAI_TEMPERATURE", str(temperature if temperature is not None else 0.2)))
+            self.temperature = float(os.getenv("COHERE_TEMPERATURE", str(temperature if temperature is not None else 0.2)))
         except ValueError:
             self.temperature = 0.2
+            
         try:
-            self.timeout_seconds = int(os.getenv("OPENAI_TIMEOUT_SECONDS", "120"))
+            self.timeout_seconds = int(os.getenv("COHERE_TIMEOUT_SECONDS", "120"))
         except ValueError:
             self.timeout_seconds = 120
 
-        self.agent = Agent(
-            name="Storyboard Director",
-            instructions=(
-                "You generate ONLY valid JSON that matches the provided schema. "
-                "No prose, no markdown. If uncertain, make reasonable assumptions and proceed."
-            ),
-            model=resolved_model,
-        )
+        # Initialize Cohere client
+        self.co = cohere.Client(self.api_key)
 
     def _build_prompt(self, site_summary: Dict[str, Any], duration_hint: Optional[int], persona: str, goal: str) -> str:
         schema_hint = json.dumps(STORYBOARD_JSON_SCHEMA, indent=2)
@@ -53,7 +48,7 @@ class StoryboardAgent:
             "You are a product demo director. Given a website exploration summary, "
             "produce a JSON storyboard that another agent will use to record a clean, concise UI demo.\n\n"
             "Constraints:\n"
-            "- Return ONLY valid JSON. No markdown.\n"
+            "- Return ONLY valid JSON. No markdown, no explanations.\n"
             "- Use the provided JSON schema exactly.\n"
             "- Choose selectors that are robust (role+name, id, or short text).\n"
             "- Favor primary flows (landing -> key feature -> value -> CTA).\n"
@@ -67,7 +62,8 @@ class StoryboardAgent:
             f"Goal: {goal}\n"
             f"Duration hint (seconds): {duration_hint if duration_hint else 'no preference'}\n\n"
             f"JSON Schema (use this strictly):\n{schema_hint}\n\n"
-            f"Website Summary (trimmed):\n{json.dumps(self._trim_site_summary(site_summary), indent=2)}\n"
+            f"Website Summary (trimmed):\n{json.dumps(self._trim_site_summary(site_summary), indent=2)}\n\n"
+            "Return ONLY the JSON object, no other text."
         )
 
     def _trim_site_summary(self, site_summary: Dict[str, Any]) -> Dict[str, Any]:
@@ -156,20 +152,21 @@ class StoryboardAgent:
         # Fallback
         return str(result)
 
-    async def _invoke_agent(self, prompt: str) -> Any:
-        """Invoke the Agents SDK using AgentRunner (SDK 0.3.0)."""
+    def _invoke_cohere(self, prompt: str) -> str:
+        """Invoke Cohere Command A Reasoning API."""
         try:
-            from agents import run as run_mod  # type: ignore
+            response = self.co.generate(
+                model=self.model,
+                prompt=prompt,
+                max_tokens=4000,
+                temperature=self.temperature,
+                stop_sequences=["\n\n\n"]
+            )
+            
+            return response.generations[0].text
+            
         except Exception as e:
-            raise RuntimeError("openai-agents package not available") from e
-
-        runner = run_mod.get_default_agent_runner()
-        # Prefer the async runner API when inside an event loop
-        try:
-            return await runner.run(self.agent, input=prompt)
-        except TypeError:
-            # Some variants accept messages instead of input
-            return await runner.run(self.agent, input=[{"role": "user", "content": prompt}])
+            raise RuntimeError(f"Cohere API request failed: {e}")
 
     async def create_storyboard_async(
         self,
@@ -179,7 +176,7 @@ class StoryboardAgent:
         goal: str = "Show the core value and test key flows",
     ) -> Dict[str, Any]:
         prompt = self._build_prompt(site_summary, duration_hint, persona, goal)
-        result = await self._invoke_agent(prompt)
+        result = self._invoke_cohere(prompt)
         content_text = self._coerce_result_to_text(result)
 
         def _parse_json_relaxed(txt: str):
@@ -200,7 +197,7 @@ class StoryboardAgent:
         try:
             data = _parse_json_relaxed(content_text)
         except Exception as e:
-            raise RuntimeError(f"Agent did not return valid JSON. Error: {e}\nRaw: {content_text[:1000]}")
+            raise RuntimeError(f"Cohere did not return valid JSON. Error: {e}\nRaw: {content_text[:1000]}")
 
         # Basic shape checks
         for key in ["product_name", "suggested_duration_seconds", "scenes", "coverage", "assumptions", "risks", "transcript"]:
