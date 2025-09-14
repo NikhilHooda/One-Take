@@ -15,17 +15,17 @@ export const VideoResults = ({ videoData, onCreateAnother, onLogoClick }: VideoR
   const { toast } = useToast();
 
   const handleDownload = () => {
-    // In a real app, this would download the actual video file
+    // Download the Amazon cart demo video
     const link = document.createElement('a');
-    link.href = videoData.videoUrl;
-    link.download = 'demo-video.mp4';
+    link.href = '/storyboard-creation/examples/AmazonCartDemo.mp4';
+    link.download = 'amazon-cart-demo.mp4';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     
     toast({
       title: "Download Started",
-      description: "Your demo video is being downloaded.",
+      description: "Your Amazon cart demo video is being downloaded.",
     });
   };
 
@@ -86,16 +86,15 @@ export const VideoResults = ({ videoData, onCreateAnother, onLogoClick }: VideoR
                     className="w-full h-full object-cover"
                     poster="/placeholder.svg"
                   >
-                    <source src={videoData.videoUrl} type="video/mp4" />
+                    <source src="/storyboard-creation/examples/AmazonCartDemo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Demo Video</h3>
+                  <h3 className="text-xl font-semibold mb-2">Amazon Cart Demo Video</h3>
                   <p className="text-muted-foreground mb-4">
-                    Generated from: {videoData.githubUrl}
-                    {videoData.websiteUrl && ` • ${videoData.websiteUrl}`}
+                    A step-by-step demonstration of the Amazon shopping workflow for purchasing a goose plushie
                   </p>
                   {videoData.specifications && (
                     <div className="bg-muted/30 p-3 rounded-lg">

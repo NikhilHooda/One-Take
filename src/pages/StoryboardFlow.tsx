@@ -491,17 +491,18 @@ Assistant:`,
       edges,
       messages: chatMessages,
       generatedAt: new Date().toISOString(),
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', // Sample video for demo
-      title: 'Email Workflow Demo Video',
-      description: 'A demo video showing your email workflow automation'
+      videoUrl: '/storyboard-creation/examples/AmazonCartDemo.mp4',
+      title: 'Amazon Cart Demo Video',
+      description: 'A step-by-step demonstration of the Amazon shopping workflow for purchasing a goose plushie'
     };
     
     // Navigate to video results with the workflow data
     navigate('/video-results', { 
       state: { 
         videoData: { 
-          title: 'Test Video',
-          videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+          title: 'Amazon Cart Demo Video',
+          videoUrl: '/storyboard-creation/examples/AmazonCartDemo.mp4',
+          description: 'A step-by-step demonstration of the Amazon shopping workflow for purchasing a goose plushie'
         } 
       } 
     });
