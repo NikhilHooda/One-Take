@@ -1,0 +1,6 @@
+[00:00 - 00:10] scene=scene-1 Welcome to Hack the North! This website is a vibrant gateway to Canada's premier hackathon event.
+[00:11 - 00:25] scene=scene-1 The homepage captures the essence of the event with catchy headings and a vibrant layout.
+[00:26 - 00:35] scene=scene-2 Here, we have the event dates and a concise summary, giving a quick overview of the hackathon's duration.
+[00:36 - 00:45] scene=scene-3 The navigation menu offers seamless access to various sections, making it easy to explore the website.
+[00:46 - 00:55] scene=scene-4 Users can stay updated by signing up for the latest news. A simple form captures their details.
+[00:56 - 01:10] scene=scene-5 Attendees will find the travel guidelines section helpful, offering detailed information for a smooth journey.

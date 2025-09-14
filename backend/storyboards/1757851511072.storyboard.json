@@ -1,0 +1,127 @@
+{
+  "product_name": "Amazon.ca",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": "Amazon.ca's homepage greets users with a wide range of products. Let's explore some key features.",
+      "shots": [
+        {
+          "selector": "#nav-assist-search",
+          "highlight": true,
+          "duration": 5
+        },
+        {
+          "selector": ".heading-1",
+          "duration": 10
+        },
+        {
+          "selector": "h2[aria-label=\"Fall style essentials\"]",
+          "duration": 5
+        },
+        {
+          "selector": "#nav-global-location-popover-link",
+          "highlight": true,
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Searching & Refining",
+      "duration_seconds": 35,
+      "narration": "Let's search for 'laptops'. We can refine our results using the filters.",
+      "shots": [
+        {
+          "selector": "#nav-search-bar-form #field-keywords",
+          "action": "type",
+          "args": "laptops\n",
+          "duration": 10
+        },
+        {
+          "selector": "#nav-search-submit-button",
+          "action": "click",
+          "duration": 5
+        },
+        {
+          "selector": "button[aria-label=\"Show more filters\"]",
+          "action": "click",
+          "duration": 5
+        },
+        {
+          "selector": "li[aria-label=\"Price: High to Low\"] a",
+          "duration": 5
+        },
+        {
+          "selector": "button[aria-label=\"Apply\"]",
+          "action": "click",
+          "duration": 5
+        },
+        {
+          "selector": "button[aria-label=\"Clear all filters\"]",
+          "action": "click",
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Product Listing & Details",
+      "duration_seconds": 25,
+      "narration": "Product listings have handy details and offer quick actions. Let's view a product.",
+      "shots": [
+        {
+          "selector": "h1[aria-label^=\"ASUS\"]",
+          "duration": 5
+        },
+        {
+          "selector": "a[aria-label^=\"Add to Cart\"]",
+          "highlight": true,
+          "duration": 5
+        },
+        {
+          "selector": "a[aria-label=\"View details\"]",
+          "action": "click",
+          "duration": 10
+        },
+        {
+          "selector": "div[aria-label=\"Product Details\"]",
+          "duration": 5
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases Amazon.ca's homepage exploration, searching, refining results, and viewing product details. Users can navigate easily, finding diverse products with helpful filters and quick actions.",
+  "assumptions": [
+    "Basic website functionality and internet connection availability.",
+    "Users are familiar with online shopping concepts and navigation."
+  ],
+  "risks": [
+    "Some website elements might have dynamic IDs, causing issues with selectors.",
+    "Limited time to thoroughly explore; assumes users are comfortable with online shopping platforms."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 30,
+        "text": "Welcome to Amazon.ca, Canada's largest online retailer. Here, we have easy access to numerous products. Notice the handy keyboard shortcuts and the location updater. Let's dive into the diverse categories."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 30,
+        "end_seconds": 65,
+        "text": "Let's search for something specific - say, 'laptops'. We can refine our search with handy filters, sorting by price or other specs. It's easy to navigate and find what we need."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 65,
+        "end_seconds": 90,
+        "text": "Check out this detailed view of a laptop. We see customer ratings, reviews, and quick actions. It's simple to add items to our cart or view more product details."
+      }
+    ]
+  }
+}

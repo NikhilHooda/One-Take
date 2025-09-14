@@ -1,0 +1,186 @@
+{
+  "product_name": "Faire",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": "The Faire homepage welcomes us with an inviting message. Let's explore the navigation.",
+      "shots": [
+        {
+          "selector": "text=Shop all bestsellers",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=Shop women owned",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=Insider membership",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=drinkware",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=planter",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=moisturizer",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=coffee",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=candle",
+          "hold_seconds": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Searching & Filtering",
+      "duration_seconds": 25,
+      "narration": "Let's search for 'coffee'. We can filter our results by various criteria.",
+      "shots": [
+        {
+          "selector": "#faireproductsearch",
+          "trigger_event": "type",
+          "args": [
+            "coffee"
+          ],
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=Filter",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=Price: Low to High",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=Sort by",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=Best Matches",
+          "hold_seconds": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Product Listing & Reviews",
+      "duration_seconds": 20,
+      "narration": "The search results show a variety of coffee products. Let's check the reviews on this item.",
+      "shots": [
+        {
+          "selector": "text=Organic French Roast Coffee",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=4.9 out of 5 stars",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "text=Read all 29 reviews",
+          "trigger_event": "click",
+          "args": [],
+          "hold_seconds": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Adding to Cart",
+      "duration_seconds": 15,
+      "narration": "We can quickly add products to our cart. Let's add this coffee.",
+      "shots": [
+        {
+          "selector": "text=Add to Cart",
+          "trigger_event": "click",
+          "args": []
+        },
+        {
+          "selector": "text=Cart",
+          "hold_seconds": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "Cart Preview",
+      "duration_seconds": 10,
+      "narration": "Our cart provides a preview of the selected item. We can adjust the quantity here.",
+      "shots": [
+        {
+          "selector": "text=Organic French Roast Coffee",
+          "hold_seconds": 5
+        },
+        {
+          "selector": "span.cart-item-quantity",
+          "trigger_event": "click",
+          "args": [
+            "2"
+          ],
+          "hold_seconds": 5
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the website's navigation, search functionality, product reviews, and cart interactions. Users can explore categories, filter products, read reviews, and make selections for their store.",
+  "assumptions": [
+    "Basic web literacy of users",
+    "Interest in wholesale shopping for retail stores"
+  ],
+  "risks": [
+    "Some product categories might have limited or no stock",
+    "Users might require more time to read through extensive product listings or reviews"
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 15,
+        "text": "Welcome to Faire, an exclusive platform for retail stores to source products. Let's dive into the diverse categories, starting with the homepage."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 15,
+        "end_seconds": 30,
+        "text": "Here we have easy access to bestsellers, women-owned brands, and specialized categories like drinkware and skincare products."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 30,
+        "end_seconds": 45,
+        "text": "Let's initiate a search for 'coffee' and explore the filtering options. We can sort by price, popularity, and more."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 45,
+        "end_seconds": 60,
+        "text": "The search results provide a comprehensive view of coffee products. We can check detailed reviews to ensure we're selecting the right items."
+      },
+      {
+        "scene_id": "scene-4",
+        "start_seconds": 60,
+        "end_seconds": 75,
+        "text": "Adding items to our cart is straightforward. We'll give it a quick glance before proceeding."
+      },
+      {
+        "scene_id": "scene-5",
+        "start_seconds": 75,
+        "end_seconds": 90,
+        "text": "We can confirm and adjust the cart items. Faire makes wholesale shopping efficient and seamless."
+      }
+    ]
+  }
+}

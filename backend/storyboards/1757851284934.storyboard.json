@@ -1,0 +1,182 @@
+{
+  "product_name": "React",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": "This is the React homepage, offering an overview of React's purpose and key features. Let's explore some of the content.",
+      "shots": [
+        {
+          "selector": "h1",
+          "text": "React",
+          "action": "zoom-in",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "p",
+          "text": "React is the library for web and native user interfaces.",
+          "duration_seconds": 5
+        },
+        {
+          "selector": "a[aria-label='Menu']",
+          "action": "click",
+          "duration_seconds": 1,
+          "narration": "The menu button opens up a sidebar with navigation links."
+        },
+        {
+          "selector": "a[aria-label='Menu']",
+          "text": "Menu",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "aside",
+          "highlight_selector": "a[aria-label='Learn more.']",
+          "text": "Learn",
+          "duration_seconds": 5,
+          "narration": "Here are some quick links to different sections of the website."
+        },
+        {
+          "selector": "button[aria-label='Use Dark Mode']",
+          "action": "click",
+          "duration_seconds": 1
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Learning Resources",
+      "duration_seconds": 25,
+      "narration": "Let's check out the learning resources provided on the website. These are great for beginners.",
+      "shots": [
+        {
+          "selector": "a[text='Learn']",
+          "action": "click",
+          "duration_seconds": 1
+        },
+        {
+          "selector": "h2",
+          "text": "LEARN REACT",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "section h3",
+          "text": "Quick Start",
+          "duration_seconds": 3,
+          "narration": "The Quick Start section has introductory tutorials."
+        },
+        {
+          "selector": "a[text='Creating and nesting components']",
+          "duration_seconds": 5,
+          "narration": "Let's have a look at some of the topics covered."
+        },
+        {
+          "selector": "a[text='Writing markup with JSX']",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "a[text='Adding styles']",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "a[text='Displaying data']",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "button[aria-label='Use Light Mode']",
+          "action": "click",
+          "duration_seconds": 1
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "API Documentation",
+      "duration_seconds": 20,
+      "narration": "React provides comprehensive API documentation. Let's go through some of the sections.",
+      "shots": [
+        {
+          "selector": "a[text='Reference']",
+          "action": "click",
+          "duration_seconds": 1
+        },
+        {
+          "selector": "h2",
+          "text": "REACT API",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "p",
+          "text": "Find detailed information about React's API.",
+          "duration_seconds": 4,
+          "narration": "Here you'll find all you need to understand the various API offerings."
+        },
+        {
+          "selector": "aside",
+          "highlight_selector": "a[text='SearchableVideoList.js']",
+          "duration_seconds": 5,
+          "narration": "There are code examples and explanations of different components."
+        },
+        {
+          "selector": "button[aria-label='Use Dark Mode']",
+          "action": "click",
+          "duration_seconds": 1
+        },
+        {
+          "selector": "form[selector-hint='form:nth-of-type(1)'] input[placeholder='Search']",
+          "action": "click",
+          "duration_seconds": 1,
+          "narration": "The search feature helps find specific API details quickly."
+        },
+        {
+          "selector": "form[selector-hint='form:nth-of-type(1)'] input[placeholder='Search']",
+          "text": "Search API",
+          "duration_seconds": 3
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the React website's homepage, learning resources, and API documentation, including navigation, content exploration, and interactivity.",
+  "assumptions": [
+    "Basic internet browsing capabilities and knowledge of web development concepts are assumed for the persona."
+  ],
+  "risks": [
+    "Some users might have slow internet connections, which may impact the demo's pace.",
+    "Website content or layout changes could make some shots irrelevant."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to the React website. This is the homepage, where you get an overview of React's capabilities. You can see the main navigation bar here, with links to different sections."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 10,
+        "end_seconds": 20,
+        "text": "React focuses on helping you build user interfaces with components. The homepage gives a nice summary of its native user interface support."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 20,
+        "end_seconds": 35,
+        "text": "Let's dive into the learning resources. There's a whole section dedicated to helping newcomers get started. It covers essential topics like creating and nesting components."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 35,
+        "end_seconds": 50,
+        "text": "The API documentation is comprehensive. It has all the details you need on React's various functions. See? There's even a search feature to find specific API info."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 50,
+        "end_seconds": 60,
+        "text": "You can also explore practical code examples, like this one demonstrating the SearchableVideoList.js component."
+      }
+    ]
+  }
+}

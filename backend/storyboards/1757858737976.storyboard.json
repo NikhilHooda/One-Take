@@ -1,0 +1,157 @@
+{
+  "product_name": "Desmos | Graphing Calculator",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Landing Page",
+      "duration_seconds": 30,
+      "narration": "The Desmos graphing calculator welcomes us with an inviting interface. Note the various calculator options across the top.",
+      "shots": [
+        {
+          "selector": "role=button[name=\"Open Graph (ctrl+o)\"]",
+          "hold": true,
+          "duration_seconds": 10
+        },
+        {
+          "selector": "text=Save"
+        },
+        {
+          "selector": "text=Log In"
+        },
+        {
+          "selector": "text=Sign Up"
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Calculator Tools",
+      "duration_seconds": 20,
+      "narration": "Let's explore these calculator tools. Each one opens a new window with advanced features.",
+      "shots": [
+        {
+          "selector": "text=Graphing",
+          "hold": true,
+          "duration_seconds": 15
+        },
+        {
+          "selector": "text=Scientific"
+        },
+        {
+          "selector": "text=Four Function"
+        },
+        {
+          "selector": "text=Matrix"
+        },
+        {
+          "selector": "text=Geometry"
+        },
+        {
+          "selector": "text=3D"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Graphing in Action",
+      "duration_seconds": 20,
+      "narration": "Graphing is seamless. Enter equations and see them visualized instantly.",
+      "shots": [
+        {
+          "selector": "#dcg-main-content-region",
+          "duration_seconds": 20
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "More Features",
+      "duration_seconds": 15,
+      "narration": "We have more features to explore on the homepage, like the Expression List and options to Share, Undo, and Redo.",
+      "shots": [
+        {
+          "selector": "role=button[name=\"Share\"]",
+          "hold": true,
+          "duration_seconds": 5
+        },
+        {
+          "selector": "role=button[name=\"Undo\"]",
+          "hold": true,
+          "duration_seconds": 5
+        },
+        {
+          "selector": "role=button[name=\"Redo\"]",
+          "hold": true,
+          "duration_seconds": 5
+        },
+        {
+          "selector": "role=button[name=\"Edit Expression List\"]",
+          "hold": true,
+          "duration_seconds": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "Custom Expressions",
+      "duration_seconds": 25,
+      "narration": "You can create and delete custom expressions. Let's add and delete an expression here.",
+      "shots": [
+        {
+          "selector": "role=button[name=\"Add Item\"]",
+          "hold": true,
+          "duration_seconds": 10
+        },
+        {
+          "selector": "role=button[name=\"Delete Expression 1\"]",
+          "hold": true,
+          "duration_seconds": 10
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the Desmos Graphing Calculator's UI, highlighting its graphing capabilities, tool options, and expression management.",
+  "assumptions": [
+    "Basic functionality and accessibility of the website are intact.",
+    "Users are familiar with the concept of online calculators."
+  ],
+  "risks": [
+    "Some features might not load as expected due to internet connectivity.",
+    "Calculator functions are assumed to be working as intended."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to Desmos, your online graphing calculator. The landing page offers quick access to various calculators."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 10,
+        "end_seconds": 25,
+        "text": "Let's dive into the array of calculator tools. Each one is a click away and opens new windows with advanced math functionalities."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 25,
+        "end_seconds": 45,
+        "text": "The graphing calculator is a beauty. Type in any equation and watch it come to life on the coordinate plane."
+      },
+      {
+        "scene_id": "scene-4",
+        "start_seconds": 45,
+        "end_seconds": 60,
+        "text": "Desmos offers more. Check out these handy features for managing expressions and interacting with your graphs."
+      },
+      {
+        "scene_id": "scene-5",
+        "start_seconds": 60,
+        "end_seconds": 90,
+        "text": "You have the power to customize. Add and delete expressions for a tailored experience. See? Easy!"
+      }
+    ]
+  }
+}

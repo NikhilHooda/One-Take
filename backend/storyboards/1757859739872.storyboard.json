@@ -1,0 +1,116 @@
+{
+  "product_name": "Cohere Enterprise AI Website",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Website Homepage",
+      "duration_seconds": 30,
+      "narration": "The Cohere homepage introduces you to their enterprise AI solutions. Let's explore the features and benefits they offer.",
+      "shots": [
+        {
+          "selector": "https://cohere.com/",
+          "text_highlights": [
+            "Your next breakthrough, powered by AI",
+            "Safe. Flexible. Built for business."
+          ],
+          "focus_elements": [
+            "homepage headings",
+            "navigation links"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Product Overview",
+      "duration_seconds": 25,
+      "narration": "Cohere provides a range of AI products. Let's dive into the product page to learn more.",
+      "shots": [
+        {
+          "selector": "https://cohere.com/products",
+          "text_highlights": [
+            "Turn possibility into production",
+            "The turnkey AI platform",
+            "AI models built for business"
+          ],
+          "focus_elements": [
+            "product-title",
+            "product-cards"
+          ],
+          "transition_seconds": 10
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Product Details",
+      "duration_seconds": 35,
+      "narration": "Each product has a detailed overview page. For instance, let's check out the North product for modern workplace productivity.",
+      "shots": [
+        {
+          "selector": "https://cohere.com/north",
+          "text_highlights": [
+            "North\nAn enterprise-ready AI platform",
+            "Empower your workforce",
+            "Deploy AI agents and automations"
+          ],
+          "focus_elements": [
+            "north-banner",
+            "north-features",
+            "testimonial-section"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the website's homepage, product overview, and individual product details, highlighting key features and benefits of Cohere's enterprise AI solutions.",
+  "assumptions": [
+    "Basic website functionality and navigation are working as expected.",
+    "The website content and structure remain unchanged during the demo."
+  ],
+  "risks": [
+    "Certain website elements might load slowly or not as expected, impacting the demo flow.",
+    "The specific product features and pricing might change, making the demo outdated."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to Cohere's Enterprise AI website. Here you'll discover how AI can power your business. The homepage highlights the benefits of Cohere's solutions with an inviting and informative layout."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 10,
+        "end_seconds": 20,
+        "text": "It emphasizes security, flexibility, and the cutting-edge technology that Cohere provides. The navigation menu offers easy access to key sections of the site."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 20,
+        "end_seconds": 30,
+        "text": "Let's explore the products! There's a wide range of AI solutions on offer. Each product is designed to enhance specific aspects of your business."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 30,
+        "end_seconds": 45,
+        "text": "From the turnkey AI platform to powerful language models, Cohere has you covered. The concise product cards provide a quick overview, and you can dive into each one for more details."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 45,
+        "end_seconds": 60,
+        "text": "Here's the North product page, showcasing a revolutionary AI platform for the modern workplace. It offers detailed insights into how North can boost productivity."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 60,
+        "end_seconds": 90,
+        "text": "You'll find an overview of North's capabilities, use cases, and even customer testimonials. This page provides a comprehensive look at the product, making it easy to evaluate."
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "product_name": "YouTube",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": "YouTube's homepage welcomes us with a wide range of content. Let's explore!",
+      "shots": [
+        {
+          "selector": "#logo",
+          "action": "zoomIn",
+          "duration": 2
+        },
+        {
+          "selector": "h1",
+          "text": "YouTube - Enjoy the videos and music you love",
+          "duration": 5
+        },
+        {
+          "selector": "[aria-label=\"Search\"]",
+          "action": "click",
+          "duration": 2
+        },
+        {
+          "selector": "form:nth-of-type(1) [name=\"search_query\"]",
+          "action": "type",
+          "text": "Cooking",
+          "duration": 5
+        },
+        {
+          "selector": "form:nth-of-type(1) button[name=\"Search\"]",
+          "action": "click",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Search Results",
+      "duration_seconds": 35,
+      "narration": "The search results appear instantly. We can see a variety of videos related to our query.",
+      "shots": [
+        {
+          "selector": "ol.ytd-video-renderer-results-list",
+          "action": "scroll",
+          "duration": 10
+        },
+        {
+          "selector": "li:nth-child(1) a:nth-child(3)",
+          "text": "How to Make the Perfect Pizza Dough - Cooking with Julia",
+          "duration": 5
+        },
+        {
+          "selector": "li:nth-child(1) a:nth-child(3)",
+          "action": "click",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Video Interaction",
+      "duration_seconds": 25,
+      "narration": "We can interact with the video. Let's like and comment on it.",
+      "shots": [
+        {
+          "selector": "[aria-label=\"Like\"]",
+          "action": "click",
+          "duration": 2
+        },
+        {
+          "selector": "[aria-label=\"Add a public comment\"]",
+          "action": "click",
+          "duration": 2
+        },
+        {
+          "selector": "textarea",
+          "action": "type",
+          "text": "Great recipe! Tried it last night.",
+          "duration": 5
+        },
+        {
+          "selector": "ytd-button-renderer:nth-child(4)",
+          "action": "click",
+          "duration": 2
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases YouTube's user-friendly interface, efficient search functionality, and interactive features. Users can explore, search for videos, interact with them, and engage through likes and comments.",
+  "assumptions": [
+    "Basic web literacy, ability to use a mouse and keyboard."
+  ],
+  "risks": [
+    "The internet connection might affect the smoothness of the demo. Users might need to scroll to see all content on the page."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to YouTube's homepage! We see the iconic logo and a concise site description. The clean layout hints at an intuitive user experience."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 10,
+        "end_seconds": 20,
+        "text": "Let's dive into the search bar, it's right here. I'm going to search for 'Cooking' to explore some tasty videos."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 22,
+        "end_seconds": 35,
+        "text": "These are our search results. We get a comprehensive list of videos related to cooking. See how the page loads content quickly?"
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 37,
+        "end_seconds": 50,
+        "text": "Check this out! We can easily interact with the video. I'll give it a like and also add a comment. It's nice to have a platform where we can engage with other users."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 52,
+        "end_seconds": 60,
+        "text": "Our comment is posted! It's simple to share our thoughts and connect with others."
+      }
+    ]
+  }
+}

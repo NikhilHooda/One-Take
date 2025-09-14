@@ -71,7 +71,11 @@ export const StoryboardDetails: React.FC<StoryboardDetailsProps> = ({ storyboard
                     {scene.duration_seconds || 0}s
                   </Badge>
                 </div>
-                <p className="text-sm text-muted-foreground">{scene.narration}</p>
+                <p className="text-sm text-muted-foreground">
+                  {typeof scene.narration === 'object' 
+                    ? scene.narration?.en || scene.narration?.[Object.keys(scene.narration)[0]] || 'No narration provided'
+                    : scene.narration || 'No narration provided'}
+                </p>
                 {scene.on_screen_text && (
                   <p className="text-xs bg-muted p-2 rounded">
                     <strong>On-screen text:</strong> {scene.on_screen_text}

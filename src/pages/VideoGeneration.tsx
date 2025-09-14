@@ -83,7 +83,7 @@ export const VideoGeneration = ({ onStoryboardGenerated, onLogoClick }: VideoGen
       
       // Call the real storyboard generation API
       const response = await StoryboardService.generateStoryboard({
-        githubUrl: formData.githubUrl,
+        githubUrl: formData.githubUrl || undefined,
         websiteUrl: formData.websiteUrl,
         specifications: formData.specifications
       });

@@ -1,0 +1,5200 @@
+{
+  "engine": "playwright",
+  "started_at": 1757851848,
+  "start_url": "https://www.faire.com/",
+  "max_pages": 5,
+  "pages": [
+    {
+      "url": "https://www.faire.com/",
+      "title": "",
+      "description": null,
+      "headings": [
+        "Buy products for your store your customers will love.",
+        "Buy products for your store your customers will love.",
+        "Discover your next bestseller",
+        "Discover your next bestseller",
+        "Discover your next bestseller",
+        "Shop by the values you care most about",
+        "We make it simple.You make it yours.",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The best selection of brands for your store, all in one place"
+      ],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "Sign up to buy",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh fslegacy-component",
+          "locator_suggestion": "text=Sign up to buy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop women owned",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/All Brands/brand-value/women-owned",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary-inverse! bg-transparent! fslegacy-component",
+          "locator_suggestion": "text=Shop women owned",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign up for free",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 enohNZ fslegacy-component",
+          "locator_suggestion": "text=Sign up for free",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "LockUnlock wholesale pricing",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh !w-fit fslegacy-component",
+          "locator_suggestion": "text=LockUnlock wholesale pricing",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "About us",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=About us",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Newsroom",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/news",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Newsroom",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Careers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/careers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Careers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Affiliates",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/affiliates",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Affiliates",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Blog",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Help center",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/support",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Help center",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Open with Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/open-with-faire",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Open with Faire",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Faire Markets",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/markets",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Faire Markets",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/brands",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Sell on Faire",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Small Business Grant",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/small-business-grant",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Small Business Grant",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Insider",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "POS integration",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/point-of-sale/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=POS integration",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Instagram",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/faire_wholesale/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Instagram",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Facebook",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/fairewholesale/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Facebook",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "X icon",
+          "role": null,
+          "tag": "a",
+          "href": "https://x.com/faire_wholesale",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=X icon",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Terms of Service",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/tos",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Terms of Service",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Cookie Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/privacy/cookies",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Cookie Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "IP Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/copyright",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=IP Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Accessibility Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/aoda",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Accessibility Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sitemap",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/site-map",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Sitemap",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign up",
+          "role": "button",
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ",
+          "locator_suggestion": "text=Sign up",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign up",
+          "role": "button",
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ",
+          "locator_suggestion": "text=Sign up",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/",
+          "aria_label": "Go to Faire homepage",
+          "id_attr": "faire-logo-link",
+          "classes": "sc-afbaa1da-0 sc-7495dfce-0 ebtSMJ dSIvZp",
+          "locator_suggestion": "role=button[name=\"Go to Faire homepage\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-e0a09f8-2 dZrQBc",
+          "locator_suggestion": "text=Blog",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/brands",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ sc-e0a09f8-1 kLyhBX",
+          "locator_suggestion": "text=Sell on Faire",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign in",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "f_t_paragraphSansRegular relative flex items-center justify-center px-4 text-fs-text-primary hover:text-fs-action-text-hover h-[50px] md:h-[60px] cursor-pointer",
+          "locator_suggestion": "text=Sign in",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Join free",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/?signUp=1",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 enohNZ sc-e0a09f8-3 gJytVS fslegacy-component",
+          "locator_suggestion": "text=Join free",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Skip to main content",
+          "role": null,
+          "tag": "a",
+          "href": "#main",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ sc-379887d4-2 bMcBsp",
+          "locator_suggestion": "text=Skip to main content",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "New",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/New Brands",
+          "aria_label": "New",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"New\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Home decor",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Home Decor",
+          "aria_label": "Home decor",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Home decor\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Food & drink",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Food & Drink",
+          "aria_label": "Food & drink",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Food & drink\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Women",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Women",
+          "aria_label": "Women",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Women\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Beauty & wellness",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Beauty & Wellness",
+          "aria_label": "Beauty & wellness",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Beauty & wellness\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Jewelry",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Jewelry",
+          "aria_label": "Jewelry",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Jewelry\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Paper & novelty",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Paper & Novelty",
+          "aria_label": "Paper & novelty",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Paper & novelty\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Kids & baby",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Kids & Baby",
+          "aria_label": "Kids & baby",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Kids & baby\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Pets",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Pets",
+          "aria_label": "Pets",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Pets\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Men",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Men",
+          "aria_label": "Men",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Men\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757851823217\\page_1.png",
+      "features_guess": [
+        "pricing",
+        "login",
+        "signup",
+        "integrations"
+      ]
+    },
+    {
+      "url": "https://www.faire.com/en-ca/",
+      "title": "",
+      "description": null,
+      "headings": [
+        "Buy products for your store your customers will love.",
+        "Buy products for your store your customers will love.",
+        "Discover your next bestseller",
+        "Discover your next bestseller",
+        "Discover your next bestseller",
+        "Shop by the values you care most about",
+        "We make it simple.You make it yours.",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The perfect\ndrinkware\n\n\nfor your store,\nright this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "The best selection of brands for your store, all in one place"
+      ],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": "button",
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 782.8125,
+            "y": 0,
+            "width": 51.359375,
+            "height": 20
+          }
+        },
+        {
+          "text": "Sign up",
+          "role": "button",
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ",
+          "locator_suggestion": "text=Sign up",
+          "bbox": {
+            "x": 782.8125,
+            "y": 23.27956771850586,
+            "width": 51.359375,
+            "height": 20
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/",
+          "aria_label": "Go to Faire homepage",
+          "id_attr": "faire-logo-link",
+          "classes": "sc-afbaa1da-0 sc-7495dfce-0 ebtSMJ dSIvZp",
+          "locator_suggestion": "role=button[name=\"Go to Faire homepage\"]",
+          "bbox": {
+            "x": 8,
+            "y": 51.5,
+            "width": 136,
+            "height": 29
+          }
+        },
+        {
+          "text": "Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-e0a09f8-2 dZrQBc",
+          "locator_suggestion": "text=Blog",
+          "bbox": {
+            "x": 918.90625,
+            "y": 36,
+            "width": 54.140625,
+            "height": 60
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/brands",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ sc-e0a09f8-1 kLyhBX",
+          "locator_suggestion": "text=Sell on Faire",
+          "bbox": {
+            "x": 973.046875,
+            "y": 36,
+            "width": 105.609375,
+            "height": 60
+          }
+        },
+        {
+          "text": "Sign in",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "f_t_paragraphSansRegular relative flex items-center justify-center px-4 text-fs-text-primary hover:text-fs-action-text-hover h-[50px] md:h-[60px] cursor-pointer",
+          "locator_suggestion": "text=Sign in",
+          "bbox": {
+            "x": 1078.65625,
+            "y": 36,
+            "width": 78.203125,
+            "height": 60
+          }
+        },
+        {
+          "text": "Join free",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/?signUp=1",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 enohNZ sc-e0a09f8-3 gJytVS fslegacy-component",
+          "locator_suggestion": "text=Join free",
+          "bbox": {
+            "x": 1168.859375,
+            "y": 48,
+            "width": 99.140625,
+            "height": 36
+          }
+        },
+        {
+          "text": "Skip to main content",
+          "role": null,
+          "tag": "a",
+          "href": "#main",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ sc-379887d4-2 bMcBsp",
+          "locator_suggestion": "text=Skip to main content",
+          "bbox": {
+            "x": 640,
+            "y": -40,
+            "width": 173.71875,
+            "height": 40
+          }
+        },
+        {
+          "text": "Sign up to buy",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh fslegacy-component",
+          "locator_suggestion": "text=Sign up to buy",
+          "bbox": {
+            "x": 80,
+            "y": 448,
+            "width": 143.75,
+            "height": 48
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 56,
+            "y": 1532,
+            "width": 177.734375,
+            "height": 48
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop women owned",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/All Brands/brand-value/women-owned",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary-inverse! bg-transparent! fslegacy-component",
+          "locator_suggestion": "text=Shop women owned",
+          "bbox": {
+            "x": 664,
+            "y": 2871.25,
+            "width": 185.234375,
+            "height": 48
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 191.96875,
+            "y": 3561.28125,
+            "width": 171.1875,
+            "height": 20
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkware",
+          "bbox": {
+            "x": 482.40625,
+            "y": 4034.2861328125,
+            "width": 315.1875,
+            "height": 64
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 482.40625,
+            "y": 4014.28125,
+            "width": 315.1875,
+            "height": 64
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 482.40625,
+            "y": 4014.28125,
+            "width": 315.1875,
+            "height": 64
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 482.40625,
+            "y": 4014.28125,
+            "width": 315.1875,
+            "height": 64
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 482.40625,
+            "y": 4014.28125,
+            "width": 315.1875,
+            "height": 64
+          }
+        },
+        {
+          "text": "Sign up for free",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 enohNZ fslegacy-component",
+          "locator_suggestion": "text=Sign up for free",
+          "bbox": {
+            "x": 563.921875,
+            "y": 4250.28125,
+            "width": 152.140625,
+            "height": 48
+          }
+        },
+        {
+          "text": "Unlock wholesale pricing",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh !w-fit fslegacy-component",
+          "locator_suggestion": "text=Unlock wholesale pricing",
+          "bbox": {
+            "x": 48,
+            "y": 4601.28125,
+            "width": 236,
+            "height": 48
+          }
+        },
+        {
+          "text": "About us",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=About us",
+          "bbox": {
+            "x": 808.34375,
+            "y": 4548.28125,
+            "width": 59.90625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Newsroom",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/news",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Newsroom",
+          "bbox": {
+            "x": 808.34375,
+            "y": 4586.28125,
+            "width": 71.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Careers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/careers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Careers",
+          "bbox": {
+            "x": 808.34375,
+            "y": 4624.28125,
+            "width": 51.84375,
+            "height": 20
+          }
+        },
+        {
+          "text": "Affiliates",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/affiliates",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Affiliates",
+          "bbox": {
+            "x": 808.34375,
+            "y": 4662.28125,
+            "width": 58.625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Blog",
+          "bbox": {
+            "x": 808.34375,
+            "y": 4700.28125,
+            "width": 30.140625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Help center",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/support",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Help center",
+          "bbox": {
+            "x": 948.34375,
+            "y": 4548.28125,
+            "width": 78.390625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Open with Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/open-with-faire",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Open with Faire",
+          "bbox": {
+            "x": 948.34375,
+            "y": 4586.28125,
+            "width": 105.65625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Faire Markets",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/markets",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Faire Markets",
+          "bbox": {
+            "x": 948.34375,
+            "y": 4624.28125,
+            "width": 88.5625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/brands",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Sell on Faire",
+          "bbox": {
+            "x": 948.34375,
+            "y": 4662.28125,
+            "width": 81.609375,
+            "height": 20
+          }
+        },
+        {
+          "text": "Small Business Grant",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/small-business-grant",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Small Business Grant",
+          "bbox": {
+            "x": 948.34375,
+            "y": 4700.28125,
+            "width": 140.65625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Insider",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Insider",
+          "bbox": {
+            "x": 948.34375,
+            "y": 4738.28125,
+            "width": 45.59375,
+            "height": 20
+          }
+        },
+        {
+          "text": "POS integration",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/point-of-sale/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=POS integration",
+          "bbox": {
+            "x": 948.34375,
+            "y": 4776.28125,
+            "width": 105.859375,
+            "height": 20
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/faire_wholesale/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 1105,
+            "y": 4513.28125,
+            "width": 16,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/fairewholesale/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 1153,
+            "y": 4513.28125,
+            "width": 16,
+            "height": 24
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://x.com/faire_wholesale",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 1201,
+            "y": 4513.28125,
+            "width": 15,
+            "height": 24
+          }
+        },
+        {
+          "text": "Terms of Service",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/tos",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Terms of Service",
+          "bbox": {
+            "x": 246.046875,
+            "y": 4863.28125,
+            "width": 111.65625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 370.515625,
+            "y": 4863.28125,
+            "width": 91.921875,
+            "height": 20
+          }
+        },
+        {
+          "text": "Cookie Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/privacy/cookies",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Cookie Policy",
+          "bbox": {
+            "x": 475.25,
+            "y": 4863.28125,
+            "width": 90.390625,
+            "height": 20
+          }
+        },
+        {
+          "text": "IP Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/copyright",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=IP Policy",
+          "bbox": {
+            "x": 578.453125,
+            "y": 4863.28125,
+            "width": 55.921875,
+            "height": 20
+          }
+        },
+        {
+          "text": "Accessibility Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/aoda",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Accessibility Policy",
+          "bbox": {
+            "x": 647.1875,
+            "y": 4863.28125,
+            "width": 127.65625,
+            "height": 20
+          }
+        },
+        {
+          "text": "Sitemap",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/site-map",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Sitemap",
+          "bbox": {
+            "x": 787.65625,
+            "y": 4863.28125,
+            "width": 55.40625,
+            "height": 20
+          }
+        },
+        {
+          "text": "New",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/New Brands",
+          "aria_label": "New",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"New\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Home decor",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Home Decor",
+          "aria_label": "Home decor",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Home decor\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Food & drink",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Food & Drink",
+          "aria_label": "Food & drink",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Food & drink\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Women",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Women",
+          "aria_label": "Women",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Women\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Beauty & wellness",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Beauty & Wellness",
+          "aria_label": "Beauty & wellness",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Beauty & wellness\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Jewelry",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Jewelry",
+          "aria_label": "Jewelry",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Jewelry\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Paper & novelty",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Paper & Novelty",
+          "aria_label": "Paper & novelty",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Paper & novelty\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Kids & baby",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Kids & Baby",
+          "aria_label": "Kids & baby",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Kids & baby\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Pets",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Pets",
+          "aria_label": "Pets",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Pets\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Men",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Men",
+          "aria_label": "Men",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Men\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757851823217\\page_2.png",
+      "features_guess": [
+        "pricing",
+        "login",
+        "signup",
+        "integrations"
+      ]
+    },
+    {
+      "url": "https://www.faire.com/blog/",
+      "title": "Faire Learning Hub - The future is local",
+      "description": "The Faire Learning Hub is a space for the independent retail community to discover educational resources, industry insights, and inspirational stories.",
+      "headings": [
+        "Faire Learning Hub",
+        "With Faire, Talking Tables didn\u2019t have to choose between relationships and revenue",
+        "SEO checklist for Faire brands: How to get discovered and grow wholesale orders",
+        "How a baby brand built an empire, without sacrificing style",
+        "The holiday home decor report: Holiday planning starts now",
+        "Why this London retailer calls Faire \u2018vital\u2019 to his store launch success",
+        "All about Halloween: Trends, treats, and autumnal touches for the upcoming spooky season",
+        "How one coffee shop became the neighborhood everything store",
+        "How Faire helped Intown Ace Hardware find growth in the last place it expected",
+        "Purposeful products meet a powerful platform: How Glad & Young uses Faire to grow",
+        "Subscribe to our newsletter to get the latest from Faire!",
+        "Thank you for subscribing to our newsletter!"
+      ],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "label",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "faire-header-menu-icon",
+          "classes": null,
+          "locator_suggestion": "#faire-header-menu-icon",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/?utm_source=blog&utm_medium=blog&utm_campaign=learnmore&utm_content=homeicon",
+          "aria_label": null,
+          "id_attr": "faire-header-logo",
+          "classes": "faire-logo",
+          "locator_suggestion": "#faire-header-logo",
+          "bbox": {
+            "x": 20,
+            "y": 30.5,
+            "width": 88,
+            "height": 11
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "img",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "faire-mobile-search-icon",
+          "classes": null,
+          "locator_suggestion": "#faire-mobile-search-icon",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "English (US)",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=English (US)",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Fran\u00e7ais",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/fr/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Fran\u00e7ais",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Deutsch",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/de/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Deutsch",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "English (UK)",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/en-gb/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=English (UK)",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/brands?utm_source=blog&utm_medium=blog&utm_campaign=learnmore",
+          "aria_label": "Sell on Faire",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Sell on Faire\"]",
+          "bbox": {
+            "x": 920.234375,
+            "y": 29,
+            "width": 82.90625,
+            "height": 14
+          }
+        },
+        {
+          "text": "Sign In",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/?signIn=1",
+          "aria_label": "Sign In",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Sign In\"]",
+          "bbox": {
+            "x": 1033.140625,
+            "y": 29,
+            "width": 47.21875,
+            "height": 14
+          }
+        },
+        {
+          "text": "Sign Up to Shop",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/?signUp=1&utm_source=blog&utm_medium=blog&utm_campaign=learnmore",
+          "aria_label": "Sign Up to Shop",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Sign Up to Shop\"]",
+          "bbox": {
+            "x": 1134.359375,
+            "y": 29,
+            "width": 110.640625,
+            "height": 14
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "faire-mobile-menu-background",
+          "classes": null,
+          "locator_suggestion": "#faire-mobile-menu-background",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/",
+          "aria_label": null,
+          "id_attr": "faire-mobile-menu-logo",
+          "classes": "faire-logo",
+          "locator_suggestion": "#faire-mobile-menu-logo",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "English (US)",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=English (US)",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Fran\u00e7ais",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/fr/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Fran\u00e7ais",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Deutsch",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/de/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Deutsch",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "English (UK)",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/en-gb/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=English (UK)",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/brands?utm_source=blog&utm_medium=blog&utm_campaign=learnmore",
+          "aria_label": "Sell on Faire",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Sell on Faire\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign In",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/?signIn=1",
+          "aria_label": "Sign In",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Sign In\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign Up to Shop",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/?signUp=1&utm_source=blog&utm_medium=blog&utm_campaign=learnmore",
+          "aria_label": "Sign Up to Shop",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Sign Up to Shop\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Faire Learning Hub",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Faire Learning Hub",
+          "bbox": {
+            "x": 55,
+            "y": 127,
+            "width": 395.078125,
+            "height": 55
+          }
+        },
+        {
+          "text": "Home",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "active",
+          "locator_suggestion": "text=Home",
+          "bbox": {
+            "x": 500.078125,
+            "y": 128,
+            "width": 70.984375,
+            "height": 52
+          }
+        },
+        {
+          "text": "Brand News & Guides",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/brand-news/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Brand News & Guides",
+          "bbox": {
+            "x": 571.0625,
+            "y": 128,
+            "width": 176.109375,
+            "height": 52
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/the-holiday-home-decor-report-holiday-planning-starts-now/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "featured-post-cta",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 55,
+            "y": 235,
+            "width": 702,
+            "height": 464
+          }
+        },
+        {
+          "text": "The holiday home decor report: Holiday planning starts now",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/the-holiday-home-decor-report-holiday-planning-starts-now/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=The holiday home decor report: Holiday planning starts now",
+          "bbox": {
+            "x": 815.5,
+            "y": 387,
+            "width": 379.5,
+            "height": 144
+          }
+        },
+        {
+          "text": "Read article",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/the-holiday-home-decor-report-holiday-planning-starts-now/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "featured-post-cta",
+          "locator_suggestion": "text=Read article",
+          "bbox": {
+            "x": 815.5,
+            "y": 551,
+            "width": 201.40625,
+            "height": 52
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/how-a-baby-brand-built-an-empire-without-sacrificing-style/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "featured-post-cta",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 1225,
+            "y": 235,
+            "width": 702,
+            "height": 464
+          }
+        },
+        {
+          "text": "How a baby brand built an empire, without sacrificing style",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/how-a-baby-brand-built-an-empire-without-sacrificing-style/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=How a baby brand built an empire, without sacrificing style",
+          "bbox": {
+            "x": 1985.5,
+            "y": 363,
+            "width": 379.5,
+            "height": 192
+          }
+        },
+        {
+          "text": "Read article",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/how-a-baby-brand-built-an-empire-without-sacrificing-style/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "featured-post-cta",
+          "locator_suggestion": "text=Read article",
+          "bbox": {
+            "x": 1985.5,
+            "y": 575,
+            "width": 201.40625,
+            "height": 52
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/seo-checklist-for-faire-brands-how-to-get-discovered-and-grow-wholesale-orders/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "featured-post-cta",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 2395,
+            "y": 235,
+            "width": 702,
+            "height": 464
+          }
+        },
+        {
+          "text": "SEO checklist for Faire brands: How to get discovered and grow wholesale orders",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/seo-checklist-for-faire-brands-how-to-get-discovered-and-grow-wholesale-orders/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 3155.5,
+            "y": 339,
+            "width": 379.5,
+            "height": 240
+          }
+        },
+        {
+          "text": "Read article",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/seo-checklist-for-faire-brands-how-to-get-discovered-and-grow-wholesale-orders/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "featured-post-cta",
+          "locator_suggestion": "text=Read article",
+          "bbox": {
+            "x": 3155.5,
+            "y": 599,
+            "width": 201.40625,
+            "height": 52
+          }
+        },
+        {
+          "text": "All posts",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "active",
+          "locator_suggestion": "text=All posts",
+          "bbox": {
+            "x": 55,
+            "y": 745,
+            "width": 89.5,
+            "height": 52
+          }
+        },
+        {
+          "text": "Buying",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Buying",
+          "bbox": {
+            "x": 144.5,
+            "y": 745,
+            "width": 76.65625,
+            "height": 52
+          }
+        },
+        {
+          "text": "Community",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/community/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Community",
+          "bbox": {
+            "x": 221.15625,
+            "y": 745,
+            "width": 109.046875,
+            "height": 52
+          }
+        },
+        {
+          "text": "Industry Insights",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/industry-insights/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Industry Insights",
+          "bbox": {
+            "x": 330.203125,
+            "y": 745,
+            "width": 143.125,
+            "height": 52
+          }
+        },
+        {
+          "text": "Selling",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Selling",
+          "bbox": {
+            "x": 473.328125,
+            "y": 745,
+            "width": 76.375,
+            "height": 52
+          }
+        },
+        {
+          "text": "Trends",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Trends",
+          "bbox": {
+            "x": 549.703125,
+            "y": 745,
+            "width": 75.671875,
+            "height": 52
+          }
+        },
+        {
+          "text": "Uncategorized",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/uncategorized/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Uncategorized",
+          "bbox": {
+            "x": 625.375,
+            "y": 745,
+            "width": 129.25,
+            "height": 52
+          }
+        },
+        {
+          "text": "Selling\n\nWith Faire, Talking Tables didn\u2019t have to choose between relationships and revenue\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 55,
+            "y": 839,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Selling",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Selling",
+          "bbox": {
+            "x": 55,
+            "y": 1117,
+            "width": 39.234375,
+            "height": 24
+          }
+        },
+        {
+          "text": "With Faire, Talking Tables didn\u2019t have to choose between relationships and revenue",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/with-faire-talking-tables-didnt-have-to-choose-between-relationships-and-revenue/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 55,
+            "y": 1149,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/with-faire-talking-tables-didnt-have-to-choose-between-relationships-and-revenue/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 55,
+            "y": 1265,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Selling\n\nSEO checklist for Faire brands: How to get discovered and grow wholesale orders\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 454.59375,
+            "y": 839,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Selling",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Selling",
+          "bbox": {
+            "x": 454.59375,
+            "y": 1117,
+            "width": 39.234375,
+            "height": 24
+          }
+        },
+        {
+          "text": "SEO checklist for Faire brands: How to get discovered and grow wholesale orders",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/seo-checklist-for-faire-brands-how-to-get-discovered-and-grow-wholesale-orders/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 454.59375,
+            "y": 1149,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/seo-checklist-for-faire-brands-how-to-get-discovered-and-grow-wholesale-orders/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 454.59375,
+            "y": 1265,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Selling\n\nHow a baby brand built an empire, without sacrificing style\u00a0\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 854.1875,
+            "y": 839,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Selling",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Selling",
+          "bbox": {
+            "x": 854.1875,
+            "y": 1117,
+            "width": 39.234375,
+            "height": 24
+          }
+        },
+        {
+          "text": "How a baby brand built an empire, without sacrificing style",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/how-a-baby-brand-built-an-empire-without-sacrificing-style/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": "text=How a baby brand built an empire, without sacrificing style",
+          "bbox": {
+            "x": 854.1875,
+            "y": 1149,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/selling/how-a-baby-brand-built-an-empire-without-sacrificing-style/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 854.1875,
+            "y": 1265,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Trends\n\nThe holiday home decor report: Holiday planning starts now\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 55,
+            "y": 1329,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Trends",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Trends",
+          "bbox": {
+            "x": 55,
+            "y": 1607,
+            "width": 39,
+            "height": 24
+          }
+        },
+        {
+          "text": "The holiday home decor report: Holiday planning starts now",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/the-holiday-home-decor-report-holiday-planning-starts-now/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": "text=The holiday home decor report: Holiday planning starts now",
+          "bbox": {
+            "x": 55,
+            "y": 1639,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/the-holiday-home-decor-report-holiday-planning-starts-now/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 55,
+            "y": 1755,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Buying\n\nWhy this London retailer calls Faire \u2018vital\u2019 to his store launch success\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 454.59375,
+            "y": 1329,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Buying",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Buying",
+          "bbox": {
+            "x": 454.59375,
+            "y": 1607,
+            "width": 39.78125,
+            "height": 24
+          }
+        },
+        {
+          "text": "Why this London retailer calls Faire \u2018vital\u2019 to his store launch success",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/why-this-london-retailer-calls-faire-vital-to-his-store-launch-success/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 454.59375,
+            "y": 1639,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/why-this-london-retailer-calls-faire-vital-to-his-store-launch-success/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 454.59375,
+            "y": 1755,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Trends\n\nAll about Halloween: Trends, treats, and autumnal touches for the upcoming spooky season\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 854.1875,
+            "y": 1329,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Trends",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Trends",
+          "bbox": {
+            "x": 854.1875,
+            "y": 1607,
+            "width": 39,
+            "height": 24
+          }
+        },
+        {
+          "text": "All about Halloween: Trends, treats, and autumnal touches for the upcoming spooky season",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/all-about-halloween-trends-treats-and-autumnal-touches-for-the-upcoming-spooky-season/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 854.1875,
+            "y": 1639,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/trends/all-about-halloween-trends-treats-and-autumnal-touches-for-the-upcoming-spooky-season/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 854.1875,
+            "y": 1755,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Buying\n\nHow one coffee shop became the neighborhood everything store\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 55,
+            "y": 1819,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Buying",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Buying",
+          "bbox": {
+            "x": 55,
+            "y": 2097,
+            "width": 39.78125,
+            "height": 24
+          }
+        },
+        {
+          "text": "How one coffee shop became the neighborhood everything store",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/how-one-coffee-shop-became-the-neighborhood-everything-store/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": "text=How one coffee shop became the neighborhood everything store",
+          "bbox": {
+            "x": 55,
+            "y": 2129,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/how-one-coffee-shop-became-the-neighborhood-everything-store/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 55,
+            "y": 2245,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Buying\n\nHow Faire helped Intown Ace Hardware find growth in the last place it expected\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 454.59375,
+            "y": 1819,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Buying",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Buying",
+          "bbox": {
+            "x": 454.59375,
+            "y": 2097,
+            "width": 39.78125,
+            "height": 24
+          }
+        },
+        {
+          "text": "How Faire helped Intown Ace Hardware find growth in the last place it expected",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/how-faire-helped-intown-ace-hardware-find-growth-in-the-last-place-it-expected/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 454.59375,
+            "y": 2129,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/how-faire-helped-intown-ace-hardware-find-growth-in-the-last-place-it-expected/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 454.59375,
+            "y": 2245,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Buying\n\nPurposeful products meet a powerful platform: How Glad & Young uses Faire to grow\n\nREAD",
+          "role": null,
+          "tag": "div",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 854.1875,
+            "y": 1819,
+            "width": 369.59375,
+            "height": 450
+          }
+        },
+        {
+          "text": "Buying",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Buying",
+          "bbox": {
+            "x": 854.1875,
+            "y": 2097,
+            "width": 39.78125,
+            "height": 24
+          }
+        },
+        {
+          "text": "Purposeful products meet a powerful platform: How Glad & Young uses Faire to grow",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/purposeful-products-meet-a-powerful-platform-how-glad-young-uses-faire-to-grow/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "blog-post-card-title ellipsis-max-3",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 854.1875,
+            "y": 2129,
+            "width": 369.59375,
+            "height": 96
+          }
+        },
+        {
+          "text": "READ",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/buying/purposeful-products-meet-a-powerful-platform-how-glad-young-uses-faire-to-grow/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "cta-box",
+          "locator_suggestion": "text=READ",
+          "bbox": {
+            "x": 854.1875,
+            "y": 2245,
+            "width": 369.59375,
+            "height": 24
+          }
+        },
+        {
+          "text": "Back",
+          "role": "button",
+          "tag": "a",
+          "href": "#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "prev page-numbers disabled",
+          "locator_suggestion": "text=Back",
+          "bbox": {
+            "x": 266,
+            "y": 2349,
+            "width": 144,
+            "height": 34
+          }
+        },
+        {
+          "text": "2",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/2/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=2",
+          "bbox": {
+            "x": 488,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "3",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/3/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=3",
+          "bbox": {
+            "x": 528,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "4",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/4/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=4",
+          "bbox": {
+            "x": 568,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "5",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/5/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=5",
+          "bbox": {
+            "x": 608,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "37",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/37/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=37",
+          "bbox": {
+            "x": 688,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "38",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/38/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=38",
+          "bbox": {
+            "x": 728,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "39",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/39/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=39",
+          "bbox": {
+            "x": 768,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "40",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/40/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "page-numbers",
+          "locator_suggestion": "text=40",
+          "bbox": {
+            "x": 808,
+            "y": 2354,
+            "width": 24,
+            "height": 24
+          }
+        },
+        {
+          "text": "Next",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/page/2/#blogSection",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "next page-numbers",
+          "locator_suggestion": "text=Next",
+          "bbox": {
+            "x": 870,
+            "y": 2349,
+            "width": 144,
+            "height": 34
+          }
+        },
+        {
+          "text": "Subscribe",
+          "role": null,
+          "tag": "input",
+          "href": null,
+          "aria_label": null,
+          "id_attr": "gform_submit_button_2",
+          "classes": "gform-button gform-button--white  button",
+          "locator_suggestion": "#gform_submit_button_2",
+          "bbox": {
+            "x": 820.6875,
+            "y": 2656.421875,
+            "width": 142,
+            "height": 50
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/",
+          "aria_label": null,
+          "id_attr": "faire-footer-logo",
+          "classes": null,
+          "locator_suggestion": "#faire-footer-logo",
+          "bbox": {
+            "x": 140,
+            "y": 2800.421875,
+            "width": 104,
+            "height": 24
+          }
+        },
+        {
+          "text": "About Us",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/about/",
+          "aria_label": "About Us",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"About Us\"]",
+          "bbox": {
+            "x": 833.859375,
+            "y": 2881.171875,
+            "width": 53.484375,
+            "height": 12
+          }
+        },
+        {
+          "text": "Newsroom",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/news",
+          "aria_label": "Newsroom",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Newsroom\"]",
+          "bbox": {
+            "x": 833.859375,
+            "y": 2905.171875,
+            "width": 62.484375,
+            "height": 12
+          }
+        },
+        {
+          "text": "Careers",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/careers",
+          "aria_label": "Careers",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Careers\"]",
+          "bbox": {
+            "x": 833.859375,
+            "y": 2929.171875,
+            "width": 45.296875,
+            "height": 12
+          }
+        },
+        {
+          "text": "Partnerships",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/partnerships",
+          "aria_label": "Partnerships",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Partnerships\"]",
+          "bbox": {
+            "x": 833.859375,
+            "y": 2953.171875,
+            "width": 72.953125,
+            "height": 12
+          }
+        },
+        {
+          "text": "Help Center",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/support/",
+          "aria_label": "Help Center",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Help Center\"]",
+          "bbox": {
+            "x": 946.8125,
+            "y": 2881.171875,
+            "width": 70.453125,
+            "height": 12
+          }
+        },
+        {
+          "text": "Open with Faire",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/open-with-faire",
+          "aria_label": "Open with Faire",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Open with Faire\"]",
+          "bbox": {
+            "x": 946.8125,
+            "y": 2905.171875,
+            "width": 92.390625,
+            "height": 12
+          }
+        },
+        {
+          "text": "Faire Markets",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/markets/",
+          "aria_label": "Faire Markets",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Faire Markets\"]",
+          "bbox": {
+            "x": 946.8125,
+            "y": 2929.171875,
+            "width": 77.484375,
+            "height": 12
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/brands/",
+          "aria_label": "Sell on Faire",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Sell on Faire\"]",
+          "bbox": {
+            "x": 946.8125,
+            "y": 2953.171875,
+            "width": 71.53125,
+            "height": 12
+          }
+        },
+        {
+          "text": "Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": "Blog",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Blog\"]",
+          "bbox": {
+            "x": 1079.203125,
+            "y": 2881.171875,
+            "width": 26.3125,
+            "height": 12
+          }
+        },
+        {
+          "text": "Instagram",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/faire_wholesale/",
+          "aria_label": "Instagram",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Instagram\"]",
+          "bbox": {
+            "x": 1079.203125,
+            "y": 2905.171875,
+            "width": 58.6875,
+            "height": 12
+          }
+        },
+        {
+          "text": "Facebook",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/fairewholesale/",
+          "aria_label": "Facebook",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Facebook\"]",
+          "bbox": {
+            "x": 1079.203125,
+            "y": 2929.171875,
+            "width": 56.671875,
+            "height": 12
+          }
+        },
+        {
+          "text": "Twitter",
+          "role": null,
+          "tag": "a",
+          "href": "https://twitter.com/faire_wholesale",
+          "aria_label": "Twitter",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Twitter\"]",
+          "bbox": {
+            "x": 1079.203125,
+            "y": 2953.171875,
+            "width": 40.203125,
+            "height": 12
+          }
+        },
+        {
+          "text": "Terms of Service",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/tos/",
+          "aria_label": "Terms of Service",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Terms of Service\"]",
+          "bbox": {
+            "x": 321.6875,
+            "y": 3060.671875,
+            "width": 93.640625,
+            "height": 12
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/privacy/",
+          "aria_label": "Privacy Policy",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Privacy Policy\"]",
+          "bbox": {
+            "x": 440.328125,
+            "y": 3060.671875,
+            "width": 76.984375,
+            "height": 12
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "#faireproductsearch",
+          "fields": [
+            {
+              "name": "s",
+              "type": "text",
+              "placeholder": "Search for products or brands"
+            }
+          ],
+          "submit_button_text": null
+        },
+        {
+          "selector_hint": "form:nth-of-type(2)",
+          "fields": [
+            {
+              "name": "s",
+              "type": "text",
+              "placeholder": "Search for article or topics"
+            }
+          ],
+          "submit_button_text": null
+        },
+        {
+          "selector_hint": "#gform_2",
+          "fields": [
+            {
+              "name": "input_4",
+              "type": "radio",
+              "placeholder": null
+            },
+            {
+              "name": "input_4",
+              "type": "radio",
+              "placeholder": null
+            },
+            {
+              "name": "input_4",
+              "type": "radio",
+              "placeholder": null
+            },
+            {
+              "name": "input_1",
+              "type": "email",
+              "placeholder": "Your email address*"
+            },
+            {
+              "name": "gform_submit_button_2",
+              "type": "submit",
+              "placeholder": null
+            },
+            {
+              "name": "is_submit_2",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "gform_submit",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "gform_unique_id",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "state_2",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "gform_target_page_number_2",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "gform_source_page_number_2",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "gform_field_values",
+              "type": "hidden",
+              "placeholder": null
+            }
+          ],
+          "submit_button_text": "Subscribe"
+        },
+        {
+          "selector_hint": "#brave_form_-NOLSooOhYbfj5PdWupa",
+          "fields": [
+            {
+              "name": "-NOLUMGyuK7M52yYQTqK[]",
+              "type": "text",
+              "placeholder": "John*"
+            },
+            {
+              "name": "-NOLUMGyuK7M52yYQTqK[]",
+              "type": "text",
+              "placeholder": "Doe*"
+            },
+            {
+              "name": "-NOLSooOhYbfj5PdWupb",
+              "type": "email",
+              "placeholder": "you@yourstore.com*"
+            },
+            {
+              "name": "-NOLVONmlxkM6oCj-xxp",
+              "type": "text",
+              "placeholder": "Your store"
+            },
+            {
+              "name": "-NOLVXORWZwKqJYwPsly",
+              "type": "select",
+              "placeholder": null
+            },
+            {
+              "name": "-NOLSooOhYbfj5PdWupd",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NOLSooOhYbfj5PdWupe",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NOLSooOhYbfj5PdWupf",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NOLSooOhYbfj5PdWupg",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NP477VfFYKbo7OwKstu",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "brave_form_security-NOLSooOhYbfj5PdWupa",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "_wp_http_referer",
+              "type": "hidden",
+              "placeholder": null
+            }
+          ],
+          "submit_button_text": "Download now"
+        },
+        {
+          "selector_hint": "#brave_form_-NRqwseLaEAyUV_1skfj",
+          "fields": [
+            {
+              "name": "-NRqwseLaEAyUV_1skfk",
+              "type": "email",
+              "placeholder": "you@yourstore.com*"
+            },
+            {
+              "name": "-NRqwseLaEAyUV_1skfl",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NRqwseLaEAyUV_1skfm",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NRqwseLaEAyUV_1skfn",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NRqwseLaEAyUV_1skfo",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NRqwseLaEAyUV_1skfp",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "brave_form_security-NRqwseLaEAyUV_1skfj",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "_wp_http_referer",
+              "type": "hidden",
+              "placeholder": null
+            }
+          ],
+          "submit_button_text": "Get Started"
+        },
+        {
+          "selector_hint": "#brave_form_-NWmwEG5Yhoqqk4W96A3",
+          "fields": [
+            {
+              "name": "-NWmwEG5Yhoqqk4W96AE",
+              "type": "email",
+              "placeholder": "you@yourstore.com*"
+            },
+            {
+              "name": "-NWmwV_TDuKrdjxuju28",
+              "type": "select",
+              "placeholder": null
+            },
+            {
+              "name": "-NWmwEG5Yhoqqk4W96AF",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NWmwEG5Yhoqqk4W96AG",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NWmwEG5Yhoqqk4W96AH",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NWmwEG5Yhoqqk4W96AI",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "-NWmwEG5Yhoqqk4W96AJ",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "brave_form_security-NWmwEG5Yhoqqk4W96A3",
+              "type": "hidden",
+              "placeholder": null
+            },
+            {
+              "name": "_wp_http_referer",
+              "type": "hidden",
+              "placeholder": null
+            }
+          ],
+          "submit_button_text": "Get Started"
+        },
+        {
+          "selector_hint": "form:nth-of-type(7)",
+          "fields": [
+            {
+              "name": "search-input",
+              "type": "input",
+              "placeholder": "Search"
+            }
+          ],
+          "submit_button_text": ""
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757851823217\\page_3.png",
+      "features_guess": [
+        "login",
+        "signup"
+      ]
+    },
+    {
+      "url": "https://www.faire.com/en-ca/brands",
+      "title": "",
+      "description": null,
+      "headings": [],
+      "nav_links": [],
+      "clickables": [],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757851823217\\page_4.png",
+      "features_guess": []
+    },
+    {
+      "url": "https://www.faire.com/en-ca/?signUp=1",
+      "title": "",
+      "description": null,
+      "headings": [
+        "Buy products for your store your customers will love.",
+        "Buy products for your store your customers will love.",
+        "Discover your next bestseller",
+        "Discover your next bestseller",
+        "Discover your next bestseller",
+        "Shop by the values you care most about",
+        "We make it simple.You make it yours.",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The perfectdrinkwaredrinkwaredrinkwareplanterplanterplantermoisturizermoisturizermoisturizercoffeecoffeecoffeecandlecandlecandlefor your store, right this way.",
+        "drinkware",
+        "drinkware",
+        "drinkware",
+        "planter",
+        "planter",
+        "planter",
+        "moisturizer",
+        "moisturizer",
+        "moisturizer",
+        "coffee",
+        "coffee",
+        "coffee",
+        "candle",
+        "candle",
+        "candle",
+        "The best selection of brands for your store, all in one place"
+      ],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "Sign up to buy",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh fslegacy-component",
+          "locator_suggestion": "text=Sign up to buy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop all bestsellers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Top Sellers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary! hover:text-[#5b2a25]! fslegacy-component",
+          "locator_suggestion": "text=Shop all bestsellers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Shop women owned",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/All Brands/brand-value/women-owned",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh hover:bg-fs-surface-primary-inverse! bg-transparent! fslegacy-component",
+          "locator_suggestion": "text=Shop women owned",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider membership",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ fslegacy-component",
+          "locator_suggestion": "text=Insider membership",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "drinkwaredrinkwaredrinkware",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Kitchen & Tabletop/Drinkware",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 iJpiS fslegacy-component",
+          "locator_suggestion": "text=drinkwaredrinkwaredrinkware",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "planterplanterplanter",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Garden & Outdoor/Pots & Plants",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 buvrHv fslegacy-component",
+          "locator_suggestion": "text=planterplanterplanter",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "moisturizermoisturizermoisturizer",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Beauty & Wellness/subcategory/Skincare/Creams & Moisturizers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dlojUL fslegacy-component",
+          "locator_suggestion": "text=moisturizermoisturizermoisturizer",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "coffeecoffeecoffee",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Food & Drink/subcategory/Coffee & Tea",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 dpcWey fslegacy-component",
+          "locator_suggestion": "text=coffeecoffeecoffee",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "candlecandlecandle",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/suppliers/Home Decor/subcategory/Candles & Holders/Candles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 kHvDQ sc-67cf7903-1 bywkNc fslegacy-component",
+          "locator_suggestion": "text=candlecandlecandle",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign up for free",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 enohNZ fslegacy-component",
+          "locator_suggestion": "text=Sign up for free",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "LockUnlock wholesale pricing",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 jsbpkh !w-fit fslegacy-component",
+          "locator_suggestion": "text=LockUnlock wholesale pricing",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "About us",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=About us",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Newsroom",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/news",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Newsroom",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Careers",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/careers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Careers",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Affiliates",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/affiliates",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Affiliates",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Blog",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Help center",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/support",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Help center",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Open with Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/open-with-faire",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Open with Faire",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Faire Markets",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/markets",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Faire Markets",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/brands",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Sell on Faire",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Small Business Grant",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/small-business-grant",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Small Business Grant",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Insider",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/insider",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=Insider",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "POS integration",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/point-of-sale/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ",
+          "locator_suggestion": "text=POS integration",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Instagram",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/faire_wholesale/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Instagram",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Facebook",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/fairewholesale/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Facebook",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "X icon",
+          "role": null,
+          "tag": "a",
+          "href": "https://x.com/faire_wholesale",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=X icon",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Terms of Service",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/tos",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Terms of Service",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Cookie Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/privacy/cookies",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Cookie Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "IP Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/copyright",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=IP Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Accessibility Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/aoda",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Accessibility Policy",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sitemap",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/site-map",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-1 dIjiGA",
+          "locator_suggestion": "text=Sitemap",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign up",
+          "role": "button",
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ",
+          "locator_suggestion": "text=Sign up",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign up",
+          "role": "button",
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ",
+          "locator_suggestion": "text=Sign up",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/",
+          "aria_label": "Go to Faire homepage",
+          "id_attr": "faire-logo-link",
+          "classes": "sc-afbaa1da-0 sc-7495dfce-0 ebtSMJ dSIvZp",
+          "locator_suggestion": "role=button[name=\"Go to Faire homepage\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.faire.com/blog/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-e0a09f8-2 dZrQBc",
+          "locator_suggestion": "text=Blog",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sell on Faire",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/brands",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-afbaa1da-0 ebtSMJ sc-e0a09f8-1 kLyhBX",
+          "locator_suggestion": "text=Sell on Faire",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Sign in",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "f_t_paragraphSansRegular relative flex items-center justify-center px-4 text-fs-text-primary hover:text-fs-action-text-hover h-[50px] md:h-[60px] cursor-pointer",
+          "locator_suggestion": "text=Sign in",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Join free",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/?signUp=1",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-a0301a8f-1 enohNZ sc-e0a09f8-3 gJytVS fslegacy-component",
+          "locator_suggestion": "text=Join free",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Skip to main content",
+          "role": null,
+          "tag": "a",
+          "href": "#main",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-2ab376d1-0 iSWKgZ sc-379887d4-2 bMcBsp",
+          "locator_suggestion": "text=Skip to main content",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "New",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/New Brands",
+          "aria_label": "New",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"New\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Home decor",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Home Decor",
+          "aria_label": "Home decor",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Home decor\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Food & drink",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Food & Drink",
+          "aria_label": "Food & drink",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Food & drink\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Women",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Women",
+          "aria_label": "Women",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Women\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Beauty & wellness",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Beauty & Wellness",
+          "aria_label": "Beauty & wellness",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Beauty & wellness\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Jewelry",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Jewelry",
+          "aria_label": "Jewelry",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Jewelry\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Paper & novelty",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Paper & Novelty",
+          "aria_label": "Paper & novelty",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Paper & novelty\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Kids & baby",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Kids & Baby",
+          "aria_label": "Kids & baby",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Kids & baby\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Pets",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Pets",
+          "aria_label": "Pets",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Pets\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "text": "Men",
+          "role": null,
+          "tag": "a",
+          "href": "/en-ca/category/Men",
+          "aria_label": "Men",
+          "id_attr": null,
+          "classes": "font-fs-paragraph active:text-fs-text-subdued focus:text-fs-text-subdued border-b-1 border-solid border-transparent whitespace-nowrap text-fs-text-primary",
+          "locator_suggestion": "role=button[name=\"Men\"]",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757851823217\\page_5.png",
+      "features_guess": [
+        "pricing",
+        "login",
+        "signup",
+        "integrations"
+      ]
+    }
+  ]
+}

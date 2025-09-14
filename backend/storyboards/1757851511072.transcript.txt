@@ -1,0 +1,3 @@
+[00:00 - 00:30] scene=scene-1 Welcome to Amazon.ca, Canada's largest online retailer. Here, we have easy access to numerous products. Notice the handy keyboard shortcuts and the location updater. Let's dive into the diverse categories.
+[00:30 - 01:05] scene=scene-2 Let's search for something specific - say, 'laptops'. We can refine our search with handy filters, sorting by price or other specs. It's easy to navigate and find what we need.
+[01:05 - 01:30] scene=scene-3 Check out this detailed view of a laptop. We see customer ratings, reviews, and quick actions. It's simple to add items to our cart or view more product details.

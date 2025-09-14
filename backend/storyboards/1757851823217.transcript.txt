@@ -1,0 +1,6 @@
+[00:00 - 00:15] scene=scene-1 Welcome to Faire, an exclusive platform for retail stores to source products. Let's dive into the diverse categories, starting with the homepage.
+[00:15 - 00:30] scene=scene-1 Here we have easy access to bestsellers, women-owned brands, and specialized categories like drinkware and skincare products.
+[00:30 - 00:45] scene=scene-2 Let's initiate a search for 'coffee' and explore the filtering options. We can sort by price, popularity, and more.
+[00:45 - 01:00] scene=scene-3 The search results provide a comprehensive view of coffee products. We can check detailed reviews to ensure we're selecting the right items.
+[01:00 - 01:15] scene=scene-4 Adding items to our cart is straightforward. We'll give it a quick glance before proceeding.
+[01:15 - 01:30] scene=scene-5 We can confirm and adjust the cart items. Faire makes wholesale shopping efficient and seamless.

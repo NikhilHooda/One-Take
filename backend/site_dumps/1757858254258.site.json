@@ -1,0 +1,5111 @@
+{
+  "engine": "playwright",
+  "started_at": 1757858267,
+  "start_url": "https://www.desmos.com/calculator",
+  "max_pages": 5,
+  "pages": [
+    {
+      "url": "https://www.desmos.com/calculator",
+      "title": "Desmos | Graphing Calculator",
+      "description": null,
+      "headings": [],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Open Graph (ctrl+o)",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-opendrawer dcg-header-btn",
+          "locator_suggestion": "role=button[name=\"Open Graph (ctrl+o)\"]",
+          "bbox": {
+            "x": 2,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "Save",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-save dcg-save-button tooltip-offset dcg-disabled",
+          "locator_suggestion": "text=Save",
+          "bbox": {
+            "x": 170.171875,
+            "y": 5.5,
+            "width": 64.828125,
+            "height": 34
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-home-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 586.921875,
+            "y": 17,
+            "width": 106.171875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Log In",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-sign-in dcg-action-login dcg-btn-white-outline",
+          "locator_suggestion": "text=Log In",
+          "bbox": {
+            "x": 956.734375,
+            "y": 4.5,
+            "width": 66.046875,
+            "height": 36
+          }
+        },
+        {
+          "text": "Sign Up",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-create-account dcg-btn dcg-btn-blue dcg-action-createaccount",
+          "locator_suggestion": "text=Sign Up",
+          "bbox": {
+            "x": 1030.78125,
+            "y": 4.5,
+            "width": 77.234375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "share",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-share dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"share\"]",
+          "bbox": {
+            "x": 1118.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Help",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-help dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"Help\"]",
+          "bbox": {
+            "x": 1158.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Language",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-language dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"Language\"]",
+          "bbox": {
+            "x": 1198.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Tools",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-current-tool dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"Tools\"]",
+          "bbox": {
+            "x": 1238.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Add Item",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-icon-btn dcg-add-expression-btn dcg-action-add-expression dcg-do-blur",
+          "locator_suggestion": "role=button[name=\"Add Item\"]",
+          "bbox": {
+            "x": 4,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Undo",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-undo dcg-icon-btn dcg-disabled",
+          "locator_suggestion": "role=button[name=\"Undo\"]",
+          "bbox": {
+            "x": 149.5,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Redo",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-redo dcg-icon-btn dcg-disabled",
+          "locator_suggestion": "role=button[name=\"Redo\"]",
+          "bbox": {
+            "x": 187.5,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Edit Expression List",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-icon-btn dcg-action-toggle-edit",
+          "locator_suggestion": "role=button[name=\"Edit Expression List\"]",
+          "bbox": {
+            "x": 333,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Hide Expression List",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-resize-list-btn dcg-action-hideexpressions dcg-icon-btn",
+          "locator_suggestion": "role=button[name=\"Hide Expression List\"]",
+          "bbox": {
+            "x": 371,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Delete Expression 1",
+          "id_attr": null,
+          "classes": "dcg-top-level-icon dcg-tappable",
+          "locator_suggestion": "role=button[name=\"Delete Expression 1\"]",
+          "bbox": {
+            "x": 383.609375,
+            "y": 94,
+            "width": 30.390625,
+            "height": 34.390625
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "i",
+          "href": null,
+          "aria_label": "Close Message",
+          "id_attr": null,
+          "classes": "dcg-icon-remove dcg-close-notice-icon dcg-theme-light",
+          "locator_suggestion": "role=button[name=\"Close Message\"]",
+          "bbox": {
+            "x": 306.5,
+            "y": 609,
+            "width": 30,
+            "height": 30
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-notice__tile",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 85.5,
+            "y": 616,
+            "width": 36,
+            "height": 36
+          }
+        },
+        {
+          "text": "Log in",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-notice__link-button dcg-blue-link dcg-unstyled-button",
+          "locator_suggestion": "text=Log in",
+          "bbox": {
+            "x": 127.5,
+            "y": 611,
+            "width": 51.421875,
+            "height": 27
+          }
+        },
+        {
+          "text": "sign up",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-notice__link-button dcg-blue-link dcg-unstyled-button",
+          "locator_suggestion": "text=sign up",
+          "bbox": {
+            "x": 190.890625,
+            "y": 611,
+            "width": 59.015625,
+            "height": 27
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Graph Settings",
+          "id_attr": null,
+          "classes": "dcg-action-settings dcg-pillbox-btn-interior dcg-icon-btn dcg-btn-flat-gray dcg-settings-pillbox",
+          "locator_suggestion": "role=button[name=\"Graph Settings\"]",
+          "bbox": {
+            "x": 1238,
+            "y": 51,
+            "width": 37,
+            "height": 37
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Zoom In",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-zoomin dcg-pillbox-btn-interior",
+          "locator_suggestion": "role=button[name=\"Zoom In\"]",
+          "bbox": {
+            "x": 1239,
+            "y": 94,
+            "width": 35,
+            "height": 35
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Zoom Out",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-zoomout dcg-pillbox-btn-interior",
+          "locator_suggestion": "role=button[name=\"Zoom Out\"]",
+          "bbox": {
+            "x": 1239,
+            "y": 130,
+            "width": 35,
+            "height": 35
+          }
+        },
+        {
+          "text": "\"x\"\nx",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "boldX",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"boldX\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "\"y\"\ny",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "boldY",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"boldY\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "\"a\" squared\na2",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Squared",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Squared\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "\"a\" Superscript, \"b\" , Baseline\nab",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Superscript",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Superscript\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "7\n7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "7",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"7\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "8\n8",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "8",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"8\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "9\n9",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "9",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"9\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "divided by\n\u00f7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Divide",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Divide\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "functions",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Functions",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Functions\"]",
+          "bbox": {
+            "x": 905.75,
+            "y": 813,
+            "width": 146.734375,
+            "height": 36
+          }
+        },
+        {
+          "text": "(\n(",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Left Parenthesis",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Left Parenthesis\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": ")\n)",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Right Parenthesis",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Right Parenthesis\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "less than\n<",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "<",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"<\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "greater than\n>",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": ">",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\">\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "4\n4",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "4",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"4\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "5\n5",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "5",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"5\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "6\n6",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "6",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"6\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "times\n\u00d7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Times",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Times\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Left Arrow",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Left Arrow\"]",
+          "bbox": {
+            "x": 905.75,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Right Arrow",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Right Arrow\"]",
+          "bbox": {
+            "x": 981.109375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "| \"a\" |\n|a|",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Absolute Value",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Absolute Value\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": ",\n,",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": ",",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\",\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "less than or equal to\n\u2264",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "<=",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"<=\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "greater than or equal to\n\u2265",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": ">=",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\">=\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "1\n1",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "1",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"1\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "2\n2",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "2",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"2\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "3\n3",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "3",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"3\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "negative\n\u2212",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Minus",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Minus\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Backspace",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Backspace\"]",
+          "bbox": {
+            "x": 943.421875,
+            "y": 893,
+            "width": 109.046875,
+            "height": 36
+          }
+        },
+        {
+          "text": "A B C",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Toggle Letters",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Toggle Letters\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Toggle Audio Trace",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Toggle Audio Trace\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "StartRoot, , EndRoot",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Square Root",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Square Root\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "pi\n\u03c0",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Pi",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Pi\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "0\n0",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "0",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"0\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": ".\n.",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Decimal",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Decimal\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "equals\n=",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "=",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"=\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "positive\n+",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Plus",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Plus\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Enter",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-blue",
+          "locator_suggestion": "role=button[name=\"Enter\"]",
+          "bbox": {
+            "x": 905.75,
+            "y": 933,
+            "width": 146.734375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Show Keypad",
+          "id_attr": null,
+          "classes": "dcg-btn-flat-gray dcg-show-keypad dcg-do-not-blur",
+          "locator_suggestion": "role=button[name=\"Show Keypad\"]",
+          "bbox": {
+            "x": 5,
+            "y": 683,
+            "width": 78,
+            "height": 42
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858254258\\page_1.png",
+      "features_guess": [
+        "login",
+        "signup"
+      ]
+    },
+    {
+      "url": "https://www.desmos.com/",
+      "title": "Desmos | Beautiful free math.",
+      "description": null,
+      "headings": [
+        "Beautiful free math.",
+        "Explore all of our math tools!",
+        "Looking for Desmos Classroom (Now Amplify Classroom)?",
+        "The next generation of Desmos Geometry is here.",
+        "Jump into a new dimension of math.",
+        "Is Desmos on your test?",
+        "Partner with Desmos Studio",
+        "2024 Global Math Art Expo",
+        "COMPANY",
+        "PRODUCTS",
+        "RESOURCES",
+        "Contact Us",
+        "Legal"
+      ],
+      "nav_links": [
+        [
+          "About Us",
+          "https://www.desmos.com/about"
+        ],
+        [
+          "Careers",
+          "https://www.desmos.com/careers"
+        ],
+        [
+          "Team",
+          "https://www.desmos.com/team"
+        ],
+        [
+          "Guiding Principles",
+          "https://www.desmos.com/guiding-principles"
+        ],
+        [
+          "Design Principles",
+          "https://www.desmos.com/design-principles"
+        ],
+        [
+          "Des-Blog",
+          "https://blog.desmos.com/"
+        ],
+        [
+          "Graphing Calculator",
+          "https://www.desmos.com/calculator"
+        ],
+        [
+          "Scientific Calculator",
+          "https://www.desmos.com/scientific"
+        ],
+        [
+          "Four-Function Calculator",
+          "https://www.desmos.com/fourfunction"
+        ],
+        [
+          "Test Practice",
+          "https://www.desmos.com/practice"
+        ],
+        [
+          "Matrix Calculator",
+          "https://www.desmos.com/matrix"
+        ],
+        [
+          "Geometry Tool",
+          "https://www.desmos.com/geometry"
+        ],
+        [
+          "3D Calculator",
+          "https://www.desmos.com/3d"
+        ],
+        [
+          "Help Center",
+          "https://help.desmos.com/"
+        ],
+        [
+          "Accessibility",
+          "https://www.desmos.com/accessibility"
+        ],
+        [
+          "VPAT\u00ae",
+          "https://www.desmos.com/acr"
+        ],
+        [
+          "Assessments",
+          "https://www.desmos.com/testing"
+        ],
+        [
+          "Desmos For Work",
+          "https://www.desmos.com/for-work"
+        ],
+        [
+          "Education Partnerships",
+          "https://www.desmos.com/partners"
+        ],
+        [
+          "API Docs",
+          "https://www.desmos.com/api"
+        ]
+      ],
+      "clickables": [
+        {
+          "text": "Skip to Main Content",
+          "role": null,
+          "tag": "a",
+          "href": "#dcg-main-content-region",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "offscreen",
+          "locator_suggestion": "text=Skip to Main Content",
+          "bbox": {
+            "x": -1000,
+            "y": -1000,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-home-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 16,
+            "y": 21.5,
+            "width": 120.65625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Log In",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-log-in dcg-btn-gray-outline",
+          "locator_suggestion": "text=Log In",
+          "bbox": {
+            "x": 1068.59375,
+            "y": 6,
+            "width": 70.484375,
+            "height": 38
+          }
+        },
+        {
+          "text": "Sign Up",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-sign-up dcg-btn-blue",
+          "locator_suggestion": "text=Sign Up",
+          "bbox": {
+            "x": 1145.078125,
+            "y": 6,
+            "width": 82.921875,
+            "height": 38
+          }
+        },
+        {
+          "text": "Open Graphing Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/calculator",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-frontpage-landing__button--hero",
+          "locator_suggestion": "text=Open Graphing Calculator",
+          "bbox": {
+            "x": 140,
+            "y": 321.40625,
+            "width": 247.125,
+            "height": 42
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/calculator/s7zluvxfpl",
+          "aria_label": "Open graph",
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-interactive__graph-link dcg-gray-link",
+          "locator_suggestion": "role=button[name=\"Open graph\"]",
+          "bbox": {
+            "x": 1106,
+            "y": 94,
+            "width": 18,
+            "height": 21
+          }
+        },
+        {
+          "text": "Graphing",
+          "role": null,
+          "tag": "a",
+          "href": "/calculator",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Graphing",
+          "bbox": {
+            "x": 296,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Scientific",
+          "role": null,
+          "tag": "a",
+          "href": "/scientific",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Scientific",
+          "bbox": {
+            "x": 416,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Four Function",
+          "role": null,
+          "tag": "a",
+          "href": "/fourfunction",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Four Function",
+          "bbox": {
+            "x": 536,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Matrix",
+          "role": null,
+          "tag": "a",
+          "href": "/matrix",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Matrix",
+          "bbox": {
+            "x": 656,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Geometry",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Geometry",
+          "bbox": {
+            "x": 776,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "3D",
+          "role": null,
+          "tag": "a",
+          "href": "/3d",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=3D",
+          "bbox": {
+            "x": 896,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "I'm a Teacher",
+          "role": null,
+          "tag": "a",
+          "href": "//classroom.amplify.com/discover",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-btn-gray-outline dcg-frontpage-landing__button",
+          "locator_suggestion": "text=I'm a Teacher",
+          "bbox": {
+            "x": 490.671875,
+            "y": 972,
+            "width": 145.15625,
+            "height": 42
+          }
+        },
+        {
+          "text": "I'm a Student",
+          "role": null,
+          "tag": "a",
+          "href": "//student.amplify.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-btn-gray-outline dcg-frontpage-landing__button",
+          "locator_suggestion": "text=I'm a Student",
+          "bbox": {
+            "x": 645.828125,
+            "y": 972,
+            "width": 143.5,
+            "height": 42
+          }
+        },
+        {
+          "text": "Open Geometry",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-frontpage-landing-geometry__primary-link",
+          "locator_suggestion": "text=Open Geometry",
+          "bbox": {
+            "x": 140,
+            "y": 1368.5,
+            "width": 166.0625,
+            "height": 42
+          }
+        },
+        {
+          "text": "Examples",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry-gallery",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-btn-gray-outline",
+          "locator_suggestion": "text=Examples",
+          "bbox": {
+            "x": 322.0625,
+            "y": 1368.5,
+            "width": 117.03125,
+            "height": 42
+          }
+        },
+        {
+          "text": "Open 3D",
+          "role": null,
+          "tag": "a",
+          "href": "/3d",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-frontpage-landing-3d__primary-link",
+          "locator_suggestion": "text=Open 3D",
+          "bbox": {
+            "x": 648,
+            "y": 1800.5,
+            "width": 110.046875,
+            "height": 42
+          }
+        },
+        {
+          "text": "Examples",
+          "role": null,
+          "tag": "a",
+          "href": "/3d-gallery",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-btn-gray-outline dcg-frontpage-landing-3d__secondary-link",
+          "locator_suggestion": "text=Examples",
+          "bbox": {
+            "x": 774.046875,
+            "y": 1800.5,
+            "width": 117.03125,
+            "height": 42
+          }
+        },
+        {
+          "text": "Graphing",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/calculator/s7zluvxfpl",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link",
+          "locator_suggestion": "text=Graphing",
+          "bbox": {
+            "x": 759.3125,
+            "y": 1982,
+            "width": 65.828125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Geometry",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/geometry/tpbst3h2yc",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link",
+          "locator_suggestion": "text=Geometry",
+          "bbox": {
+            "x": 834.03125,
+            "y": 1982,
+            "width": 69.0625,
+            "height": 17
+          }
+        },
+        {
+          "text": "3D",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/3d/aekzzek9i8",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link",
+          "locator_suggestion": "text=3D",
+          "bbox": {
+            "x": 943.125,
+            "y": 1982,
+            "width": 20.453125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Is Desmos on your test?",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-section__header-link",
+          "locator_suggestion": "text=Is Desmos on your test?",
+          "bbox": {
+            "x": 464.328125,
+            "y": 2089,
+            "width": 351.34375,
+            "height": 45
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-testing__map-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 140,
+            "y": 2148,
+            "width": 399.671875,
+            "height": 318.59375
+          }
+        },
+        {
+          "text": "43 more!",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link dcg-frontpage-landing-testing__link",
+          "locator_suggestion": "text=43 more!",
+          "bbox": {
+            "x": 678.3125,
+            "y": 2437.59375,
+            "width": 71.046875,
+            "height": 20
+          }
+        },
+        {
+          "text": "Partner with Desmos Studio",
+          "role": null,
+          "tag": "a",
+          "href": "/partners",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-section__header-link",
+          "locator_suggestion": "text=Partner with Desmos Studio",
+          "bbox": {
+            "x": 441.75,
+            "y": 2571.59375,
+            "width": 396.484375,
+            "height": 45
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cambiumassessment.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 217,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.ibo.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 391,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://smarterbalanced.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 565,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.pearson.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 739,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.nwea.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 913,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cambridge.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 217,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.collegeboard.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 391,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.mheducation.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 565,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.savvas.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 739,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.datarecognitioncorp.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 913,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "2024 Global Math Art Expo",
+          "role": null,
+          "tag": "a",
+          "href": "/art",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-section__header-link",
+          "locator_suggestion": "text=2024 Global Math Art Expo",
+          "bbox": {
+            "x": 447.953125,
+            "y": 3052.59375,
+            "width": 384.09375,
+            "height": 45
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#17;wgmb52ycwu",
+          "aria_label": "One must imagine sisyphus happy, animated",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image dcg-light-on-dark",
+          "locator_suggestion": "role=button[name=\"One must imagine sisyphus happy, animated\"]",
+          "bbox": {
+            "x": 140,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#15;p4i42jkcp1",
+          "aria_label": "iClock",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image",
+          "locator_suggestion": "role=button[name=\"iClock\"]",
+          "bbox": {
+            "x": 344,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#13;mrhscps4jo",
+          "aria_label": "The Ram: Rising Above Challenges",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image",
+          "locator_suggestion": "role=button[name=\"The Ram: Rising Above Challenges\"]",
+          "bbox": {
+            "x": 548,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#17;n7r5dqo9w5",
+          "aria_label": "Unified Renderer",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image",
+          "locator_suggestion": "role=button[name=\"Unified Renderer\"]",
+          "bbox": {
+            "x": 752,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#19;7rjmjitoa2",
+          "aria_label": "The Meadow",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image",
+          "locator_suggestion": "role=button[name=\"The Meadow\"]",
+          "bbox": {
+            "x": 956,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "About Us",
+          "role": null,
+          "tag": "a",
+          "href": "/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=About Us",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3477.1875,
+            "width": 65.8125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Careers",
+          "role": null,
+          "tag": "a",
+          "href": "/careers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Careers",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3504.390625,
+            "width": 56.90625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Team",
+          "role": null,
+          "tag": "a",
+          "href": "/team",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Team",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3531.59375,
+            "width": 39.125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Guiding Principles",
+          "role": null,
+          "tag": "a",
+          "href": "/guiding-principles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Guiding Principles",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3558.796875,
+            "width": 128.953125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Design Principles",
+          "role": null,
+          "tag": "a",
+          "href": "/design-principles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Design Principles",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3586,
+            "width": 123.609375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Des-Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://blog.desmos.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Des-Blog",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3613.203125,
+            "width": 65.8125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Graphing Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/calculator",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Graphing Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3477.1875,
+            "width": 142.296875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Scientific Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/scientific",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Scientific Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3504.390625,
+            "width": 140.5,
+            "height": 17
+          }
+        },
+        {
+          "text": "Four-Function Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/fourfunction",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Four-Function Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3531.59375,
+            "width": 176.078125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Test Practice",
+          "role": null,
+          "tag": "a",
+          "href": "/practice",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Test Practice",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3558.796875,
+            "width": 91.59375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Matrix Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/matrix",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Matrix Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3586,
+            "width": 120.03125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Geometry Tool",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Geometry Tool",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3613.203125,
+            "width": 103.75,
+            "height": 17
+          }
+        },
+        {
+          "text": "3D Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/3d",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=3D Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3640.40625,
+            "width": 96.9375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Help Center",
+          "role": null,
+          "tag": "a",
+          "href": "https://help.desmos.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Help Center",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3477.1875,
+            "width": 85.375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Accessibility",
+          "role": null,
+          "tag": "a",
+          "href": "/accessibility",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Accessibility",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3504.390625,
+            "width": 87.140625,
+            "height": 17
+          }
+        },
+        {
+          "text": "VPAT\u00ae",
+          "role": null,
+          "tag": "a",
+          "href": "/acr",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=VPAT\u00ae",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3531.59375,
+            "width": 51.203125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Assessments",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Assessments",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3558.796875,
+            "width": 95.140625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Desmos For Work",
+          "role": null,
+          "tag": "a",
+          "href": "/for-work",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Desmos For Work",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3586,
+            "width": 128.609375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Education Partnerships",
+          "role": null,
+          "tag": "a",
+          "href": "/partners",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Education Partnerships",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3613.203125,
+            "width": 165.4375,
+            "height": 17
+          }
+        },
+        {
+          "text": "API Docs",
+          "role": null,
+          "tag": "a",
+          "href": "/api",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=API Docs",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3640.40625,
+            "width": 66.6875,
+            "height": 17
+          }
+        },
+        {
+          "text": "feedback@desmos.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:feedback@desmos.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-contact-link",
+          "locator_suggestion": "text=feedback@desmos.com",
+          "bbox": {
+            "x": 230.3125,
+            "y": 3702.609375,
+            "width": 137.5,
+            "height": 15
+          }
+        },
+        {
+          "text": "Terms of Service",
+          "role": null,
+          "tag": "a",
+          "href": "/terms",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-terms",
+          "locator_suggestion": "text=Terms of Service",
+          "bbox": {
+            "x": 556.046875,
+            "y": 3702.609375,
+            "width": 95.3125,
+            "height": 15
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-privacy",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 671.8125,
+            "y": 3702.609375,
+            "width": 79.671875,
+            "height": 15
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858254258\\page_2.png",
+      "features_guess": [
+        "docs",
+        "login",
+        "signup",
+        "api",
+        "contact"
+      ]
+    },
+    {
+      "url": "https://www.desmos.com/#dcg-main-content-region",
+      "title": "Desmos | Beautiful free math.",
+      "description": null,
+      "headings": [
+        "Beautiful free math.",
+        "Explore all of our math tools!",
+        "Looking for Desmos Classroom (Now Amplify Classroom)?",
+        "The next generation of Desmos Geometry is here.",
+        "Jump into a new dimension of math.",
+        "Is Desmos on your test?",
+        "Partner with Desmos Studio",
+        "2024 Global Math Art Expo",
+        "COMPANY",
+        "PRODUCTS",
+        "RESOURCES",
+        "Contact Us",
+        "Legal"
+      ],
+      "nav_links": [
+        [
+          "About Us",
+          "https://www.desmos.com/about"
+        ],
+        [
+          "Careers",
+          "https://www.desmos.com/careers"
+        ],
+        [
+          "Team",
+          "https://www.desmos.com/team"
+        ],
+        [
+          "Guiding Principles",
+          "https://www.desmos.com/guiding-principles"
+        ],
+        [
+          "Design Principles",
+          "https://www.desmos.com/design-principles"
+        ],
+        [
+          "Des-Blog",
+          "https://blog.desmos.com/"
+        ],
+        [
+          "Graphing Calculator",
+          "https://www.desmos.com/calculator"
+        ],
+        [
+          "Scientific Calculator",
+          "https://www.desmos.com/scientific"
+        ],
+        [
+          "Four-Function Calculator",
+          "https://www.desmos.com/fourfunction"
+        ],
+        [
+          "Test Practice",
+          "https://www.desmos.com/practice"
+        ],
+        [
+          "Matrix Calculator",
+          "https://www.desmos.com/matrix"
+        ],
+        [
+          "Geometry Tool",
+          "https://www.desmos.com/geometry"
+        ],
+        [
+          "3D Calculator",
+          "https://www.desmos.com/3d"
+        ],
+        [
+          "Help Center",
+          "https://help.desmos.com/"
+        ],
+        [
+          "Accessibility",
+          "https://www.desmos.com/accessibility"
+        ],
+        [
+          "VPAT\u00ae",
+          "https://www.desmos.com/acr"
+        ],
+        [
+          "Assessments",
+          "https://www.desmos.com/testing"
+        ],
+        [
+          "Desmos For Work",
+          "https://www.desmos.com/for-work"
+        ],
+        [
+          "Education Partnerships",
+          "https://www.desmos.com/partners"
+        ],
+        [
+          "API Docs",
+          "https://www.desmos.com/api"
+        ]
+      ],
+      "clickables": [
+        {
+          "text": "Skip to Main Content",
+          "role": null,
+          "tag": "a",
+          "href": "#dcg-main-content-region",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "offscreen",
+          "locator_suggestion": "text=Skip to Main Content",
+          "bbox": {
+            "x": -1000,
+            "y": -1000,
+            "width": 1,
+            "height": 1
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-home-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 16,
+            "y": 21.5,
+            "width": 120.65625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Log In",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-log-in dcg-btn-gray-outline",
+          "locator_suggestion": "text=Log In",
+          "bbox": {
+            "x": 1068.59375,
+            "y": 6,
+            "width": 70.484375,
+            "height": 38
+          }
+        },
+        {
+          "text": "Sign Up",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-sign-up dcg-btn-blue",
+          "locator_suggestion": "text=Sign Up",
+          "bbox": {
+            "x": 1145.078125,
+            "y": 6,
+            "width": 82.921875,
+            "height": 38
+          }
+        },
+        {
+          "text": "Open Graphing Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/calculator",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-frontpage-landing__button--hero",
+          "locator_suggestion": "text=Open Graphing Calculator",
+          "bbox": {
+            "x": 140,
+            "y": 321.40625,
+            "width": 247.125,
+            "height": 42
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/calculator/s7zluvxfpl",
+          "aria_label": "Open graph",
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-interactive__graph-link dcg-gray-link",
+          "locator_suggestion": "role=button[name=\"Open graph\"]",
+          "bbox": {
+            "x": 1106,
+            "y": 94,
+            "width": 18,
+            "height": 21
+          }
+        },
+        {
+          "text": "Graphing",
+          "role": null,
+          "tag": "a",
+          "href": "/calculator",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Graphing",
+          "bbox": {
+            "x": 296,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Scientific",
+          "role": null,
+          "tag": "a",
+          "href": "/scientific",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Scientific",
+          "bbox": {
+            "x": 416,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Four Function",
+          "role": null,
+          "tag": "a",
+          "href": "/fourfunction",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Four Function",
+          "bbox": {
+            "x": 536,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Matrix",
+          "role": null,
+          "tag": "a",
+          "href": "/matrix",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Matrix",
+          "bbox": {
+            "x": 656,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "Geometry",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=Geometry",
+          "bbox": {
+            "x": 776,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "3D",
+          "role": null,
+          "tag": "a",
+          "href": "/3d",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-tools__link dcg-shared-product-icon-container",
+          "locator_suggestion": "text=3D",
+          "bbox": {
+            "x": 896,
+            "y": 617,
+            "width": 88,
+            "height": 132
+          }
+        },
+        {
+          "text": "I'm a Teacher",
+          "role": null,
+          "tag": "a",
+          "href": "//classroom.amplify.com/discover",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-btn-gray-outline dcg-frontpage-landing__button",
+          "locator_suggestion": "text=I'm a Teacher",
+          "bbox": {
+            "x": 490.671875,
+            "y": 972,
+            "width": 145.15625,
+            "height": 42
+          }
+        },
+        {
+          "text": "I'm a Student",
+          "role": null,
+          "tag": "a",
+          "href": "//student.amplify.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-btn-gray-outline dcg-frontpage-landing__button",
+          "locator_suggestion": "text=I'm a Student",
+          "bbox": {
+            "x": 645.828125,
+            "y": 972,
+            "width": 143.5,
+            "height": 42
+          }
+        },
+        {
+          "text": "Open Geometry",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-frontpage-landing-geometry__primary-link",
+          "locator_suggestion": "text=Open Geometry",
+          "bbox": {
+            "x": 140,
+            "y": 1368.5,
+            "width": 166.0625,
+            "height": 42
+          }
+        },
+        {
+          "text": "Examples",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry-gallery",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-btn-gray-outline",
+          "locator_suggestion": "text=Examples",
+          "bbox": {
+            "x": 322.0625,
+            "y": 1368.5,
+            "width": 117.03125,
+            "height": 42
+          }
+        },
+        {
+          "text": "Open 3D",
+          "role": null,
+          "tag": "a",
+          "href": "/3d",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-frontpage-landing-3d__primary-link",
+          "locator_suggestion": "text=Open 3D",
+          "bbox": {
+            "x": 648,
+            "y": 1800.5,
+            "width": 110.046875,
+            "height": 42
+          }
+        },
+        {
+          "text": "Examples",
+          "role": null,
+          "tag": "a",
+          "href": "/3d-gallery",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-button dcg-frontpage-landing__button dcg-btn-gray-outline dcg-frontpage-landing-3d__secondary-link",
+          "locator_suggestion": "text=Examples",
+          "bbox": {
+            "x": 774.046875,
+            "y": 1800.5,
+            "width": 117.03125,
+            "height": 42
+          }
+        },
+        {
+          "text": "Graphing",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/calculator/s7zluvxfpl",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link",
+          "locator_suggestion": "text=Graphing",
+          "bbox": {
+            "x": 759.3125,
+            "y": 1982,
+            "width": 65.828125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Geometry",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/geometry/tpbst3h2yc",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link",
+          "locator_suggestion": "text=Geometry",
+          "bbox": {
+            "x": 834.03125,
+            "y": 1982,
+            "width": 69.0625,
+            "height": 17
+          }
+        },
+        {
+          "text": "3D",
+          "role": null,
+          "tag": "a",
+          "href": "//www.desmos.com/3d/aekzzek9i8",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link",
+          "locator_suggestion": "text=3D",
+          "bbox": {
+            "x": 943.125,
+            "y": 1982,
+            "width": 20.453125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Is Desmos on your test?",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-section__header-link",
+          "locator_suggestion": "text=Is Desmos on your test?",
+          "bbox": {
+            "x": 464.328125,
+            "y": 2089,
+            "width": 351.34375,
+            "height": 45
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-testing__map-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 140,
+            "y": 2148,
+            "width": 399.671875,
+            "height": 318.59375
+          }
+        },
+        {
+          "text": "43 more!",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-blue-link dcg-frontpage-landing-testing__link",
+          "locator_suggestion": "text=43 more!",
+          "bbox": {
+            "x": 678.3125,
+            "y": 2437.59375,
+            "width": 71.046875,
+            "height": 20
+          }
+        },
+        {
+          "text": "Partner with Desmos Studio",
+          "role": null,
+          "tag": "a",
+          "href": "/partners",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-section__header-link",
+          "locator_suggestion": "text=Partner with Desmos Studio",
+          "bbox": {
+            "x": 441.75,
+            "y": 2571.59375,
+            "width": 396.484375,
+            "height": 45
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cambiumassessment.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 217,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.ibo.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 391,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://smarterbalanced.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 565,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.pearson.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 739,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.nwea.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 913,
+            "y": 2663.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cambridge.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 217,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.collegeboard.org/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 391,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.mheducation.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 565,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.savvas.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 739,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.datarecognitioncorp.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-partner-logo-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 913,
+            "y": 2813.59375,
+            "width": 150,
+            "height": 150
+          }
+        },
+        {
+          "text": "2024 Global Math Art Expo",
+          "role": null,
+          "tag": "a",
+          "href": "/art",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-frontpage-landing-section__header-link",
+          "locator_suggestion": "text=2024 Global Math Art Expo",
+          "bbox": {
+            "x": 447.953125,
+            "y": 3052.59375,
+            "width": 384.09375,
+            "height": 45
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#dcg-main-content-region;tceetimm3k",
+          "aria_label": "Desmos Bar",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image dcg-light-on-dark",
+          "locator_suggestion": "role=button[name=\"Desmos Bar\"]",
+          "bbox": {
+            "x": 140,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#dcg-main-content-region;3iryytembl",
+          "aria_label": "Riemann Surface",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image dcg-light-on-dark",
+          "locator_suggestion": "role=button[name=\"Riemann Surface\"]",
+          "bbox": {
+            "x": 344,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#dcg-main-content-region;xs9onibmkk",
+          "aria_label": "cat sat on my homework",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image dcg-light-on-dark",
+          "locator_suggestion": "role=button[name=\"cat sat on my homework\"]",
+          "bbox": {
+            "x": 548,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#dcg-main-content-region;rthtxnaqls",
+          "aria_label": "Neuron",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image dcg-light-on-dark",
+          "locator_suggestion": "role=button[name=\"Neuron\"]",
+          "bbox": {
+            "x": 752,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/art#dcg-main-content-region;7xwwjvhzwx",
+          "aria_label": "deep breaths",
+          "id_attr": null,
+          "classes": "dcg-big-graph-image",
+          "locator_suggestion": "role=button[name=\"deep breaths\"]",
+          "bbox": {
+            "x": 956,
+            "y": 3117.59375,
+            "width": 184,
+            "height": 184
+          }
+        },
+        {
+          "text": "About Us",
+          "role": null,
+          "tag": "a",
+          "href": "/about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=About Us",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3477.1875,
+            "width": 65.8125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Careers",
+          "role": null,
+          "tag": "a",
+          "href": "/careers",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Careers",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3504.390625,
+            "width": 56.90625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Team",
+          "role": null,
+          "tag": "a",
+          "href": "/team",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Team",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3531.59375,
+            "width": 39.125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Guiding Principles",
+          "role": null,
+          "tag": "a",
+          "href": "/guiding-principles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Guiding Principles",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3558.796875,
+            "width": 128.953125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Design Principles",
+          "role": null,
+          "tag": "a",
+          "href": "/design-principles",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Design Principles",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3586,
+            "width": 123.609375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Des-Blog",
+          "role": null,
+          "tag": "a",
+          "href": "https://blog.desmos.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Des-Blog",
+          "bbox": {
+            "x": 419.84375,
+            "y": 3613.203125,
+            "width": 65.8125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Graphing Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/calculator",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Graphing Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3477.1875,
+            "width": 142.296875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Scientific Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/scientific",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Scientific Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3504.390625,
+            "width": 140.5,
+            "height": 17
+          }
+        },
+        {
+          "text": "Four-Function Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/fourfunction",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Four-Function Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3531.59375,
+            "width": 176.078125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Test Practice",
+          "role": null,
+          "tag": "a",
+          "href": "/practice",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Test Practice",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3558.796875,
+            "width": 91.59375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Matrix Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/matrix",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Matrix Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3586,
+            "width": 120.03125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Geometry Tool",
+          "role": null,
+          "tag": "a",
+          "href": "/geometry",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Geometry Tool",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3613.203125,
+            "width": 103.75,
+            "height": 17
+          }
+        },
+        {
+          "text": "3D Calculator",
+          "role": null,
+          "tag": "a",
+          "href": "/3d",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=3D Calculator",
+          "bbox": {
+            "x": 663.640625,
+            "y": 3640.40625,
+            "width": 96.9375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Help Center",
+          "role": null,
+          "tag": "a",
+          "href": "https://help.desmos.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Help Center",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3477.1875,
+            "width": 85.375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Accessibility",
+          "role": null,
+          "tag": "a",
+          "href": "/accessibility",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Accessibility",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3504.390625,
+            "width": 87.140625,
+            "height": 17
+          }
+        },
+        {
+          "text": "VPAT\u00ae",
+          "role": null,
+          "tag": "a",
+          "href": "/acr",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=VPAT\u00ae",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3531.59375,
+            "width": 51.203125,
+            "height": 17
+          }
+        },
+        {
+          "text": "Assessments",
+          "role": null,
+          "tag": "a",
+          "href": "/testing",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Assessments",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3558.796875,
+            "width": 95.140625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Desmos For Work",
+          "role": null,
+          "tag": "a",
+          "href": "/for-work",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Desmos For Work",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3586,
+            "width": 128.609375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Education Partnerships",
+          "role": null,
+          "tag": "a",
+          "href": "/partners",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=Education Partnerships",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3613.203125,
+            "width": 165.4375,
+            "height": 17
+          }
+        },
+        {
+          "text": "API Docs",
+          "role": null,
+          "tag": "a",
+          "href": "/api",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-footer-link",
+          "locator_suggestion": "text=API Docs",
+          "bbox": {
+            "x": 954.5625,
+            "y": 3640.40625,
+            "width": 66.6875,
+            "height": 17
+          }
+        },
+        {
+          "text": "feedback@desmos.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:feedback@desmos.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-contact-link",
+          "locator_suggestion": "text=feedback@desmos.com",
+          "bbox": {
+            "x": 230.3125,
+            "y": 3702.609375,
+            "width": 137.5,
+            "height": 15
+          }
+        },
+        {
+          "text": "Terms of Service",
+          "role": null,
+          "tag": "a",
+          "href": "/terms",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-terms",
+          "locator_suggestion": "text=Terms of Service",
+          "bbox": {
+            "x": 556.046875,
+            "y": 3702.609375,
+            "width": 95.3125,
+            "height": 15
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-privacy",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 671.8125,
+            "y": 3702.609375,
+            "width": 79.671875,
+            "height": 15
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858254258\\page_3.png",
+      "features_guess": [
+        "docs",
+        "login",
+        "signup",
+        "api",
+        "contact"
+      ]
+    },
+    {
+      "url": "https://www.desmos.com/calculator/s7zluvxfpl",
+      "title": "Desmos Studio Homepage Graph | Desmos",
+      "description": null,
+      "headings": [],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Open Graph (ctrl+o)",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-opendrawer dcg-header-btn",
+          "locator_suggestion": "role=button[name=\"Open Graph (ctrl+o)\"]",
+          "bbox": {
+            "x": 2,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "Save Copy",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-save dcg-save-button tooltip-offset dcg-btn-blue",
+          "locator_suggestion": "text=Save Copy",
+          "bbox": {
+            "x": 341.125,
+            "y": 5.5,
+            "width": 102.453125,
+            "height": 34
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-home-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 586.921875,
+            "y": 17,
+            "width": 106.171875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Log In",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-sign-in dcg-action-login dcg-btn-white-outline",
+          "locator_suggestion": "text=Log In",
+          "bbox": {
+            "x": 956.734375,
+            "y": 4.5,
+            "width": 66.046875,
+            "height": 36
+          }
+        },
+        {
+          "text": "Sign Up",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-create-account dcg-btn dcg-btn-blue dcg-action-createaccount",
+          "locator_suggestion": "text=Sign Up",
+          "bbox": {
+            "x": 1030.78125,
+            "y": 4.5,
+            "width": 77.234375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "share",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-share dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"share\"]",
+          "bbox": {
+            "x": 1118.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Help",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-help dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"Help\"]",
+          "bbox": {
+            "x": 1158.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Language",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-language dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"Language\"]",
+          "bbox": {
+            "x": 1198.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Tools",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-header-btn dcg-action-current-tool dcg-tooltip",
+          "locator_suggestion": "role=button[name=\"Tools\"]",
+          "bbox": {
+            "x": 1238.015625,
+            "y": -0.5,
+            "width": 40,
+            "height": 46
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Add Item",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-icon-btn dcg-add-expression-btn dcg-action-add-expression dcg-do-blur",
+          "locator_suggestion": "role=button[name=\"Add Item\"]",
+          "bbox": {
+            "x": 4,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Undo",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-undo dcg-icon-btn dcg-disabled",
+          "locator_suggestion": "role=button[name=\"Undo\"]",
+          "bbox": {
+            "x": 149.5,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Redo",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-redo dcg-icon-btn dcg-disabled",
+          "locator_suggestion": "role=button[name=\"Redo\"]",
+          "bbox": {
+            "x": 187.5,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Edit Expression List",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-icon-btn dcg-action-toggle-edit",
+          "locator_suggestion": "role=button[name=\"Edit Expression List\"]",
+          "bbox": {
+            "x": 333,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Hide Expression List",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-resize-list-btn dcg-action-hideexpressions dcg-icon-btn",
+          "locator_suggestion": "role=button[name=\"Hide Expression List\"]",
+          "bbox": {
+            "x": 371,
+            "y": 50,
+            "width": 40,
+            "height": 40
+          }
+        },
+        {
+          "text": "https://help.desmos.com",
+          "role": null,
+          "tag": "a",
+          "href": "https://help.desmos.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://help.desmos.com",
+          "bbox": {
+            "x": 89.046875,
+            "y": 291,
+            "width": 171.6875,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Delete Note 1",
+          "id_attr": null,
+          "classes": "dcg-top-level-icon dcg-tappable",
+          "locator_suggestion": "role=button[name=\"Delete Note 1\"]",
+          "bbox": {
+            "x": 383.609375,
+            "y": 94,
+            "width": 30.390625,
+            "height": 34.390625
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Delete Note 2",
+          "id_attr": null,
+          "classes": "dcg-top-level-icon dcg-tappable",
+          "locator_suggestion": "role=button[name=\"Delete Note 2\"]",
+          "bbox": {
+            "x": 383.609375,
+            "y": 363,
+            "width": 30.390625,
+            "height": 34.390625
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Delete Expression 3",
+          "id_attr": null,
+          "classes": "dcg-top-level-icon dcg-tappable",
+          "locator_suggestion": "role=button[name=\"Delete Expression 3\"]",
+          "bbox": {
+            "x": 383.609375,
+            "y": 416,
+            "width": 30.390625,
+            "height": 34.390625
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Expand Definitions folder",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-caret-container dcg-action-toggle-folder-collapsed dcg-do-not-blur",
+          "locator_suggestion": "role=button[name=\"Expand Definitions folder\"]",
+          "bbox": {
+            "x": 38,
+            "y": 471.234375,
+            "width": 32,
+            "height": 48
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Delete Definitions folder",
+          "id_attr": null,
+          "classes": "dcg-top-level-icon dcg-tappable",
+          "locator_suggestion": "role=button[name=\"Delete Definitions folder\"]",
+          "bbox": {
+            "x": 383.609375,
+            "y": 471.234375,
+            "width": 30.390625,
+            "height": 34.390625
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Hide Definitions folder",
+          "id_attr": null,
+          "classes": "dcg-circular-icon-container dcg-expression-icon-container",
+          "locator_suggestion": "role=button[name=\"Hide Definitions folder\"]",
+          "bbox": {
+            "x": 4,
+            "y": 484.734375,
+            "width": 29,
+            "height": 29
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Expand Plot the curves folder",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-caret-container dcg-action-toggle-folder-collapsed dcg-do-not-blur",
+          "locator_suggestion": "role=button[name=\"Expand Plot the curves folder\"]",
+          "bbox": {
+            "x": 38,
+            "y": 524.234375,
+            "width": 32,
+            "height": 48
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Delete Plot the curves folder",
+          "id_attr": null,
+          "classes": "dcg-top-level-icon dcg-tappable",
+          "locator_suggestion": "role=button[name=\"Delete Plot the curves folder\"]",
+          "bbox": {
+            "x": 383.609375,
+            "y": 524.234375,
+            "width": 30.390625,
+            "height": 34.390625
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Hide Plot the curves folder",
+          "id_attr": null,
+          "classes": "dcg-circular-icon-container dcg-expression-icon-container",
+          "locator_suggestion": "role=button[name=\"Hide Plot the curves folder\"]",
+          "bbox": {
+            "x": 4,
+            "y": 537.734375,
+            "width": 29,
+            "height": 29
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Graph Settings",
+          "id_attr": null,
+          "classes": "dcg-action-settings dcg-pillbox-btn-interior dcg-icon-btn dcg-btn-flat-gray dcg-settings-pillbox",
+          "locator_suggestion": "role=button[name=\"Graph Settings\"]",
+          "bbox": {
+            "x": 1238,
+            "y": 51,
+            "width": 37,
+            "height": 37
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Zoom In",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-zoomin dcg-pillbox-btn-interior",
+          "locator_suggestion": "role=button[name=\"Zoom In\"]",
+          "bbox": {
+            "x": 1239,
+            "y": 94,
+            "width": 35,
+            "height": 35
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Zoom Out",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-action-zoomout dcg-pillbox-btn-interior",
+          "locator_suggestion": "role=button[name=\"Zoom Out\"]",
+          "bbox": {
+            "x": 1239,
+            "y": 130,
+            "width": 35,
+            "height": 35
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Default Viewport",
+          "id_attr": null,
+          "classes": "dcg-unstyled-button dcg-btn-flat-gray dcg-pillbox-btn-interior dcg-action-zoomrestore",
+          "locator_suggestion": "role=button[name=\"Default Viewport\"]",
+          "bbox": {
+            "x": 1242.625,
+            "y": 175.625,
+            "width": 27.75,
+            "height": 27.75
+          }
+        },
+        {
+          "text": "\"x\"\nx",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "boldX",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"boldX\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "\"y\"\ny",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "boldY",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"boldY\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "\"a\" squared\na2",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Squared",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Squared\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "\"a\" Superscript, \"b\" , Baseline\nab",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Superscript",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Superscript\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "7\n7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "7",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"7\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "8\n8",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "8",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"8\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "9\n9",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "9",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"9\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "divided by\n\u00f7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Divide",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Divide\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 813,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "functions",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Functions",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Functions\"]",
+          "bbox": {
+            "x": 905.75,
+            "y": 813,
+            "width": 146.734375,
+            "height": 36
+          }
+        },
+        {
+          "text": "(\n(",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Left Parenthesis",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Left Parenthesis\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": ")\n)",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Right Parenthesis",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Right Parenthesis\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "less than\n<",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "<",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"<\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "greater than\n>",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": ">",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\">\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "4\n4",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "4",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"4\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "5\n5",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "5",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"5\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "6\n6",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "6",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"6\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "times\n\u00d7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Times",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Times\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Left Arrow",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Left Arrow\"]",
+          "bbox": {
+            "x": 905.75,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Right Arrow",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Right Arrow\"]",
+          "bbox": {
+            "x": 981.109375,
+            "y": 853,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "| \"a\" |\n|a|",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Absolute Value",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Absolute Value\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": ",\n,",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": ",",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\",\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "less than or equal to\n\u2264",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "<=",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"<=\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "greater than or equal to\n\u2265",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": ">=",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\">=\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "1\n1",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "1",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"1\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "2\n2",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "2",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"2\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "3\n3",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "3",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"3\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "negative\n\u2212",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Minus",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Minus\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 893,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Backspace",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Backspace\"]",
+          "bbox": {
+            "x": 943.421875,
+            "y": 893,
+            "width": 109.046875,
+            "height": 36
+          }
+        },
+        {
+          "text": "A B C",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Toggle Letters",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Toggle Letters\"]",
+          "bbox": {
+            "x": 227.5,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Toggle Audio Trace",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Toggle Audio Trace\"]",
+          "bbox": {
+            "x": 302.859375,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "StartRoot, , EndRoot",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Square Root",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Square Root\"]",
+          "bbox": {
+            "x": 378.21875,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "pi\n\u03c0",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Pi",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Pi\"]",
+          "bbox": {
+            "x": 453.578125,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "0\n0",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "0",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"0\"]",
+          "bbox": {
+            "x": 566.625,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": ".\n.",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Decimal",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Decimal\"]",
+          "bbox": {
+            "x": 641.984375,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "equals\n=",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "=",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"=\"]",
+          "bbox": {
+            "x": 717.34375,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "positive\n+",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Plus",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Plus\"]",
+          "bbox": {
+            "x": 792.703125,
+            "y": 933,
+            "width": 71.359375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Enter",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-blue",
+          "locator_suggestion": "role=button[name=\"Enter\"]",
+          "bbox": {
+            "x": 905.75,
+            "y": 933,
+            "width": 146.734375,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Show Keypad",
+          "id_attr": null,
+          "classes": "dcg-btn-flat-gray dcg-show-keypad dcg-do-not-blur",
+          "locator_suggestion": "role=button[name=\"Show Keypad\"]",
+          "bbox": {
+            "x": 5,
+            "y": 683,
+            "width": 78,
+            "height": 42
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858254258\\page_4.png",
+      "features_guess": [
+        "login",
+        "signup"
+      ]
+    },
+    {
+      "url": "https://www.desmos.com/scientific",
+      "title": "Desmos | Scientific Calculator",
+      "description": null,
+      "headings": [],
+      "nav_links": [],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-home-link",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 16,
+            "y": 21.5,
+            "width": 120.65625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Log In",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-log-in dcg-btn-gray-outline",
+          "locator_suggestion": "text=Log In",
+          "bbox": {
+            "x": 1028.59375,
+            "y": 6,
+            "width": 70.484375,
+            "height": 38
+          }
+        },
+        {
+          "text": "Sign Up",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "dcg-sign-up dcg-btn-blue",
+          "locator_suggestion": "text=Sign Up",
+          "bbox": {
+            "x": 1105.078125,
+            "y": 6,
+            "width": 82.921875,
+            "height": 38
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "i",
+          "href": null,
+          "aria_label": "Print",
+          "id_attr": null,
+          "classes": "dcg-icon-print",
+          "locator_suggestion": "role=button[name=\"Print\"]",
+          "bbox": {
+            "x": 1246,
+            "y": 17,
+            "width": 16,
+            "height": 16
+          }
+        },
+        {
+          "text": "Terms of Service",
+          "role": null,
+          "tag": "a",
+          "href": "/terms",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Terms of Service",
+          "bbox": {
+            "x": 503,
+            "y": 694,
+            "width": 107.234375,
+            "height": 16
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 633.984375,
+            "y": 694,
+            "width": 89.625,
+            "height": 16
+          }
+        },
+        {
+          "text": "Help",
+          "role": null,
+          "tag": "a",
+          "href": "https://help.desmos.com/hc/en-us/articles/4404602552205-Scientific-Calculator",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Help",
+          "bbox": {
+            "x": 747.359375,
+            "y": 694,
+            "width": 29.625,
+            "height": 16
+          }
+        },
+        {
+          "text": "main",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "main",
+          "id_attr": null,
+          "classes": "dcg-keypad-control-btn dcg-selected dcg-selectable-btn",
+          "locator_suggestion": "role=button[name=\"main\"]",
+          "bbox": {
+            "x": 347,
+            "y": 428,
+            "width": 70.875,
+            "height": 38
+          }
+        },
+        {
+          "text": "abc",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "A B C",
+          "id_attr": null,
+          "classes": "dcg-keypad-control-btn dcg-selectable-btn",
+          "locator_suggestion": "role=button[name=\"A B C\"]",
+          "bbox": {
+            "x": 417.875,
+            "y": 428,
+            "width": 63.09375,
+            "height": 38
+          }
+        },
+        {
+          "text": "func",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Functions",
+          "id_attr": null,
+          "classes": "dcg-keypad-control-btn dcg-selectable-btn",
+          "locator_suggestion": "role=button[name=\"Functions\"]",
+          "bbox": {
+            "x": 480.96875,
+            "y": 428,
+            "width": 66.984375,
+            "height": 38
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Undo",
+          "id_attr": null,
+          "classes": "dcg-keypad-control-btn dcg-disabled",
+          "locator_suggestion": "role=button[name=\"Undo\"]",
+          "bbox": {
+            "x": 649.953125,
+            "y": 433,
+            "width": 51.515625,
+            "height": 32
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "Redo",
+          "id_attr": null,
+          "classes": "dcg-keypad-control-btn dcg-disabled",
+          "locator_suggestion": "role=button[name=\"Redo\"]",
+          "bbox": {
+            "x": 711.46875,
+            "y": 433,
+            "width": 51.515625,
+            "height": 32
+          }
+        },
+        {
+          "text": "clear all",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "clear all",
+          "id_attr": null,
+          "classes": "dcg-keypad-control-btn dcg-disabled",
+          "locator_suggestion": "role=button[name=\"clear all\"]",
+          "bbox": {
+            "x": 772.984375,
+            "y": 433,
+            "width": 80.515625,
+            "height": 32
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "div",
+          "href": null,
+          "aria_label": "settings",
+          "id_attr": null,
+          "classes": "dcg-keypad-control-btn",
+          "locator_suggestion": "role=button[name=\"settings\"]",
+          "bbox": {
+            "x": 863.5,
+            "y": 433,
+            "width": 70.515625,
+            "height": 32
+          }
+        },
+        {
+          "text": "\"a\" squared\na2",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Squared",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Squared\"]",
+          "bbox": {
+            "x": 346,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "\"a\" Superscript, \"b\" , Baseline\nab",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Superscript",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Superscript\"]",
+          "bbox": {
+            "x": 406.515625,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "| \"a\" |\n|a|",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Absolute Value",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Absolute Value\"]",
+          "bbox": {
+            "x": 467.03125,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "7\n7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "7",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"7\"]",
+          "bbox": {
+            "x": 551.21875,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "8\n8",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "8",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"8\"]",
+          "bbox": {
+            "x": 611.734375,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "9\n9",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "9",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"9\"]",
+          "bbox": {
+            "x": 672.25,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "divided by\n\u00f7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Divide",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Divide\"]",
+          "bbox": {
+            "x": 732.765625,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "%\n%",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Percent Of",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Percent Of\"]",
+          "bbox": {
+            "x": 816.953125,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "StartFraction, \"a\" Over \"b\" , EndFraction\na\nb\n\u200b",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "A over B",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"A over B\"]",
+          "bbox": {
+            "x": 877.46875,
+            "y": 472,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "StartRoot, , EndRoot",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Square Root",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Square Root\"]",
+          "bbox": {
+            "x": 346,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "Root Index \"n\" , Start Root, , End Root\nn",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Nth Root",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Nth Root\"]",
+          "bbox": {
+            "x": 406.515625,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "pi\n\u03c0",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Pi",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Pi\"]",
+          "bbox": {
+            "x": 467.03125,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "4\n4",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "4",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"4\"]",
+          "bbox": {
+            "x": 551.21875,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "5\n5",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "5",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"5\"]",
+          "bbox": {
+            "x": 611.734375,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "6\n6",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "6",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"6\"]",
+          "bbox": {
+            "x": 672.25,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "times\n\u00d7",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Times",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Times\"]",
+          "bbox": {
+            "x": 732.765625,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Left Arrow",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Left Arrow\"]",
+          "bbox": {
+            "x": 816.953125,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Right Arrow",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Right Arrow\"]",
+          "bbox": {
+            "x": 877.46875,
+            "y": 512,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "sin",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Sine",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Sine\"]",
+          "bbox": {
+            "x": 346,
+            "y": 552,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "cos",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Cosine",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Cosine\"]",
+          "bbox": {
+            "x": 406.515625,
+            "y": 552,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "tan",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Tangent",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Tangent\"]",
+          "bbox": {
+            "x": 467.03125,
+            "y": 552,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "1\n1",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "1",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"1\"]",
+          "bbox": {
+            "x": 551.21875,
+            "y": 552,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "2\n2",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "2",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"2\"]",
+          "bbox": {
+            "x": 611.734375,
+            "y": 552,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "3\n3",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "3",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"3\"]",
+          "bbox": {
+            "x": 672.25,
+            "y": 552,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "negative\n\u2212",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Minus",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Minus\"]",
+          "bbox": {
+            "x": 732.765625,
+            "y": 552,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Backspace",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Backspace\"]",
+          "bbox": {
+            "x": 847.21875,
+            "y": 552,
+            "width": 86.78125,
+            "height": 36
+          }
+        },
+        {
+          "text": "(\n(",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Left Parenthesis",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Left Parenthesis\"]",
+          "bbox": {
+            "x": 346,
+            "y": 592,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": ")\n)",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Right Parenthesis",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Right Parenthesis\"]",
+          "bbox": {
+            "x": 406.515625,
+            "y": 592,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": ",\n,",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": ",",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\",\"]",
+          "bbox": {
+            "x": 467.03125,
+            "y": 592,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "0\n0",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "0",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"0\"]",
+          "bbox": {
+            "x": 551.21875,
+            "y": 592,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": ".\n.",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Decimal",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-dark-on-gray",
+          "locator_suggestion": "role=button[name=\"Decimal\"]",
+          "bbox": {
+            "x": 611.734375,
+            "y": 592,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "ans",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Answer",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Answer\"]",
+          "bbox": {
+            "x": 672.25,
+            "y": 592,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "positive\n+",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Plus",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-light-on-gray",
+          "locator_suggestion": "role=button[name=\"Plus\"]",
+          "bbox": {
+            "x": 732.765625,
+            "y": 592,
+            "width": 56.515625,
+            "height": 36
+          }
+        },
+        {
+          "text": "",
+          "role": "button",
+          "tag": "span",
+          "href": null,
+          "aria_label": "Enter",
+          "id_attr": null,
+          "classes": "dcg-keypad-btn dcg-btn-blue",
+          "locator_suggestion": "role=button[name=\"Enter\"]",
+          "bbox": {
+            "x": 816.953125,
+            "y": 592,
+            "width": 117.03125,
+            "height": 36
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858254258\\page_5.png",
+      "features_guess": [
+        "login",
+        "signup"
+      ]
+    }
+  ]
+}

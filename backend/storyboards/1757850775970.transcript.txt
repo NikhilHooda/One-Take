@@ -1,0 +1,4 @@
+[00:00 - 00:15] scene=scene-1 We're on the Amazon.ca homepage. We can see various categories and a search bar. Let's initiate a search.
+[00:15 - 00:40] scene=scene-2 We searched for 'goose plushie' and got multiple results. We'll focus on the first product, 'Gund Baby Gundersson Goose'.
+[00:40 - 00:55] scene=scene-3 Checking the reviews is always a good idea. This product has great ratings! We can also view the specs and details here.
+[00:55 - 01:03] scene=scene-4 Adding this adorable goose to our cart is simple and convenient. We're now ready for checkout!

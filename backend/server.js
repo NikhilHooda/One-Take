@@ -21,19 +21,21 @@ app.post('/api/generate-storyboard', async (req, res) => {
   try {
     const { githubUrl, websiteUrl, specifications } = req.body;
 
-    // Validate required fields
-    if (!githubUrl) {
-      return res.status(400).json({ error: 'GitHub URL is required' });
+    // Validate required fields - websiteUrl is required, githubUrl is optional
+    if (!websiteUrl) {
+      return res.status(400).json({ error: 'Website URL is required' });
     }
 
-    // Validate GitHub URL
-    try {
-      const url = new URL(githubUrl);
-      if (url.hostname !== 'github.com') {
-        return res.status(400).json({ error: 'Invalid GitHub URL' });
+    // Validate GitHub URL if provided
+    if (githubUrl) {
+      try {
+        const url = new URL(githubUrl);
+        if (url.hostname !== 'github.com') {
+          return res.status(400).json({ error: 'Invalid GitHub URL' });
+        }
+      } catch (error) {
+        return res.status(400).json({ error: 'Invalid GitHub URL format' });
       }
-    } catch (error) {
-      return res.status(400).json({ error: 'Invalid URL format' });
     }
 
     // Generate unique IDs for this request
@@ -42,9 +44,9 @@ app.post('/api/generate-storyboard', async (req, res) => {
     const transcriptPath = path.join(__dirname, 'storyboards', `${requestId}.transcript.txt`);
     const siteSummaryPath = path.join(__dirname, 'site_dumps', `${requestId}.site.json`);
 
-    // Determine the URL to analyze (prefer website URL if provided)
-    const targetUrl = websiteUrl || githubUrl;
-    console.log(`Starting storyboard generation for: ${githubUrl}`);
+    // Use the website URL as the target URL for analysis
+    const targetUrl = websiteUrl;
+    console.log(`Starting storyboard generation for website: ${websiteUrl}${githubUrl ? ` (GitHub: ${githubUrl})` : ''}`);
 
     // First, scan the website to get site summary
     const scanArgs = [
@@ -143,7 +145,14 @@ app.post('/api/generate-storyboard', async (req, res) => {
     const storyboardData = JSON.parse(fs.readFileSync(storyboardPath, 'utf8'));
     const transcript = fs.readFileSync(transcriptPath, 'utf8');
 
-    // Clean up temporary files
+    // Log file paths for inspection
+    console.log(`Generated files saved at:`);
+    console.log(`- Storyboard JSON: ${storyboardPath}`);
+    console.log(`- Transcript: ${transcriptPath}`);
+    console.log(`- Site summary: ${siteSummaryPath}`);
+
+    // Keep files for inspection (commented out cleanup)
+    /*
     try {
       fs.unlinkSync(storyboardPath);
       fs.unlinkSync(transcriptPath);
@@ -151,6 +160,7 @@ app.post('/api/generate-storyboard', async (req, res) => {
     } catch (cleanupError) {
       console.warn('Failed to clean up temporary files:', cleanupError.message);
     }
+    */
 
     // Return the response
     res.json({
@@ -160,7 +170,7 @@ app.post('/api/generate-storyboard', async (req, res) => {
       requestId: requestId,
       generatedAt: new Date().toISOString(),
       sourceUrls: {
-        githubUrl: githubUrl,
+        githubUrl: githubUrl || null,
         websiteUrl: websiteUrl
       }
     });

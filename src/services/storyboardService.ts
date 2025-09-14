@@ -1,8 +1,8 @@
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 export interface StoryboardRequest {
-  githubUrl: string;
-  websiteUrl?: string;
+  githubUrl?: string;
+  websiteUrl: string;
   specifications?: string;
 }
 

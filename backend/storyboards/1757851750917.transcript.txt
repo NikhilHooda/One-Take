@@ -1,0 +1,4 @@
+[00:00 - 00:10] scene=home-page-intro Welcome to React, the ultimate destination for building user interfaces. This website is a treasure trove of resources for developers.
+[00:10 - 00:20] scene=nav-links The navigation bar is our gateway to exploring different sections. We can easily access versions, community resources, and more.
+[00:20 - 00:35] scene=search-functionality React provides a handy search feature. Simply type your query and find relevant content instantly. For instance, searching for 'components'.
+[00:35 - 01:00] scene=learning-resources There's a wealth of learning material. The 'Learn' section offers a comprehensive guide, perfect for beginners and advanced learners alike.

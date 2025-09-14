@@ -146,7 +146,7 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     {
       id: '1',
       type: 'ai',
-      content: 'Hi there! I\'m here to help you with your Amazon shopping workflow storyboard. How can I assist you today?',
+      content: 'Welcome! Generate a storyboard to get started, and I\'ll help you customize it.',
       timestamp: new Date()
     }
   ]);
@@ -190,6 +190,22 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     };
   }, [isResizing]);
   
+  // Load storyboard data from navigation state
+  useEffect(() => {
+    if (location.state?.storyboardData) {
+      setStoryboardData(location.state.storyboardData);
+      
+      // Add initial AI message about the generated storyboard
+      const initialMessage = {
+        id: '2',
+        type: 'ai' as const,
+        content: `I've generated a storyboard for "${location.state.storyboardData.product_name || 'your project'}" with ${location.state.storyboardData.scenes?.length || 0} scenes. The total duration is estimated at ${location.state.storyboardData.suggested_duration_seconds || 90} seconds.`,
+        timestamp: new Date()
+      };
+      setChatMessages(prev => [...prev, initialMessage]);
+    }
+  }, [location.state]);
+  
   // Calculate center position for nodes based on canvas width
   const getCanvasCenterX = () => {
     const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1024;
@@ -209,7 +225,9 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
       position: { x: centerX, y: index * 200 },
       data: {
         title: scene.title || `Scene ${index + 1}`,
-        objective: scene.narration || 'Scene description',
+        description: typeof scene.narration === 'object' 
+          ? scene.narration?.en || scene.narration?.[Object.keys(scene.narration)[0]] || 'Scene description'
+          : scene.narration || 'Scene description',
         icon: Video, // Default icon, could be customized based on scene type
         status: 'completed',
         hasInput: false,
@@ -218,140 +236,20 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     }));
   };
   
-  const initialNodes: Node[] = [
-    {
-      id: 'scene1',
-      type: 'custom',
-      position: { x: centerX, y: 350 },
-      data: {
-        title: 'Landing on Amazon Home',
-        description: "Navigate to Amazon's homepage and verify the home page is loaded.",
-        icon: Settings,
-        status: 'completed'
-      },
-    },
-    {
-      id: 'scene2',
-      type: 'custom',
-      position: { x: centerX, y: 600 },
-      data: {
-        title: 'Searching for Goose Plushie',
-        description: "Go to the search bar and search for 'goose plushie'.",
-        icon: Settings,
-        status: 'completed'
-      },
-    },
-    {
-      id: 'scene3',
-      type: 'custom',
-      position: { x: centerX, y: 850 },
-      data: {
-        title: 'Selecting Product',
-        description: "Select the first product in the search results that matches the search query.",
-        icon: Settings,
-        status: 'completed'
-      },
-    },
-    {
-      id: 'scene4',
-      type: 'custom',
-      position: { x: centerX, y: 1100 },
-      data: {
-        title: 'Add to Cart',
-        description: "Check the reviews for the product and then add the product to the cart.",
-        icon: Settings,
-        status: 'completed'
-      },
-    },
-    {
-      id: 'scene5',
-      type: 'custom',
-      position: { x: centerX, y: 1350 },
-      data: {
-        title: 'View Cart',
-        description: "View the cart and verify the product is in the cart.",
-        icon: Settings,
-        status: 'completed'
-      },
-    },
-    {
-      id: 'scene6',
-      type: 'custom',
-      position: { x: centerX, y: 1600 },
-      data: {
-        title: 'Wrap-Up',
-        description: "Summarize the actions and verify the product is ready for checkout.",
-        icon: Settings,
-        status: 'active'
-      },
-    },
-  ];
+  const initialNodes: Node[] = [];
   
-  const initialEdges: Edge[] = [
-    {
-      id: 'e1-2',
-      source: 'scene1',
-      target: 'scene2',
-      type: 'smoothstep',
-      animated: false,
-      style: {
-        stroke: '#ffffff',
-        strokeWidth: 4,
-      },
-    },
-    {
-      id: 'e2-3',
-      source: 'scene2',
-      target: 'scene3',
-      type: 'smoothstep',
-      animated: false,
-      style: {
-        stroke: '#ffffff',
-        strokeWidth: 4,
-      },
-    },
-    {
-      id: 'e3-4',
-      source: 'scene3',
-      target: 'scene4',
-      type: 'smoothstep',
-      animated: false,
-      style: {
-        stroke: '#ffffff',
-        strokeWidth: 4,
-      },
-    },
-    {
-      id: 'e4-5',
-      source: 'scene4',
-      target: 'scene5',
-      type: 'smoothstep',
-      animated: false,
-      style: {
-        stroke: '#ffffff',
-        strokeWidth: 4,
-      },
-    },
-    {
-      id: 'e5-6',
-      source: 'scene5',
-      target: 'scene6',
-      type: 'smoothstep',
-      animated: false,
-      style: {
-        stroke: '#ffffff',
-        strokeWidth: 4,
-      },
-    },
-  ];
+  const initialEdges: Edge[] = [];
   
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   
   // Update nodes when storyboard data is loaded
   useEffect(() => {
+    console.log('Storyboard data changed:', storyboardData);
     if (storyboardData) {
+      console.log('Processing storyboard data:', storyboardData);
       const storyboardNodes = convertStoryboardToNodes(storyboardData);
+      console.log('Generated nodes:', storyboardNodes);
       if (storyboardNodes.length > 0) {
         setNodes(storyboardNodes);
         
@@ -371,7 +269,12 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
           });
         }
         setEdges(storyboardEdges);
+        console.log('Set nodes and edges successfully');
+      } else {
+        console.log('No nodes generated from storyboard');
       }
+    } else {
+      console.log('No storyboard data available');
     }
   }, [storyboardData]);
   
@@ -430,18 +333,9 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
 6. Any other questions users might have
 
 CURRENT STORYBOARD CONTEXT:
-The user is working on an Amazon shopping workflow storyboard with the following scenes:
+${storyboardData ? `The user is working on a storyboard for "${storyboardData.product_name}" with ${storyboardData.scenes?.length || 0} scenes.` : 'No storyboard has been generated yet. The user should create a storyboard first.'}
 
-Scene 1: "Landing on Amazon Home" - Navigate to Amazon's homepage and verify the home page is loaded.
-Scene 2: "Searching for Goose Plushie" - Go to the search bar and search for 'goose plushie'.
-Scene 3: "Selecting Product" - Select the first product in the search results that matches the search query.
-Scene 4: "Add to Cart" - Check the reviews for the product and then add the product to the cart.
-Scene 5: "View Cart" - View the cart and verify the product is in the cart.
-Scene 6: "Wrap-Up" - Summarize the actions and verify the product is ready for checkout.
-
-This is a step-by-step Amazon shopping tutorial workflow for purchasing a goose plushie. Each scene represents a different action in the shopping process, from landing on Amazon to completing the purchase preparation.
-
-Be helpful, friendly, and informative. You can answer questions about this specific Amazon shopping workflow, the individual scenes, how they work together, or any modifications the user might want to make.
+Be helpful, friendly, and informative. You can answer questions about storyboard creation, workflow design, or help the user get started.
 
 User: ${currentMessage}
 
@@ -549,9 +443,9 @@ Assistant:`,
     navigate('/video-results', { 
       state: { 
         videoData: { 
-          title: 'Amazon Cart Demo Video',
-          videoUrl: '/storyboard-creation/examples/AmazonCartDemo.mp4',
-          description: 'A step-by-step demonstration of the Amazon shopping workflow for purchasing a goose plushie'
+          title: 'Generated Storyboard Video',
+          videoUrl: '/path/to/generated/video.mp4',
+          description: 'A demonstration of your generated storyboard workflow'
         } 
       } 
     });
@@ -673,6 +567,24 @@ Assistant:`,
               }}
             >
               <div className="w-full h-full relative">
+                {/* Placeholder when no storyboard is loaded */}
+                {!storyboardData && nodes.length === 0 && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-background/80 backdrop-blur-sm z-10">
+                    <div className="text-center p-8">
+                      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-muted flex items-center justify-center">
+                        <Play className="w-8 h-8 text-muted-foreground" />
+                      </div>
+                      <h3 className="text-xl font-semibold mb-2">No Storyboard Generated</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Generate a storyboard from the Video Generation page to see it here.
+                      </p>
+                      <Button onClick={() => navigate('/video-generation')} className="bg-primary text-primary-foreground">
+                        Go to Video Generation
+                      </Button>
+                    </div>
+                  </div>
+                )}
+                
                 <ReactFlow
                   nodes={nodes}
                   edges={edges}

@@ -1,0 +1,4 @@
+[00:00 - 00:15] scene=scene-1 Welcome to the React website. Here, we have the main homepage with an introduction to React's capabilities. We'll start by exploring some of the content right away.
+[00:15 - 00:30] scene=scene-1 We see key features highlighted, and also notice the menu bar. It's easy to navigate and explore further. We can even switch the theme with these buttons.
+[00:31 - 00:55] scene=scene-2 Let's dive into the 'Learn' section. It offers a clear learning path, and we can quickly access resources. Hovering over the menu reveals more options. We can search for specific topics too.
+[00:56 - 01:16] scene=scene-3 The API documentation is comprehensive. It provides detailed insights into React's capabilities. We can easily switch between light and dark mode for comfort.

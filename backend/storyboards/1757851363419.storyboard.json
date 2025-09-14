@@ -1,0 +1,121 @@
+{
+  "product_name": "Amazon.ca",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": {
+        "en": "Amazon.ca's homepage greets users with a wide range of products. You'll see various categories and recommendations. Let's search for something specific."
+      },
+      "shots": [
+        {
+          "selector": "nav-assist-search",
+          "highlight_selector": "nav-assist-search",
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Search & Select",
+      "duration_seconds": 30,
+      "narration": {
+        "en": "Let's look for a 'Goose Plushie'. Here's the search bar. Type and select. It's that simple."
+      },
+      "shots": [
+        {
+          "selector": "#nav-search-bar-form",
+          "highlight_selector": "field-keywords",
+          "duration": 10
+        },
+        {
+          "selector": "#search-results",
+          "highlight_selector": ".a-link-normal",
+          "duration": 10,
+          "trigger": "click",
+          "trigger_selector": "#nav-search-submit-button"
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Product Page",
+      "duration_seconds": 20,
+      "narration": {
+        "en": "The product page has images, descriptions, and reviews. We can quickly add items to the cart."
+      },
+      "shots": [
+        {
+          "selector": ".a-fixed-left-grid-col",
+          "highlight_selector": ".a-color-base",
+          "duration": 15
+        },
+        {
+          "selector": ".a-box-vertical .a-color-base",
+          "highlight_selector": ".a-button-text",
+          "duration": 5,
+          "trigger": "click"
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Cart Action",
+      "duration_seconds": 10,
+      "narration": {
+        "en": "The item is now in the cart. Users can easily view and manage their cart contents."
+      },
+      "shots": [
+        {
+          "selector": "#nav-cart-link",
+          "highlight_selector": "#nav-cart-link",
+          "duration": 5
+        },
+        {
+          "selector": "#cart-dropdown-content",
+          "highlight_selector": ".a-link-normal",
+          "duration": 5
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo covers the essential user journey from homepage exploration, searching for a specific product, viewing product details, and adding items to the cart. Users can discover various products, initiate searches, and easily navigate the website.",
+  "assumptions": [
+    "Basic internet browsing familiarity",
+    "Access to Amazon.ca website"
+  ],
+  "risks": [
+    "Search results may vary based on region and availability",
+    "Users might have slow internet connection, impacting load times"
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 15,
+        "text": "Welcome to Amazon.ca, Canada's largest online retailer. You'll notice the homepage has quick links to various product categories and featured items."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 15,
+        "end_seconds": 25,
+        "text": "Let's initiate a search. Go to the search bar, type 'Goose Plushie', and hit Go. There you go!"
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 25,
+        "end_seconds": 35,
+        "text": "Here's the first result for the goose plushie. You can check out the reviews and product details. It's all very straightforward."
+      },
+      {
+        "scene_id": "scene-4",
+        "start_seconds": 35,
+        "end_seconds": 40,
+        "text": "Want to buy it? Click, and it's added to the cart. Easy, right?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "product_name": "React",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": "This is the React homepage, offering an overview of React's purpose and key features. Let's explore some of the content.",
+      "shots": [
+        {
+          "selector": "h1",
+          "text": "React",
+          "action": "zoom-in",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "p",
+          "text": "React is the library for web and native user interfaces.",
+          "duration_seconds": 5
+        },
+        {
+          "selector": "a[aria-label='Menu']",
+          "action": "click",
+          "duration_seconds": 1,
+          "narration": "The menu button opens up a sidebar with navigation links."
+        },
+        {
+          "selector": "a[aria-label='Menu']",
+          "text": "Menu",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "aside",
+          "highlight_selector": "a[aria-label='Learn more.']",
+          "text": "Learn",
+          "duration_seconds": 5,
+          "narration": "Here are some quick links to different sections of the website"
+        },
+        {
+          "selector": "button[aria-label='Use Dark Mode']",
+          "action": "click",
+          "duration_seconds": 1
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Learning Resources",
+      "duration_seconds": 25,
+      "narration": "Let's check out the learning resources React provides. There are various tutorials and guides to help newcomers get started.",
+      "shots": [
+        {
+          "selector": "a[text='Learn']",
+          "action": "click",
+          "duration_seconds": 1
+        },
+        {
+          "selector": "h2",
+          "text": "LEARN REACT",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "article",
+          "highlight_selector": "h3:nth-of-type(1)",
+          "text": "Quick Start",
+          "duration_seconds": 3,
+          "narration": "The 'Quick Start' guide offers an overview of React's core concepts."
+        },
+        {
+          "selector": "article",
+          "highlight_selector": "a[text='Creating and nesting components']",
+          "duration_seconds": 5,
+          "narration": "It explains the basic idea of components, which is a key concept in React."
+        },
+        {
+          "selector": "button[aria-label='Use Light Mode']",
+          "action": "click",
+          "duration_seconds": 1
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "API Documentation",
+      "duration_seconds": 20,
+      "narration": "React provides comprehensive API documentation. Let's have a look at the different APIs it offers.",
+      "shots": [
+        {
+          "selector": "a[text='Reference']",
+          "action": "click",
+          "duration_seconds": 1
+        },
+        {
+          "selector": "h2",
+          "text": "REFERENCE",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "ul",
+          "highlight_selector": "li:nth-of-type(1) a",
+          "text": "React API",
+          "duration_seconds": 3,
+          "narration": "Here's the API section with various React-specific APIs."
+        },
+        {
+          "selector": "ul",
+          "highlight_selector": "li:nth-of-type(2) a",
+          "text": "React DOM API",
+          "duration_seconds": 3,
+          "narration": "The React DOM API is also available for working with the DOM."
+        },
+        {
+          "selector": "button[aria-label='Use Dark Mode']",
+          "action": "click",
+          "duration_seconds": 1
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Community & Support",
+      "duration_seconds": 15,
+      "narration": "React has an active community and offers multiple support channels.",
+      "shots": [
+        {
+          "selector": "a[text='Community']",
+          "action": "click",
+          "duration_seconds": 1
+        },
+        {
+          "selector": "h2",
+          "text": "COMMUNITY",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "p",
+          "text": "Get involved in the React community.",
+          "duration_seconds": 4,
+          "narration": "The community section provides resources and links to connect with other React developers."
+        },
+        {
+          "selector": "a[aria-label='Open on GitHub']",
+          "text": "GitHub",
+          "duration_seconds": 2,
+          "narration": "You can also access the official GitHub repo for React."
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the React website's homepage, learning resources, API documentation, and community support. It highlights key features and user interactions, including navigation, content exploration, and theme customization.",
+  "assumptions": [
+    "Basic internet browsing and website navigation familiarity."
+  ],
+  "risks": [
+    "Some users might expect a more hands-on, interactive demo."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to the React website. This concise demo will showcase its key features.\n\nAs you can see, the homepage provides a clear introduction to React's purpose."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 10,
+        "end_seconds": 20,
+        "text": "We have a concise overview of its capabilities and some initial navigation options."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 20,
+        "end_seconds": 35,
+        "text": "Let's dive into the learning resources. React offers a wealth of tutorials and guides, perfect for newcomers.\n\nHere's a quick look at the 'Quick Start' guide, which is an excellent entry point."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 35,
+        "end_seconds": 50,
+        "text": "For developers, the API documentation is a valuable resource. It extensively covers the APIs provided by React."
+      },
+      {
+        "scene_id": "scene-4",
+        "start_seconds": 50,
+        "end_seconds": 65,
+        "text": "React also ensures you're not alone with an active community and various support options.\n\nYou can connect and seek assistance easily."
+      }
+    ]
+  }
+}

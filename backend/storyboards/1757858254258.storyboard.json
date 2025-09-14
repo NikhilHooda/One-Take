@@ -1,0 +1,139 @@
+{
+  "product_name": "Desmos | Graphing Calculator",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Opening the Website",
+      "duration_seconds": 10,
+      "narration": "This is Desmos, an online graphing calculator. Let's begin by opening the website.",
+      "shots": [
+        {
+          "selector": "https://www.desmos.com/calculator",
+          "duration_seconds": 10
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Adding a Function",
+      "duration_seconds": 25,
+      "narration": "You can add functions to the graph easily. Here, I'll add the function y = 2x + 1.",
+      "shots": [
+        {
+          "selector": "role=button[name=\"Add Item\"]",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "text=Edit Expression List",
+          "duration_seconds": 5
+        },
+        {
+          "selector": "input[placeholder=\"Enter an expression\"]",
+          "duration_seconds": 8,
+          "action": "type",
+          "text": "2x + 1"
+        },
+        {
+          "selector": "div[role=\"button\"]",
+          "duration_seconds": 2,
+          "action": "click"
+        },
+        {
+          "selector": "role=button[name=\"Hide Expression List\"]",
+          "duration_seconds": 3
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Toggling Functions",
+      "duration_seconds": 25,
+      "narration": "We can toggle functions on and off. Let's hide the first function we added.",
+      "shots": [
+        {
+          "selector": "role=button[name=\"Edit Expression List\"]",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "div[role=\"button\"][aria-label=\"Delete Expression 1\"]",
+          "duration_seconds": 2,
+          "action": "click"
+        },
+        {
+          "selector": "role=button[name=\"Hide Expression List\"]",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "role=button[name=\"Delete Expression 1\"]",
+          "duration_seconds": 2,
+          "action": "click"
+        },
+        {
+          "selector": "role=button[name=\"Undo\"]",
+          "duration_seconds": 3
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Graph Features",
+      "duration_seconds": 30,
+      "narration": "Desmos offers many graph customizations. Let's explore some features.",
+      "shots": [
+        {
+          "selector": "role=button[name=\"Tools\"]",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "div[role=\"menu\"]",
+          "duration_seconds": 27,
+          "actions": [
+            "click",
+            "wait",
+            "click",
+            "wait",
+            "click"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo covers the basic functionality of Desmos, including adding functions, toggling them, and accessing graph customization features.",
+  "assumptions": [
+    "The user is familiar with the concept of a graphing calculator and its general usage.",
+    "Standard browser functionality is known, including buttons and menu navigation."
+  ],
+  "risks": [
+    "The website may undergo changes, rendering some selectors invalid.",
+    "Some features may require registration or login, which is not covered in this demo."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to Desmos, your online graphing calculator. We'll start by launching the website."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 10,
+        "end_seconds": 35,
+        "text": "See that 'Add Item' button? Clicking it lets us enter new functions. I'm adding '2x + 1' here. There's also an option to edit the expression list."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 35,
+        "end_seconds": 60,
+        "text": "You can manage your functions easily. Let's hide the first one we added. So this is how you toggle functions on and off."
+      },
+      {
+        "scene_id": "scene-4",
+        "start_seconds": 60,
+        "end_seconds": 90,
+        "text": "Desmos has lots of graph options. Check out these customization features. We can change the grid, axis, and even add labels."
+      }
+    ]
+  }
+}

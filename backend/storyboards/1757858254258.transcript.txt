@@ -1,0 +1,4 @@
+[00:00 - 00:10] scene=scene-1 Welcome to Desmos, your online graphing calculator. We'll start by launching the website.
+[00:10 - 00:35] scene=scene-2 See that 'Add Item' button? Clicking it lets us enter new functions. I'm adding '2x + 1' here. There's also an option to edit the expression list.
+[00:35 - 01:00] scene=scene-3 You can manage your functions easily. Let's hide the first one we added. So this is how you toggle functions on and off.
+[01:00 - 01:30] scene=scene-4 Desmos has lots of graph options. Check out these customization features. We can change the grid, axis, and even add labels.

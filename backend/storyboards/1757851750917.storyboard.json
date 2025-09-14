@@ -1,0 +1,97 @@
+{
+  "product_name": "React",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "home-page-intro",
+      "title": "Home Page Introduction",
+      "duration_seconds": 30,
+      "narration": "Welcome to the React website. Let's explore its key features.",
+      "shots": [
+        {
+          "selector": "https://react.dev/",
+          "script": "This is the homepage of the React library, a popular choice for building user interfaces.",
+          "style": null,
+          "focus_element": null
+        }
+      ]
+    },
+    {
+      "id": "nav-links",
+      "title": "Navigating React",
+      "duration_seconds": 20,
+      "narration": "The navigation bar has links to different sections of the website.",
+      "shots": [
+        {
+          "selector": "https://react.dev/",
+          "script": "Here's the menu with links to versions, learning resources, and more.",
+          "style": null,
+          "focus_element": "nav_links"
+        }
+      ]
+    },
+    {
+      "id": "search-functionality",
+      "title": "Using Search",
+      "duration_seconds": 15,
+      "narration": "The search feature helps find specific topics quickly.",
+      "shots": [
+        {
+          "selector": "https://react.dev/",
+          "script": "The search bar is prominent and easy to use. Let's search for 'components'.",
+          "style": null,
+          "focus_element": "forms:nth-of-type(1)"
+        }
+      ]
+    },
+    {
+      "id": "learning-resources",
+      "title": "Learning Resources",
+      "duration_seconds": 25,
+      "narration": "The website provides comprehensive learning resources.",
+      "shots": [
+        {
+          "selector": "https://react.dev/learn",
+          "script": "The 'Learn' section offers a quick start guide and in-depth topics.",
+          "style": null,
+          "focus_element": "url(https://react.dev/learn)"
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the React website's homepage, navigation, search functionality, and learning resources. It emphasizes the website's user-friendly design and abundant learning materials.",
+  "assumptions": [
+    "Basic internet browsing capabilities and knowledge of web development concepts."
+  ],
+  "risks": [
+    "Some users might experience slow loading times due to network issues."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "home-page-intro",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to React, the ultimate destination for building user interfaces. This website is a treasure trove of resources for developers."
+      },
+      {
+        "scene_id": "nav-links",
+        "start_seconds": 10,
+        "end_seconds": 20,
+        "text": "The navigation bar is our gateway to exploring different sections. We can easily access versions, community resources, and more."
+      },
+      {
+        "scene_id": "search-functionality",
+        "start_seconds": 20,
+        "end_seconds": 35,
+        "text": "React provides a handy search feature. Simply type your query and find relevant content instantly. For instance, searching for 'components'."
+      },
+      {
+        "scene_id": "learning-resources",
+        "start_seconds": 35,
+        "end_seconds": 60,
+        "text": "There's a wealth of learning material. The 'Learn' section offers a comprehensive guide, perfect for beginners and advanced learners alike."
+      }
+    ]
+  }
+}

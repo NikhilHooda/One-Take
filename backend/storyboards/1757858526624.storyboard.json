@@ -1,0 +1,133 @@
+{
+  "product_name": "Hack the North",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Website Homepage",
+      "duration_seconds": 30,
+      "narration": "Welcome to Hack the North, Canada's biggest hackathon! This website is an exciting hub for all the latest information about the event.",
+      "shots": [
+        {
+          "selector": "https://hackthenorth.com/",
+          "text_highlights": [
+            "Hack the North",
+            "Canada's biggest hackathon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Event Details",
+      "duration_seconds": 20,
+      "narration": "The website clearly displays the event dates and a concise overview. Users can quickly grasp the event's purpose and duration.",
+      "shots": [
+        {
+          "selector": "https://hackthenorth.com/",
+          "text_highlights": [
+            "September 12-14, 2025",
+            "36 hours of building"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Navigation Menu",
+      "duration_seconds": 15,
+      "narration": "The navigation menu provides easy access to various sections, including 'About', 'Projects', 'FAQ', and social media links.",
+      "shots": [
+        {
+          "selector": "https://hackthenorth.com/",
+          "focus_element": "#navigation-menu",
+          "text_highlights": [
+            "About",
+            "Projects & Stories",
+            "Sponsors",
+            "FAQ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Sign Up Form",
+      "duration_seconds": 15,
+      "narration": "Users can sign up for updates and stay connected. The form is simple and straightforward.",
+      "shots": [
+        {
+          "selector": "https://hackthenorth.com/code-of-conduct",
+          "focus_element": "form:nth-of-type(1)",
+          "text_highlights": [
+            "Sign up for the latest from Hack the North!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "Travel Guidelines",
+      "duration_seconds": 20,
+      "narration": "The website offers detailed travel guidelines and FAQs, ensuring a smooth experience for attendees.",
+      "shots": [
+        {
+          "selector": "https://hackthenorth.com/travel-guidelines",
+          "text_highlights": [
+            "Travel Guidelines",
+            "Reimbursement Policy"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the website's homepage, event details, navigation, sign-up form, and travel information, providing a concise overview of Hack the North's online presence.",
+  "assumptions": [
+    "Basic web browsing functionality and internet connection availability.",
+    "Users are aware of hackathon events and their general structure."
+  ],
+  "risks": [
+    "Some users may have region-based restrictions and may not access the event website directly.",
+    "The website's content may be subject to change, which could impact the demo's accuracy."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 10,
+        "text": "Welcome to Hack the North! This website is a vibrant gateway to Canada's premier hackathon event."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 11,
+        "end_seconds": 25,
+        "text": "The homepage captures the essence of the event with catchy headings and a vibrant layout."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 26,
+        "end_seconds": 35,
+        "text": "Here, we have the event dates and a concise summary, giving a quick overview of the hackathon's duration."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 36,
+        "end_seconds": 45,
+        "text": "The navigation menu offers seamless access to various sections, making it easy to explore the website."
+      },
+      {
+        "scene_id": "scene-4",
+        "start_seconds": 46,
+        "end_seconds": 55,
+        "text": "Users can stay updated by signing up for the latest news. A simple form captures their details."
+      },
+      {
+        "scene_id": "scene-5",
+        "start_seconds": 56,
+        "end_seconds": 70,
+        "text": "Attendees will find the travel guidelines section helpful, offering detailed information for a smooth journey."
+      }
+    ]
+  }
+}

@@ -1,0 +1,4106 @@
+{
+  "engine": "playwright",
+  "started_at": 1757858560,
+  "start_url": "https://hackthenorth.com/",
+  "max_pages": 5,
+  "pages": [
+    {
+      "url": "https://hackthenorth.com/",
+      "title": "Hack the North",
+      "description": "Experience Canada\u2019s biggest hackathon, Hack the North, on September 12-14, 2025. With 36 hours of building, mentorship, and diverse resources, we want to make it easy for anyone to dream big!",
+      "headings": [
+        "Hack the North",
+        "Welcome to Canada\u2019s biggest hackathon",
+        "You belong in tech",
+        "Welcome to Canada\u2019s biggest hackathon",
+        "You belong in tech",
+        "Last year we had...",
+        "1200+",
+        "hackers",
+        "178",
+        "schools",
+        "10",
+        "countries",
+        "235",
+        "projects",
+        "submitted",
+        "650 000+",
+        "km travelled",
+        "180+",
+        "mentors",
+        "15+",
+        "workshops",
+        "Canada's biggest hackathon!",
+        "Join a global community",
+        "Create something amazing!",
+        "Make lasting memories",
+        "Dream big and build bigger",
+        "Stealth Startup",
+        "Rajan Agarwal",
+        "Get inspired by industry leaders",
+        "Judges",
+        "Our 2025",
+        "Keynote Speaker",
+        "Amjad Masad",
+        "What's new",
+        "Goose Games",
+        "Guinness World Record",
+        "Waterloo Tech Week",
+        "Sponsor a special weekend",
+        "...and more to come",
+        "Our partners",
+        "Frequently asked questions",
+        "Made with \ud83d\udc99 in Waterloo, Ontario, Canada \ud83c\udde8\ud83c\udde6"
+      ],
+      "nav_links": [
+        [
+          "",
+          "https://hackthenorth.com/#hero"
+        ],
+        [
+          "About",
+          "https://hackthenorth.com/#about"
+        ],
+        [
+          "Projects & Stories",
+          "https://hackthenorth.com/#projects"
+        ],
+        [
+          "What's New",
+          "https://hackthenorth.com/#whatsnew"
+        ],
+        [
+          "Sponsors",
+          "https://hackthenorth.com/#sponsors"
+        ],
+        [
+          "FAQ",
+          "https://hackthenorth.com/#faq"
+        ],
+        [
+          "2024",
+          "https://2024.hackthenorth.com/"
+        ],
+        [
+          "",
+          "https://www.instagram.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.x.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.facebook.com/hackthenorth/"
+        ],
+        [
+          "",
+          "https://www.linkedin.com/company/hack-the-north"
+        ],
+        [
+          "",
+          "https://www.tiktok.com/@hackthenorth"
+        ],
+        [
+          "",
+          "https://hackthenorth.medium.com/"
+        ]
+      ],
+      "clickables": [
+        {
+          "text": "View Devpost",
+          "role": null,
+          "tag": "a",
+          "href": "https://devpost.com/software/stealth-startup",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-satoz cEoLiK",
+          "locator_suggestion": "text=View Devpost",
+          "bbox": {
+            "x": 4474.296875,
+            "y": 2545,
+            "width": 574.203125,
+            "height": 48
+          }
+        },
+        {
+          "text": "View Devpost",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-ikkxIA kFRIRP sc-SrznA deBhqX",
+          "locator_suggestion": "text=View Devpost",
+          "bbox": {
+            "x": 4474.296875,
+            "y": 2545,
+            "width": 212.6875,
+            "height": 48
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Previous Project Button",
+          "id_attr": null,
+          "classes": "sc-kqGoIF dfNMCN",
+          "locator_suggestion": "role=button[name=\"Previous Project Button\"]",
+          "bbox": {
+            "x": 4468,
+            "y": 2872,
+            "width": 37,
+            "height": 27
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 4513,
+            "y": 2876.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 4531,
+            "y": 2876.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 4549,
+            "y": 2876.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Next Project Button",
+          "id_attr": null,
+          "classes": "sc-gvZAcH bUoygy",
+          "locator_suggestion": "role=button[name=\"Next Project Button\"]",
+          "bbox": {
+            "x": 4575,
+            "y": 2872,
+            "width": 37,
+            "height": 27
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Previous Project Button",
+          "id_attr": null,
+          "classes": "sc-kqGoIF dfNMCN",
+          "locator_suggestion": "role=button[name=\"Previous Project Button\"]",
+          "bbox": {
+            "x": 523,
+            "y": 9103,
+            "width": 37,
+            "height": 27
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 568,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 586,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 604,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 622,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 640,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 658,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 676,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Project Indicator Button",
+          "id_attr": null,
+          "classes": "sc-dNsVcS hyzEkY",
+          "locator_suggestion": "role=button[name=\"Project Indicator Button\"]",
+          "bbox": {
+            "x": 694,
+            "y": 9107.5,
+            "width": 18,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Next Project Button",
+          "id_attr": null,
+          "classes": "sc-gvZAcH bUoygy",
+          "locator_suggestion": "role=button[name=\"Next Project Button\"]",
+          "bbox": {
+            "x": 720,
+            "y": 9103,
+            "width": 37,
+            "height": 27
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-cgjDci cPEIto",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 108.828125,
+            "y": 11189,
+            "width": 209,
+            "height": 212
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-cgjDci cPEIto",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 535.484375,
+            "y": 11189,
+            "width": 209,
+            "height": 212
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-cgjDci cPEIto",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 962.140625,
+            "y": 11189,
+            "width": 209,
+            "height": 212
+          }
+        },
+        {
+          "text": "sponsor@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:sponsor@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=sponsor@hackthenorth.com",
+          "bbox": {
+            "x": 734.375,
+            "y": 12655,
+            "width": 247.953125,
+            "height": 25
+          }
+        },
+        {
+          "text": "Become a Sponsor",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-ikkxIA fNVXd sc-ha-dNcR eiuNpO",
+          "locator_suggestion": "text=Become a Sponsor",
+          "bbox": {
+            "x": 509.296875,
+            "y": 12700,
+            "width": 261.40625,
+            "height": 48
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.ycombinator.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-cDvQBt fCFGjJ",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 231.24583435058594,
+            "y": 12820,
+            "width": 520,
+            "height": 359
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Previous slide",
+          "id_attr": null,
+          "classes": "sc-faUjhM qiPsf",
+          "locator_suggestion": "role=button[name=\"Previous slide\"]",
+          "bbox": {
+            "x": 191.25,
+            "y": 13199,
+            "width": 29,
+            "height": 29
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": "Next slide",
+          "id_attr": null,
+          "classes": "sc-faUjhM qiPsf",
+          "locator_suggestion": "role=button[name=\"Next slide\"]",
+          "bbox": {
+            "x": 510.25,
+            "y": 13199,
+            "width": 29,
+            "height": 29
+          }
+        },
+        {
+          "text": "Apply to Y Combinator",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.ycombinator.com/apply",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-fxwrCY jCurpR",
+          "locator_suggestion": "text=Apply to Y Combinator",
+          "bbox": {
+            "x": 676.25,
+            "y": 13169,
+            "width": 212.84375,
+            "height": 32
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.ycombinator.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv eUHHAP",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 13308,
+            "width": 1111.5,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.federato.ai/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv eUHHAP",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 13550,
+            "width": 1111.5,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.shopify.com/ca",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv eUHHAP",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 13792,
+            "width": 1111.5,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://jobs.rbc.com/ca/en/early-tech-talent",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv eUHHAP",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 14034,
+            "width": 1111.5,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.aboutamazon.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 14276,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://windsurf.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 14276,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.databricks.com/company/careers/university-recruiting",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 14518,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.citadel.com/careers/open-opportunities/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 14518,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.hudsonrivertrading.com/student-opportunities/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 14760,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://ollama.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 14760,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 15002,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://careers.intactfc.com/ca/en/c/students-internships-coops-jobs",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 15002,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://solana.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 15244,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 15244,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://console.groq.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 15486,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://extraordinary.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 15486,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://blackberry.qnx.com/en/products/qnx-everywhere",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 15728,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.withmartian.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 15728,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.virtu.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 15970,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.rox.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv ksSpWc",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 15970,
+            "width": 540.75,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 16212,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.figma.com/education/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 16212,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.bloomberg.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 16212,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 16454,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://ramp.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 16454,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.spectacles.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 16454,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.rilla.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 16696,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.story.foundation/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 16696,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.intuit.com/ca/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 16696,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.genesys.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 16938,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.myrocketcareer.com/careers/#results",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 16938,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.drw.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 16938,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.avanade.com/en-ca",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 17180,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/index.html",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 17180,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://d1yu8ia9htmon.cloudfront.net/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 17180,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.hoopp.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 17422,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 17422,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://uwaterloo.ca/math",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 17422,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 17664,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.paradigmai.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 17664,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://ripple.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 17664,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://vapi.ai/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 17906,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://ethglobal.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 17906,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cse-cst.gc.ca/en",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 17906,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.td.com/ca/en/personal-banking",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.265625,
+            "y": 18148,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.deshaw.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 18148,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.coinbase.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 845.234375,
+            "y": 18148,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://gt.dev/htn25",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 464.75,
+            "y": 18390,
+            "width": 350.484375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.warp.dev/hack-the-north",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv jKWYGI",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 18632,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.accenture.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv jKWYGI",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 369.625,
+            "y": 18632,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.garnet.ai/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv jKWYGI",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 18632,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.glean.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv jKWYGI",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 940.375,
+            "y": 18632,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.trycua.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv jKWYGI",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 226.9375,
+            "y": 18874,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://mintlify.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv jKWYGI",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 512.3125,
+            "y": 18874,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.animahealth.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv jKWYGI",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 797.6875,
+            "y": 18874,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.redbull.com/ca-en/events/red-bull-tetris-canada",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 19328,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.anthropic.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 369.625,
+            "y": 19328,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 19328,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://fantuan.ca/delivery/en/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 940.375,
+            "y": 19328,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.mappedin.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 19570,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://students.wlu.ca/work-leadership-and-volunteering/entrepreneurship/startup-lab/index.html",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 369.625,
+            "y": 19570,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 19570,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.waterloo.ca/en/government/economic-development.aspx",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 940.375,
+            "y": 19570,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.nextcanada.com/next-36/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 19812,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://clearpathrobotics.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 369.625,
+            "y": 19812,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.communitech.ca/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 19812,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://philcangroup.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 940.375,
+            "y": 19812,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://metalbuild.vercel.app/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 20054,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://awakechocolate.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 369.625,
+            "y": 20054,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.fasken.com/en/services/industries/technology-media-and-telecommunications/emerging-technology-venture-capital",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 20054,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://marsiaf.com/ ",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 940.375,
+            "y": 20054,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.neobanc.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 84.25,
+            "y": 20296,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.pearvc.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 369.625,
+            "y": 20296,
+            "width": 255.375,
+            "height": 194
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.simpleventures.ca/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-inyXkq sc-gwZKzw bxBYwv fqXFyX",
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 655,
+            "y": 20296,
+            "width": 255.375,
+            "height": 194
+          }
+        }
+      ],
+      "forms": [],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858526624\\page_1.png",
+      "features_guess": []
+    },
+    {
+      "url": "https://hackthenorth.com/travel-guidelines",
+      "title": "Hack the North",
+      "description": "Experience Canada\u2019s biggest hackathon, Hack the North, on September 12-14, 2025. With 36 hours of building, mentorship, and diverse resources, we want to make it easy for anyone to dream big!",
+      "headings": [
+        "Travel Guidelines",
+        "Key Points",
+        "Reimbursement Policy",
+        "Flights",
+        "Driving",
+        "Hack the North Buses",
+        "Other",
+        "Travel Restrictions",
+        "Visa",
+        "Flight Websites",
+        "Accommodations",
+        "Travel FAQ",
+        "Did we miss anything?"
+      ],
+      "nav_links": [
+        [
+          "",
+          "https://hackthenorth.com/#hero"
+        ],
+        [
+          "About",
+          "https://hackthenorth.com/#about"
+        ],
+        [
+          "Projects & Stories",
+          "https://hackthenorth.com/#projects"
+        ],
+        [
+          "What's New",
+          "https://hackthenorth.com/#whatsnew"
+        ],
+        [
+          "Sponsors",
+          "https://hackthenorth.com/#sponsors"
+        ],
+        [
+          "FAQ",
+          "https://hackthenorth.com/#faq"
+        ],
+        [
+          "2024",
+          "https://2024.hackthenorth.com/"
+        ],
+        [
+          "",
+          "https://www.instagram.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.x.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.facebook.com/hackthenorth/"
+        ],
+        [
+          "",
+          "https://www.linkedin.com/company/hack-the-north"
+        ],
+        [
+          "",
+          "https://www.tiktok.com/@hackthenorth"
+        ],
+        [
+          "",
+          "https://hackthenorth.medium.com/"
+        ]
+      ],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/#hero",
+          "aria_label": "Home",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Home\"]",
+          "bbox": {
+            "x": 167,
+            "y": 20,
+            "width": 36,
+            "height": 40
+          }
+        },
+        {
+          "text": "About",
+          "role": null,
+          "tag": "a",
+          "href": "/#about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=About",
+          "bbox": {
+            "x": 223,
+            "y": 29,
+            "width": 44.921875,
+            "height": 22
+          }
+        },
+        {
+          "text": "Projects & Stories",
+          "role": null,
+          "tag": "a",
+          "href": "/#projects",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=Projects & Stories",
+          "bbox": {
+            "x": 287.921875,
+            "y": 29,
+            "width": 130.546875,
+            "height": 22
+          }
+        },
+        {
+          "text": "What's New",
+          "role": null,
+          "tag": "a",
+          "href": "/#whatsnew",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=What's New",
+          "bbox": {
+            "x": 438.46875,
+            "y": 29,
+            "width": 89.078125,
+            "height": 22
+          }
+        },
+        {
+          "text": "Sponsors",
+          "role": null,
+          "tag": "a",
+          "href": "/#sponsors",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=Sponsors",
+          "bbox": {
+            "x": 547.546875,
+            "y": 29,
+            "width": 68.890625,
+            "height": 22
+          }
+        },
+        {
+          "text": "FAQ",
+          "role": null,
+          "tag": "a",
+          "href": "/#faq",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=FAQ",
+          "bbox": {
+            "x": 636.4375,
+            "y": 29,
+            "width": 31.25,
+            "height": 22
+          }
+        },
+        {
+          "text": "2024",
+          "role": null,
+          "tag": "a",
+          "href": "https://2024.hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=2024",
+          "bbox": {
+            "x": 687.6875,
+            "y": 29,
+            "width": 40.296875,
+            "height": 22
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/hackthenorth",
+          "aria_label": "Instagram",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Instagram\"]",
+          "bbox": {
+            "x": 876,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.x.com/hackthenorth",
+          "aria_label": "X",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"X\"]",
+          "bbox": {
+            "x": 920,
+            "y": 32.5,
+            "width": 17,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/hackthenorth/",
+          "aria_label": "Facebook",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Facebook\"]",
+          "bbox": {
+            "x": 957,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.linkedin.com/company/hack-the-north",
+          "aria_label": "LinkedIn",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"LinkedIn\"]",
+          "bbox": {
+            "x": 1001,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.tiktok.com/@hackthenorth",
+          "aria_label": "TikTok",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"TikTok\"]",
+          "bbox": {
+            "x": 1045,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://hackthenorth.medium.com/",
+          "aria_label": "Medium",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Medium\"]",
+          "bbox": {
+            "x": 1089,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "Travel FAQ",
+          "role": null,
+          "tag": "a",
+          "href": "#travel-faq",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY active",
+          "locator_suggestion": "text=Travel FAQ",
+          "bbox": {
+            "x": 128,
+            "y": 750,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Flight Websites",
+          "role": null,
+          "tag": "a",
+          "href": "#flight-websites",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Flight Websites",
+          "bbox": {
+            "x": 128,
+            "y": 690,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Visa",
+          "role": null,
+          "tag": "a",
+          "href": "#visa",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Visa",
+          "bbox": {
+            "x": 128,
+            "y": 630,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Travel Restrictions",
+          "role": null,
+          "tag": "a",
+          "href": "#travel-restrictions",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Travel Restrictions",
+          "bbox": {
+            "x": 128,
+            "y": 540,
+            "width": 150,
+            "height": 60
+          }
+        },
+        {
+          "text": "Other",
+          "role": null,
+          "tag": "a",
+          "href": "#other",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Other",
+          "bbox": {
+            "x": 128,
+            "y": 480,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Hack the North Buses",
+          "role": null,
+          "tag": "a",
+          "href": "#hack-the-north-buses",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Hack the North Buses",
+          "bbox": {
+            "x": 128,
+            "y": 390,
+            "width": 150,
+            "height": 60
+          }
+        },
+        {
+          "text": "Driving",
+          "role": null,
+          "tag": "a",
+          "href": "#driving",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Driving",
+          "bbox": {
+            "x": 128,
+            "y": 330,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Flights",
+          "role": null,
+          "tag": "a",
+          "href": "#flights",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Flights",
+          "bbox": {
+            "x": 128,
+            "y": 270,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Reimbursement Policy",
+          "role": null,
+          "tag": "a",
+          "href": "#reimbursement-policy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Reimbursement Policy",
+          "bbox": {
+            "x": 128,
+            "y": 180,
+            "width": 150,
+            "height": 60
+          }
+        },
+        {
+          "text": "Key Points",
+          "role": null,
+          "tag": "a",
+          "href": "#key-points",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf bjHtRd",
+          "locator_suggestion": "text=Key Points",
+          "bbox": {
+            "x": 128,
+            "y": 120,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "visa section",
+          "role": null,
+          "tag": "a",
+          "href": "#visa",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=visa section",
+          "bbox": {
+            "x": 926.140625,
+            "y": 391.1875,
+            "width": 80.890625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 758.59375,
+            "y": 419.984375,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 908.0625,
+            "y": 1082.734375,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 393,
+            "y": 1140.328125,
+            "width": 192.5625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 719.59375,
+            "y": 1873.453125,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 647.765625,
+            "y": 2183.828125,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 521.484375,
+            "y": 2638.1875,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 561.96875,
+            "y": 2833.375,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "https://travel.gc.ca/travel-covid",
+          "role": null,
+          "tag": "a",
+          "href": "https://travel.gc.ca/travel-covid",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://travel.gc.ca/travel-covid",
+          "bbox": {
+            "x": 393,
+            "y": 3156.953125,
+            "width": 749.375,
+            "height": 48.796875
+          }
+        },
+        {
+          "text": "https://www.cic.gc.ca/english/visit/visas.asp",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cic.gc.ca/english/visit/visas.asp",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.cic.gc.ca/english/visit/visas.asp",
+          "bbox": {
+            "x": 393,
+            "y": 3509.328125,
+            "width": 299.9375,
+            "height": 20
+          }
+        },
+        {
+          "text": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 433,
+            "y": 3682.109375,
+            "width": 718.09375,
+            "height": 48.796875
+          }
+        },
+        {
+          "text": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eligibility.html",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 393,
+            "y": 3739.703125,
+            "width": 750.859375,
+            "height": 48.796875
+          }
+        },
+        {
+          "text": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": null,
+          "bbox": {
+            "x": 393,
+            "y": 3797.296875,
+            "width": 619.484375,
+            "height": 48.796875
+          }
+        },
+        {
+          "text": "https://www.skyscanner.ca",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.skyscanner.ca",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.skyscanner.ca",
+          "bbox": {
+            "x": 393,
+            "y": 4092.078125,
+            "width": 183.9375,
+            "height": 20
+          }
+        },
+        {
+          "text": "https://www.ca.kayak.com",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.ca.kayak.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.ca.kayak.com",
+          "bbox": {
+            "x": 393,
+            "y": 4120.875,
+            "width": 181.03125,
+            "height": 20
+          }
+        },
+        {
+          "text": "https://www.google.ca/flights",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.google.ca/flights",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.google.ca/flights",
+          "bbox": {
+            "x": 393,
+            "y": 4149.671875,
+            "width": 202.84375,
+            "height": 20
+          }
+        },
+        {
+          "text": "https://www.momondo.ca",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.momondo.ca",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.momondo.ca",
+          "bbox": {
+            "x": 393,
+            "y": 4178.46875,
+            "width": 179.484375,
+            "height": 20
+          }
+        },
+        {
+          "text": "https://www.studentuniverse.co.uk",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.studentuniverse.co.uk",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.studentuniverse.co.uk",
+          "bbox": {
+            "x": 393,
+            "y": 4207.265625,
+            "width": 237.625,
+            "height": 20
+          }
+        },
+        {
+          "text": "https://flyflair.com/",
+          "role": null,
+          "tag": "a",
+          "href": "https://flyflair.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://flyflair.com/",
+          "bbox": {
+            "x": 393,
+            "y": 4236.0625,
+            "width": 129.328125,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 970.578125,
+            "y": 4788.625,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 900.59375,
+            "y": 5065.40625,
+            "width": 179.765625,
+            "height": 20
+          }
+        },
+        {
+          "text": "travel@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:travel@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-bXCLTC jVWybF",
+          "locator_suggestion": "text=travel@hackthenorth.com",
+          "bbox": {
+            "x": 633.78125,
+            "y": 6032.8125,
+            "width": 192.5625,
+            "height": 22
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/hackthenorth",
+          "aria_label": "Instagram",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Instagram\"]",
+          "bbox": {
+            "x": 503,
+            "y": 6071.9375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.x.com/hackthenorth",
+          "aria_label": "X",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"X\"]",
+          "bbox": {
+            "x": 556.703125,
+            "y": 6075.4375,
+            "width": 17,
+            "height": 21
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/hackthenorth/",
+          "aria_label": "Facebook",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Facebook\"]",
+          "bbox": {
+            "x": 603.40625,
+            "y": 6071.9375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.linkedin.com/company/hack-the-north",
+          "aria_label": "LinkedIn",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"LinkedIn\"]",
+          "bbox": {
+            "x": 657.109375,
+            "y": 6071.9375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.tiktok.com/@hackthenorth",
+          "aria_label": "TikTok",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"TikTok\"]",
+          "bbox": {
+            "x": 710.8125,
+            "y": 6071.9375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://hackthenorth.medium.com/",
+          "aria_label": "Medium",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Medium\"]",
+          "bbox": {
+            "x": 764.515625,
+            "y": 6071.9375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "Submit",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-ikkxIA hVJqDF sc-dCFHLb clJnS",
+          "locator_suggestion": "text=Submit",
+          "bbox": {
+            "x": 965.421875,
+            "y": 6136.484375,
+            "width": 100.6875,
+            "height": 42
+          }
+        },
+        {
+          "text": "Code of Conduct",
+          "role": null,
+          "tag": "a",
+          "href": "/code-of-conduct",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Code of Conduct",
+          "bbox": {
+            "x": 202,
+            "y": 6372.90625,
+            "width": 122.0625,
+            "height": 22
+          }
+        },
+        {
+          "text": "Travel Guidelines",
+          "role": null,
+          "tag": "a",
+          "href": "/travel-guidelines",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Travel Guidelines",
+          "bbox": {
+            "x": 340.0625,
+            "y": 6372.90625,
+            "width": 118.046875,
+            "height": 22
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 474.109375,
+            "y": 6372.90625,
+            "width": 95.859375,
+            "height": 22
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "form:nth-of-type(1)",
+          "fields": [
+            {
+              "name": null,
+              "type": "input",
+              "placeholder": "Sign up for the latest from Hack the North!"
+            }
+          ],
+          "submit_button_text": "Submit"
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858526624\\page_2.png",
+      "features_guess": []
+    },
+    {
+      "url": "https://hackthenorth.com/code-of-conduct",
+      "title": "Hack the North",
+      "description": "Experience Canada\u2019s biggest hackathon, Hack the North, on September 12-14, 2025. With 36 hours of building, mentorship, and diverse resources, we want to make it easy for anyone to dream big!",
+      "headings": [
+        "Code of Conduct",
+        "Introduction",
+        "Core Values",
+        "Expected Behaviour",
+        "Protected Grounds",
+        "Prohibited Behaviour",
+        "Roles and Responsibilities",
+        "Major League Hacking (MLH)",
+        "Did we miss anything?"
+      ],
+      "nav_links": [
+        [
+          "",
+          "https://hackthenorth.com/#hero"
+        ],
+        [
+          "About",
+          "https://hackthenorth.com/#about"
+        ],
+        [
+          "Projects & Stories",
+          "https://hackthenorth.com/#projects"
+        ],
+        [
+          "What's New",
+          "https://hackthenorth.com/#whatsnew"
+        ],
+        [
+          "Sponsors",
+          "https://hackthenorth.com/#sponsors"
+        ],
+        [
+          "FAQ",
+          "https://hackthenorth.com/#faq"
+        ],
+        [
+          "2024",
+          "https://2024.hackthenorth.com/"
+        ],
+        [
+          "",
+          "https://www.instagram.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.x.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.facebook.com/hackthenorth/"
+        ],
+        [
+          "",
+          "https://www.linkedin.com/company/hack-the-north"
+        ],
+        [
+          "",
+          "https://www.tiktok.com/@hackthenorth"
+        ],
+        [
+          "",
+          "https://hackthenorth.medium.com/"
+        ]
+      ],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/#hero",
+          "aria_label": "Home",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Home\"]",
+          "bbox": {
+            "x": 167,
+            "y": 20,
+            "width": 36,
+            "height": 40
+          }
+        },
+        {
+          "text": "About",
+          "role": null,
+          "tag": "a",
+          "href": "/#about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=About",
+          "bbox": {
+            "x": 223,
+            "y": 31,
+            "width": 42.6875,
+            "height": 18
+          }
+        },
+        {
+          "text": "Projects & Stories",
+          "role": null,
+          "tag": "a",
+          "href": "/#projects",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=Projects & Stories",
+          "bbox": {
+            "x": 285.6875,
+            "y": 31,
+            "width": 124.109375,
+            "height": 18
+          }
+        },
+        {
+          "text": "What's New",
+          "role": null,
+          "tag": "a",
+          "href": "/#whatsnew",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=What's New",
+          "bbox": {
+            "x": 429.796875,
+            "y": 31,
+            "width": 83.109375,
+            "height": 18
+          }
+        },
+        {
+          "text": "Sponsors",
+          "role": null,
+          "tag": "a",
+          "href": "/#sponsors",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=Sponsors",
+          "bbox": {
+            "x": 532.90625,
+            "y": 31,
+            "width": 62.25,
+            "height": 18
+          }
+        },
+        {
+          "text": "FAQ",
+          "role": null,
+          "tag": "a",
+          "href": "/#faq",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=FAQ",
+          "bbox": {
+            "x": 615.15625,
+            "y": 31,
+            "width": 32.59375,
+            "height": 18
+          }
+        },
+        {
+          "text": "2024",
+          "role": null,
+          "tag": "a",
+          "href": "https://2024.hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=2024",
+          "bbox": {
+            "x": 667.75,
+            "y": 31,
+            "width": 32,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/hackthenorth",
+          "aria_label": "Instagram",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Instagram\"]",
+          "bbox": {
+            "x": 876,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.x.com/hackthenorth",
+          "aria_label": "X",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"X\"]",
+          "bbox": {
+            "x": 920,
+            "y": 32.5,
+            "width": 17,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/hackthenorth/",
+          "aria_label": "Facebook",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Facebook\"]",
+          "bbox": {
+            "x": 957,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.linkedin.com/company/hack-the-north",
+          "aria_label": "LinkedIn",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"LinkedIn\"]",
+          "bbox": {
+            "x": 1001,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.tiktok.com/@hackthenorth",
+          "aria_label": "TikTok",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"TikTok\"]",
+          "bbox": {
+            "x": 1045,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://hackthenorth.medium.com/",
+          "aria_label": "Medium",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Medium\"]",
+          "bbox": {
+            "x": 1089,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "Major League Hacking (MLH)",
+          "role": null,
+          "tag": "a",
+          "href": "#major-league-hacking-(mlh)",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY active",
+          "locator_suggestion": "text=Major League Hacking (MLH)",
+          "bbox": {
+            "x": 128,
+            "y": 570,
+            "width": 150,
+            "height": 60
+          }
+        },
+        {
+          "text": "Roles and Responsibilities",
+          "role": null,
+          "tag": "a",
+          "href": "#roles-and-responsibilities",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Roles and Responsibilities",
+          "bbox": {
+            "x": 128,
+            "y": 480,
+            "width": 150,
+            "height": 60
+          }
+        },
+        {
+          "text": "Prohibited Behaviour",
+          "role": null,
+          "tag": "a",
+          "href": "#prohibited-behaviour",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Prohibited Behaviour",
+          "bbox": {
+            "x": 128,
+            "y": 390,
+            "width": 150,
+            "height": 60
+          }
+        },
+        {
+          "text": "Protected Grounds",
+          "role": null,
+          "tag": "a",
+          "href": "#protected-grounds",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Protected Grounds",
+          "bbox": {
+            "x": 128,
+            "y": 330,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Expected Behaviour",
+          "role": null,
+          "tag": "a",
+          "href": "#expected-behaviour",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Expected Behaviour",
+          "bbox": {
+            "x": 128,
+            "y": 240,
+            "width": 150,
+            "height": 60
+          }
+        },
+        {
+          "text": "Core Values",
+          "role": null,
+          "tag": "a",
+          "href": "#core-values",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Core Values",
+          "bbox": {
+            "x": 128,
+            "y": 180,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "Introduction",
+          "role": null,
+          "tag": "a",
+          "href": "#introduction",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf bjHtRd",
+          "locator_suggestion": "text=Introduction",
+          "bbox": {
+            "x": 128,
+            "y": 120,
+            "width": 150,
+            "height": 30
+          }
+        },
+        {
+          "text": "MLH Code of Conduct",
+          "role": null,
+          "tag": "a",
+          "href": "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=MLH Code of Conduct",
+          "bbox": {
+            "x": 823.984375,
+            "y": 4515.875,
+            "width": 148.875,
+            "height": 17
+          }
+        },
+        {
+          "text": "hello@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:hello@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-bXCLTC jVWybF",
+          "locator_suggestion": "text=hello@hackthenorth.com",
+          "bbox": {
+            "x": 621.640625,
+            "y": 4859.125,
+            "width": 172.65625,
+            "height": 21
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/hackthenorth",
+          "aria_label": "Instagram",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Instagram\"]",
+          "bbox": {
+            "x": 503,
+            "y": 4897.25,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.x.com/hackthenorth",
+          "aria_label": "X",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"X\"]",
+          "bbox": {
+            "x": 556.703125,
+            "y": 4900.75,
+            "width": 17,
+            "height": 21
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/hackthenorth/",
+          "aria_label": "Facebook",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Facebook\"]",
+          "bbox": {
+            "x": 603.40625,
+            "y": 4897.25,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.linkedin.com/company/hack-the-north",
+          "aria_label": "LinkedIn",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"LinkedIn\"]",
+          "bbox": {
+            "x": 657.109375,
+            "y": 4897.25,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.tiktok.com/@hackthenorth",
+          "aria_label": "TikTok",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"TikTok\"]",
+          "bbox": {
+            "x": 710.8125,
+            "y": 4897.25,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://hackthenorth.medium.com/",
+          "aria_label": "Medium",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Medium\"]",
+          "bbox": {
+            "x": 764.515625,
+            "y": 4897.25,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "Submit",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-ikkxIA hVJqDF sc-dCFHLb clJnS",
+          "locator_suggestion": "text=Submit",
+          "bbox": {
+            "x": 966.3125,
+            "y": 4961.796875,
+            "width": 99.796875,
+            "height": 42
+          }
+        },
+        {
+          "text": "Code of Conduct",
+          "role": null,
+          "tag": "a",
+          "href": "/code-of-conduct",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Code of Conduct",
+          "bbox": {
+            "x": 202,
+            "y": 5198.21875,
+            "width": 109.328125,
+            "height": 18
+          }
+        },
+        {
+          "text": "Travel Guidelines",
+          "role": null,
+          "tag": "a",
+          "href": "/travel-guidelines",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Travel Guidelines",
+          "bbox": {
+            "x": 327.328125,
+            "y": 5198.21875,
+            "width": 114.515625,
+            "height": 18
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 457.84375,
+            "y": 5198.21875,
+            "width": 93.765625,
+            "height": 18
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "form:nth-of-type(1)",
+          "fields": [
+            {
+              "name": null,
+              "type": "input",
+              "placeholder": "Sign up for the latest from Hack the North!"
+            }
+          ],
+          "submit_button_text": "Submit"
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858526624\\page_3.png",
+      "features_guess": []
+    },
+    {
+      "url": "https://hackthenorth.com/privacy",
+      "title": "Hack the North",
+      "description": "Experience Canada\u2019s biggest hackathon, Hack the North, on September 12-14, 2025. With 36 hours of building, mentorship, and diverse resources, we want to make it easy for anyone to dream big!",
+      "headings": [
+        "Privacy and Data Policy",
+        "Key Points",
+        "Preface",
+        "Terminology",
+        "Data we collect",
+        "Data we collect when you visit our website",
+        "Data we collect when you apply or sign up as a participant",
+        "Data we collect at the event",
+        "Cookies",
+        "Data we share",
+        "Sharing of personal data",
+        "Sharing of anonymous data",
+        "Legal compliance",
+        "Data security",
+        "Your rights",
+        "Data ownership",
+        "Data freedom",
+        "Questions",
+        "Did we miss anything?"
+      ],
+      "nav_links": [
+        [
+          "",
+          "https://hackthenorth.com/#hero"
+        ],
+        [
+          "About",
+          "https://hackthenorth.com/#about"
+        ],
+        [
+          "Projects & Stories",
+          "https://hackthenorth.com/#projects"
+        ],
+        [
+          "What's New",
+          "https://hackthenorth.com/#whatsnew"
+        ],
+        [
+          "Sponsors",
+          "https://hackthenorth.com/#sponsors"
+        ],
+        [
+          "FAQ",
+          "https://hackthenorth.com/#faq"
+        ],
+        [
+          "2024",
+          "https://2024.hackthenorth.com/"
+        ],
+        [
+          "",
+          "https://www.instagram.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.x.com/hackthenorth"
+        ],
+        [
+          "",
+          "https://www.facebook.com/hackthenorth/"
+        ],
+        [
+          "",
+          "https://www.linkedin.com/company/hack-the-north"
+        ],
+        [
+          "",
+          "https://www.tiktok.com/@hackthenorth"
+        ],
+        [
+          "",
+          "https://hackthenorth.medium.com/"
+        ]
+      ],
+      "clickables": [
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "/#hero",
+          "aria_label": "Home",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Home\"]",
+          "bbox": {
+            "x": 167,
+            "y": 20,
+            "width": 36,
+            "height": 40
+          }
+        },
+        {
+          "text": "About",
+          "role": null,
+          "tag": "a",
+          "href": "/#about",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=About",
+          "bbox": {
+            "x": 223,
+            "y": 31,
+            "width": 42.6875,
+            "height": 18
+          }
+        },
+        {
+          "text": "Projects & Stories",
+          "role": null,
+          "tag": "a",
+          "href": "/#projects",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=Projects & Stories",
+          "bbox": {
+            "x": 285.6875,
+            "y": 31,
+            "width": 124.109375,
+            "height": 18
+          }
+        },
+        {
+          "text": "What's New",
+          "role": null,
+          "tag": "a",
+          "href": "/#whatsnew",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=What's New",
+          "bbox": {
+            "x": 429.796875,
+            "y": 31,
+            "width": 83.109375,
+            "height": 18
+          }
+        },
+        {
+          "text": "Sponsors",
+          "role": null,
+          "tag": "a",
+          "href": "/#sponsors",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=Sponsors",
+          "bbox": {
+            "x": 532.90625,
+            "y": 31,
+            "width": 62.25,
+            "height": 18
+          }
+        },
+        {
+          "text": "FAQ",
+          "role": null,
+          "tag": "a",
+          "href": "/#faq",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=FAQ",
+          "bbox": {
+            "x": 615.15625,
+            "y": 31,
+            "width": 32.59375,
+            "height": 18
+          }
+        },
+        {
+          "text": "2024",
+          "role": null,
+          "tag": "a",
+          "href": "https://2024.hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "Navbar__StyledLink-sc-i9f6w7-5 dDwnFN",
+          "locator_suggestion": "text=2024",
+          "bbox": {
+            "x": 667.75,
+            "y": 31,
+            "width": 32,
+            "height": 18
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/hackthenorth",
+          "aria_label": "Instagram",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Instagram\"]",
+          "bbox": {
+            "x": 876,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.x.com/hackthenorth",
+          "aria_label": "X",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"X\"]",
+          "bbox": {
+            "x": 920,
+            "y": 32.5,
+            "width": 17,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/hackthenorth/",
+          "aria_label": "Facebook",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Facebook\"]",
+          "bbox": {
+            "x": 957,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.linkedin.com/company/hack-the-north",
+          "aria_label": "LinkedIn",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"LinkedIn\"]",
+          "bbox": {
+            "x": 1001,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.tiktok.com/@hackthenorth",
+          "aria_label": "TikTok",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"TikTok\"]",
+          "bbox": {
+            "x": 1045,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://hackthenorth.medium.com/",
+          "aria_label": "Medium",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Medium\"]",
+          "bbox": {
+            "x": 1089,
+            "y": 36,
+            "width": 24,
+            "height": 17
+          }
+        },
+        {
+          "text": "Questions",
+          "role": null,
+          "tag": "a",
+          "href": "#questions",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY active",
+          "locator_suggestion": "text=Questions",
+          "bbox": {
+            "x": 128,
+            "y": 449.25,
+            "width": 124.375,
+            "height": 30
+          }
+        },
+        {
+          "text": "Your rights",
+          "role": null,
+          "tag": "a",
+          "href": "#your-rights",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Your rights",
+          "bbox": {
+            "x": 128,
+            "y": 394.375,
+            "width": 124.375,
+            "height": 30
+          }
+        },
+        {
+          "text": "Data security",
+          "role": null,
+          "tag": "a",
+          "href": "#data-security",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Data security",
+          "bbox": {
+            "x": 128,
+            "y": 339.5,
+            "width": 124.375,
+            "height": 30
+          }
+        },
+        {
+          "text": "Data we share",
+          "role": null,
+          "tag": "a",
+          "href": "#data-we-share",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Data we share",
+          "bbox": {
+            "x": 128,
+            "y": 284.625,
+            "width": 124.375,
+            "height": 30
+          }
+        },
+        {
+          "text": "Data we collect",
+          "role": null,
+          "tag": "a",
+          "href": "#data-we-collect",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Data we collect",
+          "bbox": {
+            "x": 128,
+            "y": 229.75,
+            "width": 124.375,
+            "height": 30
+          }
+        },
+        {
+          "text": "Terminology",
+          "role": null,
+          "tag": "a",
+          "href": "#terminology",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf dFIguY",
+          "locator_suggestion": "text=Terminology",
+          "bbox": {
+            "x": 128,
+            "y": 174.875,
+            "width": 124.375,
+            "height": 30
+          }
+        },
+        {
+          "text": "Preface",
+          "role": null,
+          "tag": "a",
+          "href": "#preface",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-Nxspf bjHtRd",
+          "locator_suggestion": "text=Preface",
+          "bbox": {
+            "x": 128,
+            "y": 120,
+            "width": 124.375,
+            "height": 30
+          }
+        },
+        {
+          "text": "hello@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:hello@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=hello@hackthenorth.com",
+          "bbox": {
+            "x": 811.25,
+            "y": 375.1875,
+            "width": 161.796875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Cloudflare",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cloudflare.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Cloudflare",
+          "bbox": {
+            "x": 393,
+            "y": 1413.328125,
+            "width": 68.421875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Hotjar",
+          "role": null,
+          "tag": "a",
+          "href": "https://hotjar.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Hotjar",
+          "bbox": {
+            "x": 393,
+            "y": 1442.125,
+            "width": 40.875,
+            "height": 17
+          }
+        },
+        {
+          "text": "https://www.cloudflare.com/privacypolicy",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.cloudflare.com/privacypolicy/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.cloudflare.com/privacypolicy",
+          "bbox": {
+            "x": 429.875,
+            "y": 1633.109375,
+            "width": 270.890625,
+            "height": 17
+          }
+        },
+        {
+          "text": "https://www.hotjar.com/legal/policies/privacy",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.hotjar.com/legal/policies/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://www.hotjar.com/legal/policies/privacy",
+          "bbox": {
+            "x": 402.328125,
+            "y": 1661.90625,
+            "width": 292.234375,
+            "height": 17
+          }
+        },
+        {
+          "text": "Bugsnag",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.bugsnag.com/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Bugsnag",
+          "bbox": {
+            "x": 781.359375,
+            "y": 1745.5,
+            "width": 56,
+            "height": 17
+          }
+        },
+        {
+          "text": "https://docs.bugsnag.com/legal/privacy-policy/",
+          "role": null,
+          "tag": "a",
+          "href": "https://docs.bugsnag.com/legal/privacy-policy/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=https://docs.bugsnag.com/legal/privacy-policy/",
+          "bbox": {
+            "x": 609.390625,
+            "y": 1803.09375,
+            "width": 300.390625,
+            "height": 17
+          }
+        },
+        {
+          "text": "Google privacy settings",
+          "role": null,
+          "tag": "a",
+          "href": "https://myaccount.google.com/permissions",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Google privacy settings",
+          "bbox": {
+            "x": 672.515625,
+            "y": 2538.234375,
+            "width": 151.96875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Data we collect when you visit our website",
+          "role": null,
+          "tag": "a",
+          "href": "#data-we-collect-when-you-visit-our-website",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Data we collect when you visit our website",
+          "bbox": {
+            "x": 353,
+            "y": 2875.8125,
+            "width": 777.9375,
+            "height": 45.796875
+          }
+        },
+        {
+          "text": "[1]",
+          "role": null,
+          "tag": "a",
+          "href": "https://aws.amazon.com/compliance/programs/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=[1]",
+          "bbox": {
+            "x": 672.875,
+            "y": 3844.953125,
+            "width": 18.65625,
+            "height": 17
+          }
+        },
+        {
+          "text": "[2]",
+          "role": null,
+          "tag": "a",
+          "href": "https://cloud.google.com/security/compliance/",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=[2]",
+          "bbox": {
+            "x": 695.53125,
+            "y": 3844.953125,
+            "width": 18.65625,
+            "height": 17
+          }
+        },
+        {
+          "text": "hello@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:hello@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=hello@hackthenorth.com",
+          "bbox": {
+            "x": 840.0625,
+            "y": 4095.34375,
+            "width": 161.796875,
+            "height": 17
+          }
+        },
+        {
+          "text": "Data we collect when you visit our website",
+          "role": null,
+          "tag": "a",
+          "href": "#data-we-collect-when-you-visit-our-website",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=Data we collect when you visit our website",
+          "bbox": {
+            "x": 827.53125,
+            "y": 4702.09375,
+            "width": 275.921875,
+            "height": 17
+          }
+        },
+        {
+          "text": "hello@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:hello@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "text=hello@hackthenorth.com",
+          "bbox": {
+            "x": 777.734375,
+            "y": 4939.28125,
+            "width": 161.796875,
+            "height": 17
+          }
+        },
+        {
+          "text": "hello@hackthenorth.com",
+          "role": null,
+          "tag": "a",
+          "href": "mailto:hello@hackthenorth.com",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-bXCLTC jVWybF",
+          "locator_suggestion": "text=hello@hackthenorth.com",
+          "bbox": {
+            "x": 621.640625,
+            "y": 5253.734375,
+            "width": 172.65625,
+            "height": 21
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.instagram.com/hackthenorth",
+          "aria_label": "Instagram",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Instagram\"]",
+          "bbox": {
+            "x": 503,
+            "y": 5291.859375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.x.com/hackthenorth",
+          "aria_label": "X",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"X\"]",
+          "bbox": {
+            "x": 556.703125,
+            "y": 5295.359375,
+            "width": 17,
+            "height": 21
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.facebook.com/hackthenorth/",
+          "aria_label": "Facebook",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Facebook\"]",
+          "bbox": {
+            "x": 603.40625,
+            "y": 5291.859375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.linkedin.com/company/hack-the-north",
+          "aria_label": "LinkedIn",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"LinkedIn\"]",
+          "bbox": {
+            "x": 657.109375,
+            "y": 5291.859375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://www.tiktok.com/@hackthenorth",
+          "aria_label": "TikTok",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"TikTok\"]",
+          "bbox": {
+            "x": 710.8125,
+            "y": 5291.859375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "",
+          "role": null,
+          "tag": "a",
+          "href": "https://hackthenorth.medium.com/",
+          "aria_label": "Medium",
+          "id_attr": null,
+          "classes": null,
+          "locator_suggestion": "role=button[name=\"Medium\"]",
+          "bbox": {
+            "x": 764.515625,
+            "y": 5291.859375,
+            "width": 24,
+            "height": 28
+          }
+        },
+        {
+          "text": "Submit",
+          "role": null,
+          "tag": "button",
+          "href": null,
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "sc-ikkxIA hVJqDF sc-dCFHLb clJnS",
+          "locator_suggestion": "text=Submit",
+          "bbox": {
+            "x": 966.3125,
+            "y": 5356.40625,
+            "width": 99.796875,
+            "height": 42
+          }
+        },
+        {
+          "text": "Code of Conduct",
+          "role": null,
+          "tag": "a",
+          "href": "/code-of-conduct",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Code of Conduct",
+          "bbox": {
+            "x": 202,
+            "y": 5592.828125,
+            "width": 109.328125,
+            "height": 18
+          }
+        },
+        {
+          "text": "Travel Guidelines",
+          "role": null,
+          "tag": "a",
+          "href": "/travel-guidelines",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Travel Guidelines",
+          "bbox": {
+            "x": 327.328125,
+            "y": 5592.828125,
+            "width": 114.515625,
+            "height": 18
+          }
+        },
+        {
+          "text": "Privacy Policy",
+          "role": null,
+          "tag": "a",
+          "href": "/privacy",
+          "aria_label": null,
+          "id_attr": null,
+          "classes": "footer-link",
+          "locator_suggestion": "text=Privacy Policy",
+          "bbox": {
+            "x": 457.84375,
+            "y": 5592.828125,
+            "width": 93.765625,
+            "height": 18
+          }
+        }
+      ],
+      "forms": [
+        {
+          "selector_hint": "form:nth-of-type(1)",
+          "fields": [
+            {
+              "name": null,
+              "type": "input",
+              "placeholder": "Sign up for the latest from Hack the North!"
+            }
+          ],
+          "submit_button_text": "Submit"
+        }
+      ],
+      "screenshot_path": "C:\\Users\\aryan\\OneDrive\\Documents\\One Take\\repo-reel-creator\\backend\\artifacts\\1757858526624\\page_4.png",
+      "features_guess": [
+        "docs",
+        "signup"
+      ]
+    }
+  ]
+}

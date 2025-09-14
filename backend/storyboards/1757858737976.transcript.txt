@@ -1,0 +1,5 @@
+[00:00 - 00:10] scene=scene-1 Welcome to Desmos, your online graphing calculator. The landing page offers quick access to various calculators.
+[00:10 - 00:25] scene=scene-2 Let's dive into the array of calculator tools. Each one is a click away and opens new windows with advanced math functionalities.
+[00:25 - 00:45] scene=scene-3 The graphing calculator is a beauty. Type in any equation and watch it come to life on the coordinate plane.
+[00:45 - 01:00] scene=scene-4 Desmos offers more. Check out these handy features for managing expressions and interacting with your graphs.
+[01:00 - 01:30] scene=scene-5 You have the power to customize. Add and delete expressions for a tailored experience. See? Easy!

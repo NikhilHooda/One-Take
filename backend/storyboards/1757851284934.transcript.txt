@@ -1,0 +1,5 @@
+[00:00 - 00:10] scene=scene-1 Welcome to the React website. This is the homepage, where you get an overview of React's capabilities. You can see the main navigation bar here, with links to different sections.
+[00:10 - 00:20] scene=scene-1 React focuses on helping you build user interfaces with components. The homepage gives a nice summary of its native user interface support.
+[00:20 - 00:35] scene=scene-2 Let's dive into the learning resources. There's a whole section dedicated to helping newcomers get started. It covers essential topics like creating and nesting components.
+[00:35 - 00:50] scene=scene-3 The API documentation is comprehensive. It has all the details you need on React's various functions. See? There's even a search feature to find specific API info.
+[00:50 - 01:00] scene=scene-3 You can also explore practical code examples, like this one demonstrating the SearchableVideoList.js component.

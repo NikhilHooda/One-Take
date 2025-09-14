@@ -1,0 +1,4 @@
+[00:00 - 00:15] scene=scene-1 Welcome to Amazon.ca, Canada's largest online retailer. You'll notice the homepage has quick links to various product categories and featured items.
+[00:15 - 00:25] scene=scene-2 Let's initiate a search. Go to the search bar, type 'Goose Plushie', and hit Go. There you go!
+[00:25 - 00:35] scene=scene-3 Here's the first result for the goose plushie. You can check out the reviews and product details. It's all very straightforward.
+[00:35 - 00:40] scene=scene-4 Want to buy it? Click, and it's added to the cart. Easy, right?

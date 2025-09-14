@@ -1,0 +1,11 @@
+[00:00 - 00:10] scene=scene-1 Welcome to the React website. This concise demo will showcase its key features.
+
+As you can see, the homepage provides a clear introduction to React's purpose.
+[00:10 - 00:20] scene=scene-1 We have a concise overview of its capabilities and some initial navigation options.
+[00:20 - 00:35] scene=scene-2 Let's dive into the learning resources. React offers a wealth of tutorials and guides, perfect for newcomers.
+
+Here's a quick look at the 'Quick Start' guide, which is an excellent entry point.
+[00:35 - 00:50] scene=scene-3 For developers, the API documentation is a valuable resource. It extensively covers the APIs provided by React.
+[00:50 - 01:05] scene=scene-4 React also ensures you're not alone with an active community and various support options.
+
+You can connect and seek assistance easily.

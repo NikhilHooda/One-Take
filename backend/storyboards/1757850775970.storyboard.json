@@ -1,0 +1,152 @@
+{
+  "product_name": "Amazon.ca",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Website Homepage",
+      "duration_seconds": 30,
+      "narration": {
+        "en": "Welcome to Amazon.ca! You can see the wide range of categories Amazon offers.\nLet's search for a specific product."
+      },
+      "shots": [
+        {
+          "selector": "#nav-assist-search",
+          "action": "click",
+          "duration": 2
+        },
+        {
+          "selector": "#field-keywords",
+          "element_display": "visible",
+          "duration": 2
+        },
+        {
+          "selector": "#field-keywords",
+          "action": "type",
+          "text": "goose plushie",
+          "duration": 5
+        },
+        {
+          "selector": "#nav-search-submit-button",
+          "action": "click",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Search Results",
+      "duration_seconds": 45,
+      "narration": {
+        "en": "Here are the search results. We can see there's a variety of goose plushies available.\nLet's click on the first result."
+      },
+      "shots": [
+        {
+          "selector": "h2:contains('Gund Baby Gundersson Goose Plush Stuffed Animal')",
+          "action": "click",
+          "duration": 5
+        },
+        {
+          "selector": "img[alt~='Product Image']",
+          "element_display": "visible",
+          "duration": 2
+        },
+        {
+          "selector": "#productDescription",
+          "element_display": "visible",
+          "duration": 2
+        },
+        {
+          "selector": "a:contains('Add to Cart')",
+          "element_display": "visible",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Product Reviews",
+      "duration_seconds": 15,
+      "narration": {
+        "en": "Let's check out the reviews to get a better idea of the product. Looks like a great choice!\nWe can also see the product details and specs here."
+      },
+      "shots": [
+        {
+          "selector": "a:contains('Customer Reviews')",
+          "action": "click",
+          "duration": 2
+        },
+        {
+          "selector": "span:contains('4.8 out of 5 stars')",
+          "element_display": "visible",
+          "duration": 2
+        },
+        {
+          "selector": "span:contains('Helpful')"
+        }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Add to Cart",
+      "duration_seconds": 8,
+      "narration": {
+        "en": "After reviewing, we can easily add the item to our cart for checkout.\nGreat, it's in our cart now!"
+      },
+      "shots": [
+        {
+          "selector": "a:contains('Add to Cart')",
+          "action": "click",
+          "duration": 2
+        },
+        {
+          "selector": "#sp-cc-accept",
+          "action": "click",
+          "duration": 2
+        },
+        {
+          "selector": "#nav-cart",
+          "element_display": "visible",
+          "duration": 2
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the homepage, search functionality, product details, reviews, and adding an item to the cart.",
+  "assumptions": [
+    "Basic website functionality and interactivity are available and stable.",
+    "Search results for 'goose plushie' remain relevant and available."
+  ],
+  "risks": [
+    "The specific product chosen may not be available or relevant in the future.",
+    "Users might require more time to read and understand the content, especially if they're new to the website."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 15,
+        "text": "We're on the Amazon.ca homepage. We can see various categories and a search bar. Let's initiate a search."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 15,
+        "end_seconds": 40,
+        "text": "We searched for 'goose plushie' and got multiple results. We'll focus on the first product, 'Gund Baby Gundersson Goose'."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 40,
+        "end_seconds": 55,
+        "text": "Checking the reviews is always a good idea. This product has great ratings! We can also view the specs and details here."
+      },
+      {
+        "scene_id": "scene-4",
+        "start_seconds": 55,
+        "end_seconds": 63,
+        "text": "Adding this adorable goose to our cart is simple and convenient. We're now ready for checkout!"
+      }
+    ]
+  }
+}

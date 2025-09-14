@@ -1,0 +1,166 @@
+{
+  "product_name": "React",
+  "suggested_duration_seconds": 90,
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Homepage Exploration",
+      "duration_seconds": 30,
+      "narration": "This is the React homepage, offering an overview of React's purpose and key features. Let's explore some of the content.",
+      "shots": [
+        {
+          "selector": "h1",
+          "text": "React",
+          "action": "zoom-in",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "p",
+          "text": "React is the library for web and native user interfaces.",
+          "duration_seconds": 5
+        },
+        {
+          "selector": "a[aria-label='Menu']",
+          "action": "click",
+          "duration_seconds": 1,
+          "expectations": [
+            "Nav menu opens"
+          ]
+        },
+        {
+          "selector": "a[text='Learn']",
+          "text": "Learn",
+          "duration_seconds": 3,
+          "expectations": [
+            "User sees Learn menu options"
+          ]
+        },
+        {
+          "selector": "button[aria-label='Use Dark Mode']",
+          "action": "click",
+          "duration_seconds": 1,
+          "expectations": [
+            "Theme changes to dark mode"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Learning Resources",
+      "duration_seconds": 25,
+      "narration": "The 'Learn' section provides an easy onboarding process. Let's check out some of the learning resources available.",
+      "shots": [
+        {
+          "selector": "h2",
+          "text": "LEARN REACT",
+          "duration_seconds": 2
+        },
+        {
+          "selector": "a[text='Quick Start']",
+          "text": "Quick Start",
+          "action": "hover",
+          "duration_seconds": 3,
+          "expectations": [
+            "Submenu opens, revealing learning paths"
+          ]
+        },
+        {
+          "selector": "a[text='Creating and nesting components']",
+          "text": "Creating Components",
+          "duration_seconds": 5
+        },
+        {
+          "selector": "button[aria-label='Search']",
+          "action": "click",
+          "duration_seconds": 1
+        },
+        {
+          "selector": "input[placeholder='Search']",
+          "action": "type",
+          "input_text": "jsx",
+          "duration_seconds": 3,
+          "expectations": [
+            "Search results appear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "API Documentation",
+      "duration_seconds": 20,
+      "narration": "React offers comprehensive API documentation. Here, we'll explore the 'React DOM API' section.",
+      "shots": [
+        {
+          "selector": "h2",
+          "text": "REACT DOM API",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "p",
+          "text": "Find in-depth information about React DOM functions and utilities.",
+          "duration_seconds": 5
+        },
+        {
+          "selector": "a[text='Reference']",
+          "text": "Reference",
+          "action": "click",
+          "duration_seconds": 2,
+          "expectations": [
+            "User is redirected to API reference page"
+          ]
+        },
+        {
+          "selector": "h1",
+          "text": "Reference",
+          "duration_seconds": 3
+        },
+        {
+          "selector": "a[text='Use Light Mode']",
+          "action": "click",
+          "duration_seconds": 1,
+          "expectations": [
+            "Theme changes to light mode"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage": "This demo showcases the React website's homepage, learning resources, and API documentation, including navigation and search features.",
+  "assumptions": [
+    "Basic website functionality is available and stable.",
+    "Users are familiar with common UI elements such as menus and buttons."
+  ],
+  "risks": [
+    "Some website interactions might have unexpected behavior due to dynamic content or potential delays in loading."
+  ],
+  "transcript": {
+    "segments": [
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 0,
+        "end_seconds": 15,
+        "text": "Welcome to the React website. Here, we have the main homepage with an introduction to React's capabilities. We'll start by exploring some of the content right away."
+      },
+      {
+        "scene_id": "scene-1",
+        "start_seconds": 15,
+        "end_seconds": 30,
+        "text": "We see key features highlighted, and also notice the menu bar. It's easy to navigate and explore further. We can even switch the theme with these buttons."
+      },
+      {
+        "scene_id": "scene-2",
+        "start_seconds": 31,
+        "end_seconds": 55,
+        "text": "Let's dive into the 'Learn' section. It offers a clear learning path, and we can quickly access resources. Hovering over the menu reveals more options. We can search for specific topics too."
+      },
+      {
+        "scene_id": "scene-3",
+        "start_seconds": 56,
+        "end_seconds": 76,
+        "text": "The API documentation is comprehensive. It provides detailed insights into React's capabilities. We can easily switch between light and dark mode for comfort."
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+[00:00 - 00:10] scene=scene-1 Welcome to Cohere's Enterprise AI website. Here you'll discover how AI can power your business. The homepage highlights the benefits of Cohere's solutions with an inviting and informative layout.
+[00:10 - 00:20] scene=scene-1 It emphasizes security, flexibility, and the cutting-edge technology that Cohere provides. The navigation menu offers easy access to key sections of the site.
+[00:20 - 00:30] scene=scene-2 Let's explore the products! There's a wide range of AI solutions on offer. Each product is designed to enhance specific aspects of your business.
+[00:30 - 00:45] scene=scene-2 From the turnkey AI platform to powerful language models, Cohere has you covered. The concise product cards provide a quick overview, and you can dive into each one for more details.
+[00:45 - 01:00] scene=scene-3 Here's the North product page, showcasing a revolutionary AI platform for the modern workplace. It offers detailed insights into how North can boost productivity.
+[01:00 - 01:30] scene=scene-3 You'll find an overview of North's capabilities, use cases, and even customer testimonials. This page provides a comprehensive look at the product, making it easy to evaluate.

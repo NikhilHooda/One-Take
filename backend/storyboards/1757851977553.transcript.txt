@@ -1,0 +1,5 @@
+[00:00 - 00:10] scene=scene-1 Welcome to YouTube's homepage! We see the iconic logo and a concise site description. The clean layout hints at an intuitive user experience.
+[00:10 - 00:20] scene=scene-1 Let's dive into the search bar, it's right here. I'm going to search for 'Cooking' to explore some tasty videos.
+[00:22 - 00:35] scene=scene-2 These are our search results. We get a comprehensive list of videos related to cooking. See how the page loads content quickly?
+[00:37 - 00:50] scene=scene-3 Check this out! We can easily interact with the video. I'll give it a like and also add a comment. It's nice to have a platform where we can engage with other users.
+[00:52 - 01:00] scene=scene-3 Our comment is posted! It's simple to share our thoughts and connect with others.
