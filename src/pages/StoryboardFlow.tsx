@@ -16,6 +16,8 @@ import ReactFlow, {
   Position,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
+import heroBg from '@/assets/hero-bg.jpg';
+import LOGO from '@/assets/LOGO.png';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -51,7 +53,7 @@ interface ChatMessage {
 // Custom Node Component
 interface CustomNodeData {
   title: string;
-  objective: string;
+  description?: string;
   icon: React.ComponentType<any>;
   status?: 'pending' | 'active' | 'completed';
   hasInput?: boolean;
@@ -71,17 +73,12 @@ const CustomNode = ({ data }: { data: CustomNodeData }) => {
         : 'bg-muted'
     }`}>
       <div className="p-4">
-        <div className="flex items-center gap-3 mb-3">
-          <div className={`p-2 rounded-lg ${
-            data.status === 'active' 
-              ? 'bg-primary/20 text-primary' 
-              : data.status === 'completed'
-              ? 'bg-primary/20 text-primary'
-              : 'bg-muted'
-          }`}>
-            <IconComponent className="w-5 h-5" />
-          </div>
-          <h3 className="font-semibold">{data.title}</h3>
+        <div className="mb-3 text-center">
+          <input 
+            className="w-full text-center font-semibold bg-transparent border-none outline-none focus:outline-none focus:ring-0 text-white"
+            defaultValue={data.title}
+            placeholder="Enter title..."
+          />
         </div>
         
         {data.hasInput && (
@@ -97,16 +94,17 @@ const CustomNode = ({ data }: { data: CustomNodeData }) => {
           </div>
         )}
         
-        {data.objective && (
-          <div>
-            <p className="text-xs text-muted-foreground uppercase tracking-wide font-medium mb-1">
-              Objective
-            </p>
-            <p className="text-sm leading-relaxed">
-              {data.objective}
-            </p>
-          </div>
-        )}
+        <div>
+          <p className="text-xs text-muted-foreground uppercase tracking-wide font-medium mb-1">
+            Description
+          </p>
+          <textarea 
+            className="w-full text-sm p-2 border border-border rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-primary/20 text-black"
+            rows={4}
+            placeholder="Enter your description here..."
+            defaultValue={data.description || ''}
+          />
+        </div>
       </div>
       
       {/* Connection handles */}
@@ -148,33 +146,52 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     {
       id: '1',
       type: 'ai',
-      content: 'Welcome! I\'ve analyzed your project and generated a storyboard workflow. You can customize the flow below or ask me to make changes.',
+      content: 'Hi there! I\'m here to help you with your Amazon shopping workflow storyboard. How can I assist you today?',
       timestamp: new Date()
     }
   ]);
   
   const [newMessage, setNewMessage] = useState('');
-  
-  // Load storyboard data from navigation state
-  useEffect(() => {
-    if (location.state?.storyboardData) {
-      setStoryboardData(location.state.storyboardData);
-      
-      // Add initial AI message about the generated storyboard
-      const initialMessage: ChatMessage = {
-        id: '2',
-        type: 'ai',
-        content: `I've generated a storyboard for "${location.state.storyboardData.product_name || 'your project'}" with ${location.state.storyboardData.scenes?.length || 0} scenes. The total duration is estimated at ${location.state.storyboardData.suggested_duration_seconds || 90} seconds.`,
-        timestamp: new Date()
-      };
-      setChatMessages(prev => [...prev, initialMessage]);
+  const [sidebarWidth, setSidebarWidth] = useState(320); // Default width
+  const [isResizing, setIsResizing] = useState(false);
+
+  // Handle resize functionality
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsResizing(true);
+    e.preventDefault();
+  };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!isResizing) return;
+    
+    const newWidth = e.clientX;
+    const minWidth = 250;
+    const maxWidth = 600;
+    
+    if (newWidth >= minWidth && newWidth <= maxWidth) {
+      setSidebarWidth(newWidth);
     }
-  }, [location.state]);
+  };
+
+  const handleMouseUp = () => {
+    setIsResizing(false);
+  };
+
+  // Add event listeners for resize
+  React.useEffect(() => {
+    if (isResizing) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isResizing]);
   
   // Calculate center position for nodes based on canvas width
-  // Sidebar is 320px (w-80), so we center in the remaining space
   const getCanvasCenterX = () => {
-    const sidebarWidth = 320;
     const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1024;
     const canvasWidth = screenWidth - sidebarWidth;
     return canvasWidth / 2;
@@ -203,46 +220,68 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
   
   const initialNodes: Node[] = [
     {
-      id: '1',
+      id: 'scene1',
       type: 'custom',
-      position: { x: centerX, y: 0 },
+      position: { x: centerX, y: 350 },
       data: {
-        title: 'Gmail',
-        objective: 'Get all emails received in the last 24 hours',
-        icon: Mail,
+        title: 'Landing on Amazon Home',
+        description: "Navigate to Amazon's homepage and verify the home page is loaded.",
+        icon: Settings,
         status: 'completed'
       },
     },
     {
-      id: '2',
-      type: 'custom',
-      position: { x: centerX, y: 200 },
-      data: {
-        title: 'Gmail',
-        objective: 'Get all emails received in the last 24 hours',
-        icon: Mail,
-        status: 'completed'
-      },
-    },
-    {
-      id: '3',
-      type: 'custom',
-      position: { x: centerX, y: 400 },
-      data: {
-        title: 'AI Call',
-        objective: 'Summarize the provided emails into a concise report, highlighting key points and any action items',
-        icon: Brain,
-        status: 'completed'
-      },
-    },
-    {
-      id: '4',
+      id: 'scene2',
       type: 'custom',
       position: { x: centerX, y: 600 },
       data: {
-        title: 'Send to Slack',
-        objective: 'Post the AI-generated email summary to the specified Slack channel',
-        icon: Hash,
+        title: 'Searching for Goose Plushie',
+        description: "Go to the search bar and search for 'goose plushie'.",
+        icon: Settings,
+        status: 'completed'
+      },
+    },
+    {
+      id: 'scene3',
+      type: 'custom',
+      position: { x: centerX, y: 850 },
+      data: {
+        title: 'Selecting Product',
+        description: "Select the first product in the search results that matches the search query.",
+        icon: Settings,
+        status: 'completed'
+      },
+    },
+    {
+      id: 'scene4',
+      type: 'custom',
+      position: { x: centerX, y: 1100 },
+      data: {
+        title: 'Add to Cart',
+        description: "Check the reviews for the product and then add the product to the cart.",
+        icon: Settings,
+        status: 'completed'
+      },
+    },
+    {
+      id: 'scene5',
+      type: 'custom',
+      position: { x: centerX, y: 1350 },
+      data: {
+        title: 'View Cart',
+        description: "View the cart and verify the product is in the cart.",
+        icon: Settings,
+        status: 'completed'
+      },
+    },
+    {
+      id: 'scene6',
+      type: 'custom',
+      position: { x: centerX, y: 1600 },
+      data: {
+        title: 'Wrap-Up',
+        description: "Summarize the actions and verify the product is ready for checkout.",
+        icon: Settings,
         status: 'active'
       },
     },
@@ -251,8 +290,8 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
   const initialEdges: Edge[] = [
     {
       id: 'e1-2',
-      source: '1',
-      target: '2',
+      source: 'scene1',
+      target: 'scene2',
       type: 'smoothstep',
       animated: false,
       style: {
@@ -262,8 +301,8 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     },
     {
       id: 'e2-3',
-      source: '2',
-      target: '3',
+      source: 'scene2',
+      target: 'scene3',
       type: 'smoothstep',
       animated: false,
       style: {
@@ -273,8 +312,30 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     },
     {
       id: 'e3-4',
-      source: '3',
-      target: '4',
+      source: 'scene3',
+      target: 'scene4',
+      type: 'smoothstep',
+      animated: false,
+      style: {
+        stroke: '#ffffff',
+        strokeWidth: 4,
+      },
+    },
+    {
+      id: 'e4-5',
+      source: 'scene4',
+      target: 'scene5',
+      type: 'smoothstep',
+      animated: false,
+      style: {
+        stroke: '#ffffff',
+        strokeWidth: 4,
+      },
+    },
+    {
+      id: 'e5-6',
+      source: 'scene5',
+      target: 'scene6',
       type: 'smoothstep',
       animated: false,
       style: {
@@ -320,7 +381,7 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     [setEdges],
   );
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (!newMessage.trim()) return;
     
     const userMessage: ChatMessage = {
@@ -331,18 +392,98 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
     };
     
     setChatMessages(prev => [...prev, userMessage]);
+    const currentMessage = newMessage;
     setNewMessage('');
     
-    // Simulate AI response
-    setTimeout(() => {
+    
+    try {
+      const apiKey = import.meta.env.VITE_COHERE_API_KEY;
+      
+      if (!apiKey || apiKey === 'YOUR_COHERE_API_KEY') {
+        // Fallback for when API key is not set - provide a helpful response
+        const aiResponse: ChatMessage = {
+          id: (Date.now() + 1).toString(),
+          type: 'ai',
+          content: `I'd be happy to help you with "${currentMessage}". However, to provide you with the best AI-powered responses, please set up your Cohere API key in the environment variables. For now, I can tell you that this is a storyboard workflow for video creation where you can plan and organize your video scenes. Each node represents a different step in your video creation process.`,
+          timestamp: new Date()
+        };
+        setChatMessages(prev => [...prev, aiResponse]);
+        return;
+      }
+
+      // Call Cohere API directly
+      const response = await fetch('https://api.cohere.ai/v1/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+          model: 'command',
+          prompt: `You are a helpful AI assistant for the One Take video creation platform. You can help users with:
+
+1. Questions about the current workflow and storyboard
+2. Video creation and content planning
+3. Understanding how the application works
+4. General questions about what's happening in the interface
+5. Workflow automation and storyboard design
+6. Any other questions users might have
+
+CURRENT STORYBOARD CONTEXT:
+The user is working on an Amazon shopping workflow storyboard with the following scenes:
+
+Scene 1: "Landing on Amazon Home" - Navigate to Amazon's homepage and verify the home page is loaded.
+Scene 2: "Searching for Goose Plushie" - Go to the search bar and search for 'goose plushie'.
+Scene 3: "Selecting Product" - Select the first product in the search results that matches the search query.
+Scene 4: "Add to Cart" - Check the reviews for the product and then add the product to the cart.
+Scene 5: "View Cart" - View the cart and verify the product is in the cart.
+Scene 6: "Wrap-Up" - Summarize the actions and verify the product is ready for checkout.
+
+This is a step-by-step Amazon shopping tutorial workflow for purchasing a goose plushie. Each scene represents a different action in the shopping process, from landing on Amazon to completing the purchase preparation.
+
+Be helpful, friendly, and informative. You can answer questions about this specific Amazon shopping workflow, the individual scenes, how they work together, or any modifications the user might want to make.
+
+User: ${currentMessage}
+
+Assistant:`,
+          max_tokens: 500,
+          temperature: 0.7,
+          stop_sequences: ['User:', 'Assistant:']
+        })
+      });
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Cohere API Error:', response.status, errorText);
+        throw new Error(`API Error: ${response.status} - ${errorText}`);
+      }
+      
+      const data = await response.json();
+      console.log('Cohere API Response:', data);
+      
+      const aiResponse = data.generations?.[0]?.text?.trim() || 'I apologize, but I cannot provide a response at this time.';
+      
+      const aiMessage: ChatMessage = {
+        id: (Date.now() + 1).toString(),
+        type: 'ai',
+        content: aiResponse,
+        timestamp: new Date()
+      };
+      
+      setChatMessages(prev => [...prev, aiMessage]);
+    } catch (error) {
+      console.error('Error calling Cohere API:', error);
+      
+      // More helpful fallback response
       const aiResponse: ChatMessage = {
         id: (Date.now() + 1).toString(),
         type: 'ai',
-        content: 'I understand your request. Let me update the storyboard workflow accordingly. The changes will be reflected in the flow diagram.',
+        content: `I'd love to help you with "${currentMessage}", but I'm having trouble connecting to the AI service right now. This could be due to a missing API key or network issue. You can still use this storyboard to plan your video workflow - each node represents a step in your video creation process.`,
         timestamp: new Date()
       };
+      
       setChatMessages(prev => [...prev, aiResponse]);
-    }, 1000);
+    }
   };
 
   const handleGenerateVideo = () => {
@@ -399,54 +540,63 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
       edges,
       messages: chatMessages,
       generatedAt: new Date().toISOString(),
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', // Sample video for demo
-      title: 'Email Workflow Demo Video',
-      description: 'A demo video showing your email workflow automation'
+      videoUrl: '/storyboard-creation/examples/AmazonCartDemo.mp4',
+      title: 'Amazon Cart Demo Video',
+      description: 'A step-by-step demonstration of the Amazon shopping workflow for purchasing a goose plushie'
     };
     
     // Navigate to video results with the workflow data
     navigate('/video-results', { 
       state: { 
         videoData: { 
-          title: 'Test Video',
-          videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+          title: 'Amazon Cart Demo Video',
+          videoUrl: '/storyboard-creation/examples/AmazonCartDemo.mp4',
+          description: 'A step-by-step demonstration of the Amazon shopping workflow for purchasing a goose plushie'
         } 
       } 
     });
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="h-screen">
+    <div 
+      className="min-h-screen bg-background relative"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Background Overlay for better text readability */}
+      <div className="absolute inset-0 bg-white/10 backdrop-blur-[0.5px]"></div>
+      
+      <div className="h-screen relative z-10">
         <div className="h-full">
           {/* Header */}
           <div className="bg-card border-b border-border px-6 py-4">
             <div className="flex justify-between items-center">
+              {/* Logo on the left */}
               <div>
-                <h1 className="text-xl font-semibold">New Workflow</h1>
-                <div className="flex items-center gap-2 mt-1">
-                  <span className="text-sm text-muted-foreground">What apps can I use?</span>
-                </div>
-              </div>
-              
-              {/* Logo in the center */}
-              <div className="flex-1 flex justify-center">
                 <div 
                   className="flex items-center space-x-2 cursor-pointer hover:bg-muted transition-all duration-200 px-3 py-2 rounded-lg"
                   onClick={onLogoClick}
                   title="Back to Home"
                 >
-                  <Video className="h-6 w-6 text-primary" />
+                  <img 
+                    src={LOGO} 
+                    alt="One Take Logo" 
+                    className="h-8 w-12"
+                  />
                   <span className="font-bold text-lg">
-                    TAKE ONE
+                    ONE TAKE
                   </span>
                 </div>
               </div>
               
               <div className="flex gap-3">
                 <Button variant="outline" className="text-sm border-border hover:bg-muted">
-                  <Key className="w-4 h-4 mr-2" />
-                  Credentials (2)
+                  <Settings className="w-4 h-4 mr-2" />
+                  Settings
                 </Button>
                 <Button 
                   onClick={handleRunWorkflow}
@@ -462,78 +612,66 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
           {/* Main Content */}
           <div className="flex" style={{ height: 'calc(100vh - 80px)' }}>
             {/* Left Sidebar */}
-            <div className="w-80 bg-card border-r border-border flex flex-col">
-              {/* Tabs for different views */}
-              <div className="flex border-b border-border">
-                <button
-                  className={`flex-1 px-4 py-2 text-sm font-medium ${
-                    !storyboardData ? 'border-b-2 border-primary text-primary' : 'text-muted-foreground hover:text-foreground'
-                  }`}
-                >
-                  Chat
-                </button>
-                {storyboardData && (
-                  <button
-                    className={`flex-1 px-4 py-2 text-sm font-medium ${
-                      storyboardData ? 'border-b-2 border-primary text-primary' : 'text-muted-foreground hover:text-foreground'
-                    }`}
+            <div 
+              className="bg-card border-r border-border flex flex-col relative"
+              style={{ width: `${sidebarWidth}px` }}
+            >
+              {/* Chat Section - Full Height */}
+              <div className="h-full p-4 flex flex-col">
+                <div className="flex items-center gap-2 mb-4">
+                  <MessageCircle className="w-5 h-5 text-primary" />
+                  <span className="font-medium">AI Assistant</span>
+                </div>
+                
+                {/* Messages - Takes up all available space */}
+                <div className="flex-1 overflow-y-auto space-y-3 mb-4">
+                  {chatMessages.map((message) => (
+                    <div key={message.id} className="text-sm bg-muted p-3 rounded-lg">
+                      {message.content}
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Input - Fixed at bottom of chat */}
+                <div className="flex gap-2">
+                  <Input
+                    placeholder="Type your message here. Not sure where to start? Just ask!"
+                    value={newMessage}
+                    onChange={(e) => setNewMessage(e.target.value)}
+                    onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                    className="flex-1 text-sm"
+                  />
+                  <Button 
+                    size="sm" 
+                    onClick={handleSendMessage}
+                    disabled={!newMessage.trim()}
                   >
-                    Storyboard
-                  </button>
-                )}
+                    <Send className="w-4 h-4" />
+                  </Button>
+                </div>
               </div>
-
-              {/* Content based on active tab */}
-              <div className="flex-1 overflow-y-auto">
-                {!storyboardData ? (
-                  /* Chat Section */
-                  <div className="h-full p-4 flex flex-col">
-                    <div className="flex items-center gap-2 mb-4">
-                      <MessageCircle className="w-5 h-5 text-primary" />
-                      <span className="font-medium">AI Assistant</span>
-                    </div>
-                    
-                    {/* Messages - Takes up all available space */}
-                    <div className="flex-1 overflow-y-auto space-y-3 mb-4">
-                      {chatMessages.map((message) => (
-                        <div key={message.id} className="text-sm bg-muted p-3 rounded-lg">
-                          {message.content}
-                        </div>
-                      ))}
-                    </div>
-                    
-                    {/* Input - Fixed at bottom of chat */}
-                    <div className="flex gap-2">
-                      <Input
-                        placeholder="Type your message here. Not sure where to start? Just ask!"
-                        value={newMessage}
-                        onChange={(e) => setNewMessage(e.target.value)}
-                        onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                        className="flex-1 text-sm"
-                      />
-                      <Button 
-                        size="sm" 
-                        onClick={handleSendMessage}
-                        disabled={!newMessage.trim()}
-                      >
-                        <Send className="w-4 h-4" />
-                      </Button>
-                    </div>
-                  </div>
-                ) : (
-                  /* Storyboard Details Section */
-                  <div className="p-4">
-                    <StoryboardDetails 
-                      storyboard={storyboardData} 
-                      transcript={location.state?.transcript} 
-                    />
-                  </div>
-                )}
-              </div>
+              
+              {/* Resize Handle */}
+              <div
+                className="absolute top-0 right-0 w-1 h-full bg-border hover:bg-primary/50 cursor-col-resize transition-colors"
+                onMouseDown={handleMouseDown}
+                style={{ 
+                  cursor: isResizing ? 'col-resize' : 'col-resize',
+                  backgroundColor: isResizing ? 'hsl(var(--primary))' : undefined
+                }}
+              />
             </div>
 
             {/* Main Canvas */}
-            <div className="flex-1 bg-gray-800">
+            <div 
+              className="flex-1 relative"
+              style={{
+                backgroundImage: `url(${heroBg})`,
+                backgroundSize: '2000%',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            >
               <div className="w-full h-full relative">
                 <ReactFlow
                   nodes={nodes}
@@ -547,7 +685,7 @@ export const StoryboardFlow = ({ onLogoClick, onGenerateVideo }: StoryboardFlowP
                     padding: 0.2,
                     includeHiddenNodes: false,
                   }}
-                  className="bg-gray-800"
+                  className="bg-transparent"
                   style={{ width: '100%', height: '100%' }}
                   defaultEdgeOptions={{
                     type: 'smoothstep',
