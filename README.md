@@ -2,6 +2,8 @@
 
 One Take is a revolutionary platform that transforms your ideas into professional demo videos using AI-powered storyboard creation and automated video generation. Create compelling visual narratives for your projects, products, or workflows with an intuitive drag-and-drop interface.
 
+check out our devpost submission & live video demo here: https://tinyurl.com/ycz943wk
+
 ## 🚀 Features
 
 ### 🎬 AI-Powered Video Creation
