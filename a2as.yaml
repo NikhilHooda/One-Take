@@ -1,0 +1,111 @@
+manifest:
+  version: "0.1.2"
+  schema: https://a2as.org/cert/schema
+  subject:
+    name: nikhilhooda/one-take
+    source: https://github.com/nikhilhooda/one-take
+    branch: main
+    commit: "29cbe01d"
+    scope: [storyboard-creation/scripts/inspect_agents.py, storyboard-creation/storyboardpy/cli.py]
+  issued:
+    by: A2AS.org
+    at: '2026-01-26T16:14:17Z'
+  signatures:
+    digest: sha256:HcrMIoG0UVR33dNRE8lxlnKaUki7pxMwqmD6We5ddNc
+    key: ed25519:oULR2BmqV66GKEGJSHke2FSBmSPCIb-vQxPc3UTkOPo
+    sig: ed25519:bPgoEWItJW8O4F0R-xFR5YJx0BwYmJ-riemG39SNPzjiCOs1yAOH3lTD01AZ8SRVwWtjvShXePbOiksTz2VeAg
+
+agents:
+  agent:
+    type: instance
+    models: [gpt-4.1]
+    params:
+      function: main
+      name: Probe
+      model_settings: ModelSettings(reasoning=Reasoning(effort=minimal), verbosity=low)
+      instructions: [Respond with JSON only.]
+
+models:
+  gpt-4.1:
+    type: default
+    agents: [agent]
+
+imports:
+  Agent: agents.Agent
+  agents: agents
+  Any: typing.Any
+  argparse: argparse
+  asyncio: asyncio
+  Dict: typing.Dict
+  inspect: inspect
+  json: json
+  List: typing.List
+  load_dotenv: dotenv.load_dotenv
+  main: cli.main
+  ModelSettings: agents.ModelSettings
+  Optional: typing.Optional
+  os: os
+  Reasoning: openai.types.shared.Reasoning
+  StoryboardAgent: agent.StoryboardAgent
+  WebsiteExplorer: explorer.WebsiteExplorer
+
+functions:
+  _derive_transcript:
+    type: sync
+    module: storyboard-creation.storyboardpy.cli
+    args: [storyboard]
+    params:
+      returns: List[Dict]
+  _ensure_dir:
+    type: sync
+    module: storyboard-creation.storyboardpy.cli
+    args: [path]
+  _format_time:
+    type: sync
+    module: storyboard-creation.storyboardpy.cli
+    args: [seconds]
+    params:
+      returns: str
+  _render_transcript_text:
+    type: sync
+    module: storyboard-creation.storyboardpy.cli
+    args: [segments]
+    params:
+      returns: str
+  add_common:
+    type: sync
+    module: storyboard-creation.storyboardpy.cli
+    args: [sp]
+  build_parser:
+    type: sync
+    module: storyboard-creation.storyboardpy.cli
+    params:
+      returns: argparse.ArgumentParser
+  cmd_scan:
+    type: async
+    module: storyboard-creation.storyboardpy.cli
+    args: [args]
+  cmd_storyboard:
+    type: async
+    module: storyboard-creation.storyboardpy.cli
+    args: [args]
+  main:
+    type: sync
+    module: storyboard-creation.scripts.inspect_agents
+
+files:
+  dirpath:
+    type: variable
+    actions: [read]
+    params:
+      caller: [os.makedirs]
+  path:
+    type: variable
+    actions: [read]
+    params:
+      caller: [os.path.dirname]
+  transcript.txt:
+    type: literal
+    actions: [read]
+    params:
+      caller: [os.path.join]
